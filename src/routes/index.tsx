@@ -179,20 +179,20 @@ function DossierContent({ selected }: { selected: Principle }) {
 
 function Schematic() {
   const [deckIndex, setDeckIndex] = useState(0);
-  const deck = decks[deckIndex];
-  const [selected, setSelected] = useState<Principle>(decks[0].phases[0].principles[3]);
+  const deck = decks[deckIndex]!;
+  const [selected, setSelected] = useState<Principle>(decks[0]!.phases[0]!.principles[3]!);
   const isSmall = useMediaQuery("(max-width: 899px)");
   const [sheetOpen, setSheetOpen] = useState(false);
   const [today, setToday] = useState("");
 
   useEffect(() => {
-    setToday(new Date().toISOString().split("T")[0]);
+    setToday(new Date().toISOString().split("T")[0]!);
   }, []);
 
   const switchDeck = (i: number) => {
     if (i === deckIndex) return;
     setDeckIndex(i);
-    setSelected(decks[i].phases[0].principles[0]);
+    setSelected(decks[i]!.phases[0]!.principles[0]!);
   };
 
   const handleSelect = (p: Principle) => {
