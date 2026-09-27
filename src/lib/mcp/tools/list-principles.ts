@@ -5,7 +5,7 @@ import { decks } from "@/data/decks";
 export default defineTool({
   name: "list_principles",
   title: "List principles",
-  description: "List all sheets, phases and principle codes/names, optionally filtered to one sheet.",
+  description: "Browse the full index: four sheets (Operations, Mastery, Command, Principles), each split into phases, with every principle code and name. Optionally filter to one sheet.",
   inputSchema: {
     deck: z.string().optional().describe("Sheet name, e.g. Operations, Mastery, Command, Principles."),
   },

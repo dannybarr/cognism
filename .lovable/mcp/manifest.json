@@ -15,7 +15,7 @@
       {
         "name": "list_principles",
         "title": "List principles",
-        "description": "List all sheets, phases and principle codes/names, optionally filtered to one sheet.",
+        "description": "Browse the full index: four sheets (Operations, Mastery, Command, Principles), each split into phases, with every principle code and name. Optionally filter to one sheet.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -37,7 +37,7 @@
       {
         "name": "get_principle",
         "title": "Get principle",
-        "description": "Get the full dossier (science, deployment, examples, caution) for one principle by id or code.",
+        "description": "Get the full dossier for one principle: its source, the science behind it, step-by-step deployment, worked examples and any caution. Look up by code (e.g. N-06) or id (e.g. ackerman).",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -63,7 +63,7 @@
       {
         "name": "search_principles",
         "title": "Search principles",
-        "description": "Search principles by keyword across names, taglines, sources and science.",
+        "description": "Find principles that fit a situation. Accepts a keyword or a plain-language description (e.g. 'price objection', 'difficult feedback to a senior colleague'). Matches across codes, names, taglines, phases, sources, science, deployment steps and examples, ranked by relevance. Returns up to 10 results; call get_principle on the best match for the full playbook.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -76,7 +76,7 @@
             "query": {
               "type": "string",
               "minLength": 1,
-              "description": "Keyword or phrase to search for."
+              "description": "Keyword, phrase or short description of the situation."
             }
           },
           "required": [
