@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "sdk_version": "3.0.4",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "cognism",
+      "version": "0.1.0",
+      "title": "Cognism"
+    },
+    "tools": [
+      {
+        "name": "list_principles",
+        "title": "List principles",
+        "description": "List all sheets, phases and principle codes/names, optionally filtered to one sheet.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "deck": {
+              "description": "Sheet name, e.g. Operations, Mastery, Command, Principles.",
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_principle",
+        "title": "Get principle",
+        "description": "Get the full dossier (science, deployment, examples, caution) for one principle by id or code.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "idOrCode": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Principle id (e.g. calibrated-questions) or code (e.g. D-01)."
+            }
+          },
+          "required": [
+            "idOrCode"
+          ],
+          "additionalProperties": false
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "search_principles",
+        "title": "Search principles",
+        "description": "Search principles by keyword across names, taglines, sources and science.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Keyword or phrase to search for."
+            }
+          },
+          "required": [
+            "query"
+          ],
+          "additionalProperties": false
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
