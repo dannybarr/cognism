@@ -3,7 +3,7 @@ import type { Phase } from "./principles";
 export const conductPhases: Phase[] = [
   {
     id: "presence-approach",
-    code: "16",
+    code: "19",
     name: "Presence & Approach",
     brief:
       "How you show up before a word is spoken — the daily disposition that decides whether a room warms to you or braces against you.",
@@ -69,30 +69,8 @@ export const conductPhases: Phase[] = [
         ],
       },
       {
-        id: "unhurried-frame",
-        code: "B-04",
-        name: "The Unhurried Frame",
-        source: "Cabane — The Charisma Myth (presence); status signaling of time and pace",
-        tagline:
-          "Haste signals low status and low control. Moving, speaking, and pausing without rush signals that you belong here.",
-        science:
-          "Perceived time-abundance is a quiet status signal: people who rush, over-explain, fill every silence, and answer before the question lands communicate that their time is not their own and that they are anxious to be approved of. The unhurried — who let a beat of silence sit, who finish their sentences, who don't scramble to fill gaps — read as secure and in command of the moment. Cabane frames this as presence: the discipline of being fully in the current moment rather than mentally racing ahead. Crucially, this is a tempo, not a slowness of mind; it is the difference between a considered pause and a nervous scramble. The pause before you answer a hard question does more for your credibility than the answer itself.",
-        deployment: [
-          "Let a full beat of silence pass before answering an important question — the pause reads as thought, not hesitation.",
-          "Finish your sentences; resist the upward, hurried trail-off that invites interruption.",
-          "Don't rush to fill silences — the person who is comfortable with the pause usually controls the exchange.",
-          "Walk, sit, and gesture with deliberate ease; the body's tempo teaches the room how to read you.",
-        ],
-        examples: [
-          "Asked something pointed: a two-second pause, eye contact held, then — 'That's a fair question. Here's how I see it.'",
-          "In a meeting that's spiraling: slow your own delivery by half; the group's tempo tends to follow the calmest voice.",
-        ],
-        caution:
-          "Unhurried is a tempo of security, not indifference. Pair it with visible engagement — warmth and attention — or calm can read as aloof.",
-      },
-      {
         id: "first-impression-warmth",
-        code: "B-05",
+        code: "B-04",
         name: "Lead With the Face",
         source: "Willis & Todorov (2006) — 100ms trait inference; Ambady & Rosenthal thin slices",
         tagline:
@@ -112,13 +90,14 @@ export const conductPhases: Phase[] = [
       },
       {
         id: "dress-with-intention",
-        code: "B-06",
+        code: "B-05",
         name: "Dress a Notch Above",
-        source: "Adam & Galinsky (2012) — Enclothed Cognition (the wearer effect); everyday first-impressions",
+        source:
+          "First-impressions research; Adam & Galinsky (2012) and its failed replication (Burns et al., 2019)",
         tagline:
-          "What you wear changes how others read you and how you perform. Dress slightly above the room, always clean and well-fitted.",
+          "What you wear is read before you speak. Dress slightly above the room, always clean and well-fitted.",
         science:
-          "Adam and Galinsky's 'enclothed cognition' experiments showed that clothing can alter the wearer's own psychology: subjects who wore a coat described as a doctor's coat performed better on an attention task than those told the same coat was a painter's — same garment, different meaning, different behavior. That is the narrow, demonstrated effect. The broader, common-sense half is that dress is also among the first things others read: turning up visibly considered reads as regard for the occasion, while turning up sloppy reads as the opposite before you speak. Dressing with intention is not vanity or expense — fit, cleanliness, and appropriateness matter far more than labels. The man who dresses a notch above the expectation tends to be read as someone who has his standards in order.",
+          "Adam and Galinsky's 2012 'enclothed cognition' study reported that people wearing a coat described as a doctor's did better on an attention task. A larger preregistered replication found no such effect, and the original authors accepted the result, so the claim that clothes sharpen your own thinking should be treated as unproven. The case for dressing well rests on the other side of the exchange: appearance is among the first things others read, and people form impressions of competence and trustworthiness within moments (see Lead With the Face). Turning up visibly considered reads as regard for the occasion, while turning up sloppy reads as the opposite before you speak. Dressing with intention is not vanity or expense: fit, cleanliness and appropriateness matter far more than labels. The man who dresses a notch above the expectation tends to be read as someone who has his standards in order.",
         deployment: [
           "Dress one notch above the room's baseline — err toward considered, never underdressed.",
           "Prioritize fit and cleanliness over cost or labels; a pressed, well-fitted simple outfit beats expensive and careless.",
@@ -132,9 +111,10 @@ export const conductPhases: Phase[] = [
       },
       {
         id: "arrive-early",
-        code: "B-07",
+        code: "B-06",
         name: "Arrive Early and Unhurried",
-        source: "Kahneman & Tversky — the planning fallacy; punctuality as respect for others' time",
+        source:
+          "Kahneman & Tversky — the planning fallacy; punctuality as respect for others' time",
         tagline:
           "Being on time is a promise kept about the most nonrenewable thing others have. Arrive early so you enter composed.",
         science:
@@ -142,7 +122,7 @@ export const conductPhases: Phase[] = [
         deployment: [
           "Plan to arrive early, not on time — build a buffer against the planning fallacy that makes everyone late.",
           "Treat other people's time as more valuable than your own convenience; don't make them wait.",
-          "Use the early margin to settle and prepare, so you enter composed rather than rushed.",
+          "Use the early margin to settle, then carry that pace into the room: let a beat pass before important answers and don't rush to fill silences.",
           "If you will be late, tell them as early as possible — the warning is the courtesy.",
         ],
         examples: [
@@ -154,7 +134,7 @@ export const conductPhases: Phase[] = [
   },
   {
     id: "integrity-word",
-    code: "17",
+    code: "20",
     name: "Integrity & Word",
     brief:
       "Reliability is the substrate of every reputation. What you promise, own, and protect when it costs you is who you actually are.",
@@ -203,13 +183,14 @@ export const conductPhases: Phase[] = [
         id: "same-in-every-room",
         code: "H-03",
         name: "Be the Same in Every Room",
-        source: "Skowronski et al. (1998) — spontaneous trait transference; reputation as portable information",
+        source:
+          "Skowronski et al. (1998) — spontaneous trait transference; reputation as portable information; Feinberg et al. — gossip and reputation",
         tagline:
           "Speak of people the same whether they're present or absent. What you say about others, listeners quietly attribute to you.",
         science:
           "Spontaneous trait transference is a striking, replicated finding: when you describe someone else as, say, dishonest or petty, listeners unconsciously and enduringly associate those very traits with you — the messenger gets tagged with the message. This is why disparaging an absent third party quietly poisons how the present party sees you, and why witnessing your two-facedness leads people to correctly infer you'll do the same to them. Reputation is information that travels without you, and inconsistency across rooms is the fastest way to corrupt it. The inverse builds trust: the man who is recognizably the same person in the boardroom, the break room, and the group chat is legible and safe to rely on. Integrity in its original sense means integrated — undivided — and that wholeness is felt by everyone who watches you move between contexts.",
         deployment: [
-          "Never say anything about an absent person you wouldn't say with them in the room.",
+          "Never say anything about an absent person you wouldn't say with them in the room, and when their name comes up, add the genuine strength you know about them.",
           "Hold the same manners and warmth regardless of who's watching or who can help you.",
           "Refuse to be recruited into the bonding-through-bashing that groups offer; redirect or stay out.",
           "Let your values show most where they cost you something — that's where people decide if they're real.",
@@ -217,6 +198,7 @@ export const conductPhases: Phase[] = [
         examples: [
           "When a group turns to trashing someone absent: \"He's not here to answer that — what did you make of his actual proposal?\"",
           "Treat the intern's idea and the executive's idea with the same seriousness in front of both.",
+          "To a manager: \"You should know how much of that launch was Dan. He doesn't advertise it.\"",
         ],
       },
       {
@@ -240,30 +222,8 @@ export const conductPhases: Phase[] = [
         ],
       },
       {
-        id: "candor-with-care",
-        code: "H-05",
-        name: "Say the Hard True Thing With Care",
-        source: "Kim Scott — Radical Candor; care personally + challenge directly",
-        tagline:
-          "Withholding the truth to be liked is a quiet betrayal. The highest respect is honesty delivered with evident goodwill.",
-        science:
-          "Kim Scott's framework maps two axes — caring personally and challenging directly — and shows that dropping the challenge to stay liked ('ruinous empathy') is one of the most common and damaging failures, because it deprives people of the information they need to grow while feeling, falsely, like kindness. Real candor requires both: the difficult truth and manifest care in how it's delivered. People can absorb remarkably hard feedback when they trust the goodwill behind it, and they resent even mild feedback delivered without it. The man who will tell you the truth others are too comfortable or too cowardly to say — and does it in a way that's clearly for you, not at you — becomes rare and valued precisely because most people opt for silence.",
-        deployment: [
-          "Lead with evident goodwill, then say the hard thing plainly — care first, then challenge, in the same breath.",
-          "Be specific and behavioral, not characterological: describe what you saw, not who they are.",
-          "Ask permission and pick the moment: hard truths land better sought than ambushed.",
-          "Say the thing others are avoiding — but privately, and with a path forward attached.",
-        ],
-        examples: [
-          "\"I'm telling you this because I think you're better than how that landed: in the meeting, cutting Sam off twice cost you the room. You had the stronger point.\"",
-          "\"Can I give you something direct? I'd want it if I were you.\"",
-        ],
-        caution:
-          "Candor without care is just cruelty wearing an honesty badge. If you can't locate genuine goodwill first, wait until you can.",
-      },
-      {
         id: "do-good-quietly",
-        code: "H-06",
+        code: "H-05",
         name: "Do Good Quietly",
         source: "Sezer, Gino & Norton (2018) — humblebragging; modesty and sincerity research",
         tagline:
@@ -285,7 +245,7 @@ export const conductPhases: Phase[] = [
   },
   {
     id: "grace-under-fire",
-    code: "18",
+    code: "21",
     name: "Grace Under Fire",
     brief:
       "Anyone is composed when things go their way. Class is what you do with refusal, criticism, provocation, and defeat.",
@@ -311,48 +271,8 @@ export const conductPhases: Phase[] = [
         ],
       },
       {
-        id: "criticism-as-data",
-        code: "E-02",
-        name: "Receive Criticism as Data",
-        source: "Stone & Heen — Thanks for the Feedback; Dweck — growth mindset",
-        tagline:
-          "Meet criticism with 'thank you' and a question, not a defense. Separate the signal from the sting.",
-        science:
-          "Stone and Heen show that the reflex to defend against feedback is what wastes it: the moment you're explaining why the critic is wrong, you've stopped extracting the one useful thing they might be right about. Feedback arrives tangled — poorly delivered, partly unfair, emotionally charged — and the skill is sorting the signal from the noise rather than rejecting the whole package because the wrapping was bad. A growth orientation treats criticism as information about the work, not a verdict on the self, which is exactly what lets someone stay open under it. The visible calm of a person who can hear 'here's what didn't work' and respond with 'tell me more' rather than a rebuttal is one of the clearest markers of security and class.",
-        deployment: [
-          "Default first response to any critique: 'Thank you — say more about that.'",
-          "Separate the delivery (which may be clumsy or unfair) from the content (which may be right).",
-          "Ask for the one thing you could do differently rather than defending the whole.",
-          "Sit with it before responding; you don't have to accept or reject in the moment.",
-        ],
-        examples: [
-          "\"That's useful — what specifically would you have done differently?\"",
-          "Instead of 'well, actually…': 'Thank you. Let me think on that and come back.'",
-        ],
-      },
-      {
-        id: "hard-on-problem",
-        code: "E-03",
-        name: "Hard on the Problem, Easy on the Person",
-        source: "Fisher & Ury — Getting to Yes; Gottman — contempt research",
-        tagline:
-          "Attack the problem, never the person. The instant it becomes personal, thinking stops and defense begins.",
-        science:
-          "A foundational principle of Getting to Yes is to separate the people from the problem: sit side-by-side against the issue rather than face-to-face against each other. The moment a disagreement becomes an attack on the person, it triggers defense, and defense ends problem-solving — nobody reasons well while protecting their worth. Gottman's research adds the sharp edge: contempt, the sense of being looked down on, is the single strongest predictor of relational rupture. The man who can be relentless on the substance while remaining unmistakably warm toward the human across from him keeps the alliance intact through hard conversations, which is exactly when most people fracture it. Toughness and kindness are not a trade-off; the highest form pairs full pressure on the problem with full respect for the person.",
-        deployment: [
-          "Frame it as 'us versus the problem,' literally: 'How do we solve this?' not 'Why did you?'",
-          "Critique the work, the decision, or the outcome — never the character or intelligence of the person.",
-          "Keep your warmth visibly on even as you press hard on the substance.",
-          "Watch for contempt in yourself — sarcasm, an eye-roll, a dismissive tone — and cut it at the root.",
-        ],
-        examples: [
-          "\"The plan has a hole in the timeline — let's figure out how to close it,\" not \"You always underestimate.\"",
-          "\"I disagree hard with the call, and I still think you're the right person for this.\"",
-        ],
-      },
-      {
         id: "gap-before-response",
-        code: "E-04",
+        code: "E-02",
         name: "Put a Gap Between Trigger and Response",
         source: "Goleman — amygdala hijack; Kahneman — System 1/System 2",
         tagline:
@@ -371,28 +291,8 @@ export const conductPhases: Phase[] = [
         ],
       },
       {
-        id: "refuse-contempt",
-        code: "E-05",
-        name: "Refuse Contempt",
-        source: "Gottman — contempt as the top predictor of relational failure",
-        tagline:
-          "Sarcasm, mockery, and the eye-roll win the moment and lose the person. Disagree without disdain.",
-        science:
-          "Across decades of Gottman's research, contempt — treating another as beneath you via sarcasm, mockery, name-calling, or the eye-roll — is the strongest single predictor that a relationship will fail, more corrosive than anger, criticism, or conflict itself. Contempt communicates disgust and superiority, and it is remembered long after the disagreement's content is forgotten. It is also seductive: it offers a cheap hit of feeling superior and often a laugh from bystanders. The man who refuses it — who can be in sharp disagreement, even in conflict, without ever signaling that the other person is lesser — protects every relationship he's in. This is not weakness; holding your fire on contempt while still stating your position plainly takes far more strength than the cheap shot does.",
-        deployment: [
-          "Cut sarcasm and mockery from disagreement entirely — the laugh is never worth the residue.",
-          "Watch the micro-signals: the eye-roll, the scoff, the 'obviously' — they broadcast contempt louder than words.",
-          "Attack positions, never dignity; you can demolish an argument while honoring the person.",
-          "When you feel superior, that's the exact moment to check your tone — contempt rides in on that feeling.",
-        ],
-        examples: [
-          "\"I see it completely differently, and here's why\" — flat, respectful, no scorn.",
-          "Resisting the easy joke at someone's expense even when the room would laugh.",
-        ],
-      },
-      {
         id: "magnanimous",
-        code: "E-06",
+        code: "E-03",
         name: "Magnanimous in Win and Loss",
         source: "Crocker & Wolfe — contingencies of self-worth; Aristotle — magnanimity (megalopsychia)",
         tagline:
@@ -412,7 +312,7 @@ export const conductPhases: Phase[] = [
       },
       {
         id: "refuse-to-complain",
-        code: "E-07",
+        code: "E-04",
         name: "Refuse the Victim Story",
         source: "Bushman (2002) — venting increases aggression; rumination research",
         tagline:
@@ -434,7 +334,7 @@ export const conductPhases: Phase[] = [
       },
       {
         id: "forgive-and-release",
-        code: "E-08",
+        code: "E-05",
         name: "Forgive and Release",
         source: "Worthington — REACH forgiveness model; research on forgiveness, health, and relational repair",
         tagline:
@@ -458,7 +358,7 @@ export const conductPhases: Phase[] = [
   },
   {
     id: "generosity-regard",
-    code: "19",
+    code: "22",
     name: "Generosity & Regard",
     brief:
       "People decide how they feel about you from how you make them feel about themselves. Regard, freely given, is magnetic.",
@@ -491,7 +391,7 @@ export const conductPhases: Phase[] = [
         tagline:
           "Recalling the small thing they mentioned once is proof of attention that money can't buy.",
         science:
-          "Remembering the worry someone mentioned in passing, the trip they were nervous about, or the deadline hanging over them is a disproportionately powerful signal because it is costly: it proves you were genuinely paying attention and then carried them in your mind afterward. Effort is the honest currency of care — anyone can offer words, but recall requires that you actually attended. (Names get their own protocol in W-07; this is about the details of their life.) Following up on the specific thing — 'how did the surgery go?', 'did the interview happen?' — lands far harder than any amount of general warmth, because it says: you weren't just polite with me, you kept me.",
+          "Remembering the worry someone mentioned in passing, the trip they were nervous about, or the deadline hanging over them is a disproportionately powerful signal because it is costly: it proves you were genuinely paying attention and then carried them in your mind afterward. Effort is the honest currency of care — anyone can offer words, but recall requires that you actually attended. (Names get their own protocol in Genuine Interest & the Sound of One's Name; this is about the details of their life.) Following up on the specific thing — 'how did the surgery go?', 'did the interview happen?' — lands far harder than any amount of general warmth, because it says: you weren't just polite with me, you kept me.",
         deployment: [
           "Note the details people share — a deadline, a worry, an event — and follow up on them later.",
           "Ask the specific follow-up: not 'how are you?' but 'how did Tuesday go?'",
@@ -524,28 +424,8 @@ export const conductPhases: Phase[] = [
         ],
       },
       {
-        id: "champion-when-absent",
-        code: "W-04",
-        name: "Champion People When They're Not There",
-        source: "Feinberg et al. — reputation & gossip; praise behind the back",
-        tagline:
-          "Praise travels and is believed. Speaking well of the absent builds trust with everyone present.",
-        science:
-          "Positive reputational information spreads through networks, and praise that reaches someone secondhand can carry unusual credibility precisely because it seems to have no ulterior motive — you didn't know it would get back to them. Speaking well of people when they aren't in the room does double duty: it may eventually reach them as that kind of credible praise, and it signals to everyone present that you're the kind of person who builds others up rather than tears them down (which they correctly infer means you'll speak well of them too). It's the exact inverse of the trust-poisoning that gossip produces. The habit of being someone's advocate in the rooms they'll never know about is one of the most quietly powerful things you can do for a relationship.",
-        deployment: [
-          "Say the good thing about someone specifically when they're not there to hear it.",
-          "When someone's name comes up, add the genuine strength you know about them.",
-          "Let praise reach people indirectly — it's more believed than praise to the face.",
-          "Be the person who defends the absent, not the one who joins the pile-on.",
-        ],
-        examples: [
-          "To a manager: \"You should know how much of that launch was Dan — he doesn't advertise it.\"",
-          "When someone's being doubted in the room: \"In my experience he's exactly the person you want on this.\"",
-        ],
-      },
-      {
         id: "waiter-test",
-        code: "W-05",
+        code: "W-04",
         name: "Pass the Waiter Test",
         source: "Keltner — power & empathy; character revealed toward those who can't reciprocate",
         tagline:
@@ -564,48 +444,8 @@ export const conductPhases: Phase[] = [
         ],
       },
       {
-        id: "genuinely-curious",
-        code: "W-06",
-        name: "Be Interested, Not Interesting",
-        source: "Carnegie — become genuinely interested; Huang et al. (2017) — question-asking and liking",
-        tagline:
-          "Curiosity is more attractive than being impressive. The one who asks and listens is the one people remember warmly.",
-        science:
-          "People who ask more questions — especially follow-up questions that build on what was just said — are rated as more likeable, and the effect holds because follow-ups signal genuine attention and responsiveness rather than waiting for your turn to talk. Carnegie's older formulation was blunter: you make more friends in two months by becoming interested in others than in two years trying to get others interested in you. The disposition underneath the tactic is humility — the willingness to make the other person the subject and yourself the audience. Most people are quietly desperate to be asked about and listened to, and are starved of it; the man who is authentically curious, who draws people out and finds them interesting, is experienced as rare and warm in a world full of people waiting to talk.",
-        deployment: [
-          "Ask, then ask again — the follow-up question is where genuine interest shows.",
-          "Aim to leave a conversation knowing something real about the other person, not to have delivered your highlights.",
-          "Resist the topper — the reflex to match their story with a bigger one of your own.",
-          "Listen to understand, not to reply; let there be a beat before you respond.",
-        ],
-        examples: [
-          "\"Wait, go back — what made you decide to actually do it?\" (the follow-up that shows you were listening)",
-          "Catching yourself about to one-up a story and instead asking, \"Then what happened?\"",
-        ],
-      },
-      {
-        id: "remember-names",
-        code: "W-07",
-        name: "Remember and Use Names",
-        source: "Carnegie — a name is the sweetest sound; a practical name-recall protocol",
-        tagline:
-          "A person's own name is the sweetest sound to them. Learn it, use it, and never hide behind 'I'm bad with names.'",
-        science:
-          "Carnegie's observation — that a person's name is to them the sweetest and most important sound in any language — is offered here as durable practical wisdom rather than a strong empirical claim: a name is identity itself, and using it signals that the person registered to you as an individual rather than a face in the crowd. Where W-02 is about remembering the details of someone's life, this principle is narrower and mechanical — the discipline of actually catching and keeping the name in the first place. 'I'm terrible with names' is usually a failure of attention at the moment of introduction, not a fixed trait, and it yields to a few seconds of deliberate encoding: hear it, repeat it, attach it to the face. Using someone's name naturally later tends to be felt as warmth and recognition.",
-        deployment: [
-          "At introduction, actually listen for the name, repeat it back once, and use it in your next sentence.",
-          "Encode it deliberately — link it to the face, a feature, or a rhyme in the first few seconds.",
-          "Greet people by name when you see them again; the re-use is where the warmth compounds.",
-          "If you forget, admit it warmly and ask again — 'remind me of your name, I want to get it right' beats avoiding it.",
-        ],
-        examples: [
-          "\"Good to meet you, Daniel.\" ... later: \"Daniel, what did you make of that?\"",
-          "\"I'm sorry — your name again? I want to get it right.\" (better than dodging it for the rest of the night)",
-        ],
-      },
-      {
         id: "give-without-score",
-        code: "W-08",
+        code: "W-05",
         name: "Give Without Keeping Score",
         source: "Adam Grant — Give and Take; generalized reciprocity and reputation",
         tagline:
@@ -627,7 +467,7 @@ export const conductPhases: Phase[] = [
       },
       {
         id: "specific-gratitude",
-        code: "W-09",
+        code: "W-06",
         name: "Say Thank You, Specifically",
         source: "Grant & Gino (2010) — expressed gratitude and prosocial behavior; Emmons — gratitude research",
         tagline:
@@ -647,7 +487,7 @@ export const conductPhases: Phase[] = [
       },
       {
         id: "connect-people",
-        code: "W-10",
+        code: "W-07",
         name: "Connect People Generously",
         source: "Granovetter — the strength of weak ties; the connector as network hub",
         tagline:
@@ -669,7 +509,7 @@ export const conductPhases: Phase[] = [
   },
   {
     id: "self-mastery",
-    code: "20",
+    code: "23",
     name: "Self-Mastery & Standards",
     brief:
       "The outward poise others read as class is the surface of a private discipline. You govern yourself first; everything else follows.",
@@ -698,11 +538,12 @@ export const conductPhases: Phase[] = [
         id: "one-hard-thing",
         code: "A-02",
         name: "Do One Hard Thing Daily",
-        source: "Duckworth — grit; stress-inoculation & voluntary discomfort (Stoic praxis)",
+        source:
+          "Stress-inoculation research; Stoic practice of voluntary discomfort; Credé, Tynan & Harms (2017) on grit",
         tagline:
           "Deliberately choose discomfort each day. It widens your range and builds the calm of a man who has faced hard things.",
         science:
-          "Controlled exposure to manageable stress builds tolerance for it — the logic behind stress inoculation, and the ancient Stoic practice of voluntarily courting discomfort so that hardship, when it arrives unbidden, finds you already trained. Duckworth's research on grit ties long-term achievement less to talent than to the sustained willingness to do hard, often unglamorous things over time. Choosing a daily dose of difficulty — the cold, the workout, the uncomfortable conversation, the task you're avoiding — expands the zone in which you remain composed and capable, and that expanded range is exactly what reads to others as unflappability. The man who regularly does hard things on purpose is not braver by nature; he has simply moved his baseline, so what rattles others barely registers.",
+          "Controlled exposure to manageable stress builds tolerance for it: the logic behind stress-inoculation training, and the ancient Stoic practice of voluntarily courting discomfort so that hardship, when it arrives unbidden, finds you already trained. Duckworth's research made 'grit' famous, but the evidence is more modest than the bestseller: a 2017 meta-analysis of 88 samples found grit only moderately related to performance and very strongly overlapping with conscientiousness, with sustained effort the part that matters. Choosing a daily dose of difficulty (the cold, the workout, the uncomfortable conversation, the task you're avoiding) expands the zone in which you remain composed and capable, and that expanded range is exactly what reads to others as unflappability. The man who regularly does hard things on purpose is not braver by nature; he has simply moved his baseline, so what rattles others barely registers.",
         deployment: [
           "Pick one genuinely uncomfortable thing each day and do it first, before it can be talked out of.",
           "Rotate the difficulty: physical, social, and the task you're most avoiding.",

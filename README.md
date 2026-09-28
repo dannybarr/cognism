@@ -1,6 +1,6 @@
 # Cognism
 
-**A curated library of 153 communication and influence principles, served as an MCP server so AI agents can draw on proven playbooks instead of the open web.**
+**A curated library of 162 communication and influence principles, served as an MCP server so AI agents can draw on proven playbooks instead of the open web.**
 
 [Live app](https://cognism.lovable.app) · [MCP endpoint](https://cognism.lovable.app/mcp) · [Connect in one line](#connect)
 
@@ -88,14 +88,14 @@ All three tools are marked read-only and idempotent. The server also ships instr
 
 ## The library
 
-153 principles across four sheets and 20 phases. Every principle carries a short code for fast reference.
+162 principles across four sheets and 23 phases. Every principle carries a short code for fast reference.
 
 | Sheet | Focus | Phases | Principles |
 | --- | --- | --- | --- |
-| **Operations** | Running a live conversation or deal | Discovery, Rapport, Solutioning, Negotiation, Psychology | 52 |
-| **Mastery** | Harder interpersonal situations | Conflict & Repair, Presence & Nonverbal, Storytelling & Speaking, Feedback & Leadership, Defense & Counter-Influence | 33 |
-| **Command** | Status, framing and influence in the room | Power & Status, Frame Control & Pitching, Conversation Science, Reading & Social Intelligence, Commanding the Room | 29 |
-| **Principles** | Personal conduct and standards | Presence & Approach, Integrity & Word, Grace Under Fire, Generosity & Regard, Self-Mastery & Standards | 39 |
+| **Operations** | Running a live conversation or deal | Discovery, Rapport, Solutioning, Negotiation, Psychology | 54 |
+| **Mastery** | Harder interpersonal situations | Conflict & Repair, Presence & Nonverbal, Storytelling, Presenting, Speaking & Writing, Feedback & Leadership, Defense & Counter-Influence | 45 |
+| **Command** | Status, influence and decisions in the room | Power & Status, Influence Without Authority, Frame Control & Pitching, Conversation Science, Reading & Social Intelligence, Commanding the Room | 32 |
+| **Principles** | Personal conduct and standards | Presence & Approach, Integrity & Word, Grace Under Fire, Generosity & Regard, Self-Mastery & Standards | 31 |
 
 Each entry follows the same structure:
 

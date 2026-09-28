@@ -370,41 +370,46 @@ export const phases: Phase[] = [
         id: "name-warmth",
         code: "R-08",
         name: "Genuine Interest & the Sound of One's Name",
-        source: "Dale Carnegie — How to Win Friends and Influence People",
+        source:
+          "Dale Carnegie — How to Win Friends and Influence People; Huang et al. (2017) — question-asking and liking",
         tagline:
           "You make more allies in two months by becoming interested in people than in two years trying to get them interested in you.",
         science:
           "Carnegie's century-old observations hold up in modern research: hearing one's own name activates distinct brain regions tied to self-relevance; people rate conversation partners who ask more follow-up questions as significantly more likable (Harvard study, Huang et al. 2017). Attention is the rarest currency — giving it fully is disproportionately powerful.",
         deployment: [
-          "Use their name naturally — at the open, at key moments, at the close. Never robotically.",
-          "Ask follow-up questions about what THEY said, rather than pivoting to your own stories.",
+          "At introduction, listen for the name, repeat it once and use it in your next sentence. After that, use it naturally at key moments, never robotically.",
+          "Ask follow-up questions about what THEY said, and resist the topper: the reflex to match their story with a bigger one of your own.",
           "Remember and reference details from previous conversations — it signals they matter beyond the transaction.",
           "Let others do most of the talking about themselves; they will remember the conversation as excellent.",
         ],
         examples: [
           "\"Sarah, last time you mentioned your daughter's tournament — how did it go?\"",
           "\"Wait, go back — you said you almost took a completely different career path. What happened?\"",
+          "\"I'm sorry, your name again? I want to get it right.\" (better than dodging it for the rest of the evening)",
         ],
       },
       {
         id: "five-to-one",
         code: "R-09",
         name: "The 5:1 Ratio",
-        source: "John Gottman — Love Lab observational research",
+        source:
+          "John Gottman — Love Lab observational research",
         tagline:
-          "Stable relationships run at five positive interactions for every negative one — even during conflict.",
+          "In stable couples, positive interactions outnumber negative ones about five to one, even during conflict. At work, treat it as a direction, not a quota.",
         science:
-          "Gottman's longitudinal coding of thousands of interactions found a precise arithmetic to relational health: couples heading for stability maintained roughly 5 positive interactions (interest, affection, humor, appreciation, small acknowledgments) per negative one DURING conflict — and about 20:1 in everyday life; relationships below ~1:1 were headed for collapse. The ratio generalizes to teams: research on high-performing business teams (Losada's data, though its math was later disputed, directionally matches Gottman's) shows positivity-dominant interaction climates outperform. The practical law: negativity is roughly five times heavier than positivity, so deposits must dramatically outnumber withdrawals.",
+          "Gottman's lab coded thousands of interactions between married couples. Couples who stayed together kept roughly five positive interactions (interest, affection, humor, appreciation, small acknowledgments) for every negative one during conflict discussions, while couples headed for divorce fell close to one to one. That ratio comes from couples, and no equivalent number has been validated for teams: the 'positivity ratio' once claimed for business teams (Losada's 2.9) rested on mathematics later shown to be invalid and formally withdrawn. The transferable lesson is directional, not numerical. Negative exchanges weigh more than positive ones, so goodwill has to be built far more often than it is spent.",
         deployment: [
-          "Treat every relationship as an account: each criticism, correction, or missed commitment is a withdrawal that needs ~5 deposits to cover.",
-          "Make deposits tiny and constant: noticing effort, remembering details, small acknowledgments — frequency beats magnitude.",
-          "Front-load deposits before known withdrawals: build the balance BEFORE the hard feedback conversation, not as damage control after.",
-          "Audit your ratio with the people who matter most professionally — most people run large deficits with exactly the colleagues they depend on most.",
+          "Treat every relationship as an account: each criticism, correction or missed commitment is a withdrawal that needs several deposits to cover.",
+          "Make deposits small and constant: noticing effort, remembering details, brief acknowledgments. Frequency beats magnitude.",
+          "Build the balance before known withdrawals: before the hard feedback conversation, not as damage control after.",
+          "Check the balance with the people you depend on most at work. It is easy to run a deficit with exactly those colleagues.",
         ],
         examples: [
           "\"Before we get into the revisions — the client specifically called out your section as the clearest. They're right.\"",
           "Weekly habit: two specific, unprompted appreciation messages to people you'll eventually need to push hard.",
         ],
+        caution:
+          "The five-to-one figure is from couples research. Don't count interactions or manufacture praise to hit a number: insincere positivity is itself a withdrawal.",
       },
     ],
   },
@@ -693,7 +698,8 @@ export const phases: Phase[] = [
         id: "loss-framing",
         code: "N-04",
         name: "Loss-Aversion Framing",
-        source: "Kahneman & Tversky — Prospect Theory (Nobel Prize–winning work)",
+        source:
+          "Kahneman & Tversky — Prospect Theory (Nobel Prize–winning work)",
         tagline:
           "Losses hurt roughly twice as much as equivalent gains feel good. Frame accordingly.",
         science:
@@ -707,6 +713,7 @@ export const phases: Phase[] = [
         examples: [
           "Instead of 'this saves you $30K a year': \"Every quarter this waits, roughly $7,500 walks out the door.\"",
           "\"I want to make sure you don't lose the pricing tier you're currently locked into — it doesn't survive the renewal date.\"",
+          "\"Try it for thirty days. If it doesn't earn its place, pull it out.\" (once it is theirs, giving it up feels like a loss)",
         ],
       },
       {
@@ -849,6 +856,52 @@ export const phases: Phase[] = [
           "Prep sheet, every deal: their likely walk-away, my target, my first offer, my evidence. Filled in BEFORE hearing their number.",
         ],
       },
+      {
+        id: "golden-bridge",
+        code: "N-12",
+        name: "Build a Golden Bridge",
+        source:
+          "William Ury — Getting Past No (Harvard Negotiation Project, 1991)",
+        tagline:
+          "When the other side stonewalls or digs in, don't push harder. Make it easy for them to say yes and save face.",
+        science:
+          "Ury's sequel to Getting to Yes addresses the counterpart who won't play by its rules: the one who stonewalls, attacks or tricks. His method has five steps. Go to the balcony: step back and control your own reaction. Step to their side: listen, acknowledge and agree where you can before disagreeing. Reframe: treat their position as one possible option and ask problem-solving questions. Build a golden bridge: make agreement easy by involving them in the solution, satisfying their unmet interests and helping them save face. Use power to educate, not to defeat: make the consequences of no deal clear without escalating. The golden bridge is the heart of it. People resist agreements they did not help shape, that ignore an interest they care about, or that make them look weak to their own side. Remove those obstacles and resistance often falls away.",
+        deployment: [
+          "When provoked, pause and name what's happening to yourself before you respond. You're on the balcony, not in the fight.",
+          "Acknowledge their point and feelings first: 'I can see why that looks unfair from where you sit.'",
+          "Ask what would make this work for them, and build their ideas into the proposal so it becomes partly theirs.",
+          "Give them a way to explain the agreement to their own side: a principle, a precedent or a concession they can point to.",
+        ],
+        examples: [
+          "\"You've been clear this price won't get past your board. What would they need to see to approve it? Let's design that together.\"",
+          "\"If we frame this as a pilot rather than a policy change, would that make it easier to take back to your team?\"",
+        ],
+        caution:
+          "A golden bridge is not capitulation: you change how agreement looks and feels, not your core interests. With a counterpart acting in bad faith, keep your alternative strong (see BATNA).",
+      },
+      {
+        id: "negotiation-backlash",
+        code: "N-13",
+        name: "The Negotiation Backlash",
+        source:
+          "Hannah Riley Bowles (Harvard Kennedy School), Linda Babcock & Lei Lai (2007); Bowles & Babcock (2013)",
+        tagline:
+          "Women who negotiate for a raise or more pay are often penalized socially for asking. Pair the request with a legitimate reason and concern for the relationship.",
+        science:
+          "In four experiments, Bowles, Babcock and Lai had people evaluate candidates who did or did not negotiate for higher pay. Evaluators penalized women who negotiated more than men who did: they were less willing to work with them and judged them less nice. Male evaluators penalized women specifically, while female evaluators penalized anyone who negotiated. The finding explains part of the gender gap in initiating negotiations: some of the reluctance is an accurate reading of the social cost. In later work, Bowles and Babcock tested ways through it. Communicating concern for the organizational relationship improved how women who negotiated were seen, and giving a legitimate reason for the request improved what they achieved; together these form a 'relational account'. A related claim, that women negotiate as assertively as men when advocating for someone else, did not hold up in a later close replication, so it is left out here.",
+        deployment: [
+          "Ask anyway: not asking has a guaranteed cost, and the tactics below reduce the risk of asking.",
+          "Give a legitimate reason tied to the organization's interests: market data, a competing offer, the scope you are taking on.",
+          "Signal concern for the relationship: frame the request as working it out together, and show you want the arrangement to work for both sides.",
+          "When you evaluate other people's requests, check your own reaction: judge the ask on its merits, not on who is asking.",
+        ],
+        examples: [
+          "\"I'm excited about this role and want to make it work. Given the scope, I'd like to talk about salary. The market data for this level puts it closer to £85,000.\"",
+          "\"Now that I'm leading the team, my manager suggested I raise my compensation with you.\" (a legitimate reason for asking now)",
+        ],
+        caution:
+          "The backlash is a problem with evaluators, not with the people who negotiate; these tactics manage it rather than fix it. Its size also varies across workplaces and cultures.",
+      },
     ],
   },
   {
@@ -859,23 +912,27 @@ export const phases: Phase[] = [
       "The permanent operating system beneath every conversation — the biases and levers that govern human judgment.",
     principles: [
       {
-        id: "loss-aversion",
+        id: "two-routes",
         code: "P-01",
-        name: "Loss Aversion",
-        source: "Kahneman & Tversky — Prospect Theory (1979)",
-        tagline: "People feel loss roughly twice as intensely as equivalent gain.",
+        name: "Two Routes to Persuasion",
+        source:
+          "Richard Petty & John Cacioppo — the Elaboration Likelihood Model (1986)",
+        tagline:
+          "Engaged audiences are persuaded by the quality of your argument; distracted ones by cues. Arguments build attitudes that last.",
         science:
-          "The cornerstone of behavioral economics: the pain of losing $100 outweighs the pleasure of gaining $100 by a factor of about 2 to 2.5. This asymmetry drives status-quo bias, endowment effects, sunk-cost escalation, and risk-seeking to avoid losses. Whoever controls the loss frame controls the decision's emotional weight.",
+          "Petty and Cacioppo's Elaboration Likelihood Model, one of the most influential theories in persuasion research, holds that messages change attitudes by two routes. On the central route, people think carefully about the arguments, and argument quality decides the outcome. On the peripheral route, they rely on shortcuts: the speaker's credibility or attractiveness, the number of arguments, what others think, how confident the message sounds. Which route a listener takes depends on motivation (does this matter to them?) and ability (do they have the time, knowledge and attention to evaluate it?); missing either sends them down the peripheral route. The difference matters beyond the moment: attitudes formed through careful thinking last longer, resist counter-arguments better and predict behavior more reliably. The model explains when the rest of this sheet works: the shortcuts on these pages are most powerful when people are not thinking hard, and least powerful when they are.",
         deployment: [
-          "Frame stakes as protecting what people already have, not acquiring what they don't.",
-          "Audit your proposals: does the other side perceive change as a gain or a threatened loss? Their resistance usually maps to a hidden loss.",
-          "To move someone off the status quo, make standing still the risky option.",
-          "Trial periods and pilots work because they convert your ask into their possession — which they then don't want to lose.",
+          "Diagnose the audience: are they motivated and able to scrutinize your case? A board reviewing a major investment is; a busy stakeholder skimming an update may not be.",
+          "With engaged audiences, invest in argument quality: strong evidence and fair treatment of the counter-case. Weak arguments backfire when people think hard.",
+          "With distracted audiences, make the strength of your case easy to see (credible messengers, clear signals, simple framing), then find a moment to engage them properly.",
+          "When you need the change to last, move people onto the central route: make the issue personally relevant and give them time to think.",
         ],
         examples: [
-          "\"You've built a reputation for shipping on time. This is the first project that puts that at risk.\"",
-          "\"Try it for thirty days. If it doesn't earn its place, pull it out.\" (endowment does the rest)",
+          "To an engaged CFO: the full model, the downside scenarios and why the alternatives lose. To the wider leadership team: \"Finance has stress-tested this, and here is the one-line result.\"",
+          "\"This decision sets your team's targets next year, so I'd rather you poke holes in it now than live with it later.\" (raising the motivation to think)",
         ],
+        caution:
+          "Peripheral persuasion is fast but fragile: people persuaded by one cue can be unpersuaded by the next. Using cues on people who should be thinking carefully, as in major financial decisions, crosses into manipulation.",
       },
       {
         id: "reciprocity",
@@ -1040,21 +1097,24 @@ export const phases: Phase[] = [
         id: "pygmalion",
         code: "P-10",
         name: "The Pygmalion Effect",
-        source: "Rosenthal & Jacobson — classroom studies (1968)",
+        source:
+          "Rosenthal & Jacobson (1968); Jussim & Harber (2005) review; Yeager et al. (2014) 'wise feedback'",
         tagline:
-          "People rise or sink to the expectations you genuinely hold of them — label people UP.",
+          "Expectations shape performance, modestly and most with people still forming their view of themselves. Set them high, and mean it.",
         science:
-          "Rosenthal's experiments showed that teachers' (falsely induced) high expectations of random students produced real IQ gains — expectations leak through tone, attention, and opportunity, and become self-fulfilling. In influence terms: assigning someone a positive label or reputation to live up to ('you're one of the most thorough people here') reliably shifts their behavior toward it (also Cialdini's 'altercasting').",
+          "Rosenthal and Jacobson told teachers that randomly chosen pupils were about to 'bloom', and those pupils later showed IQ gains. The study became famous, but the effect has not held up at that size. Jussim and Harber's 2005 review found teacher-expectation effects in real classrooms are real but small (effect sizes of roughly 0.1 to 0.3), strongest with young children, and often reflect teachers accurately reading ability rather than creating it. Workplace studies of managers' expectations have found larger effects, mostly in early-career and military settings. The practical core survives: expectations leak through attention, challenge and opportunity, and people tend to move toward a credible label they are given (Cialdini calls this 'altercasting'). Treat it as a nudge, not a transformation.",
         deployment: [
-          "Publicly attribute to people the qualities you want more of — specifically and credibly, anchored in something real they did.",
+          "Attribute to people the qualities you want more of, specifically and credibly, anchored in something real they did.",
           "Frame requests as consistent with their best identity: 'You're exactly the kind of person who...'",
-          "Hold visibly high expectations paired with visible confidence they'll be met ('high standards + belief' is the strongest feedback frame per Yeager's research).",
-          "Never label down, even in frustration — negative labels are equally self-fulfilling.",
+          "Pair high standards with explicit confidence they'll be met. In Yeager's 'wise feedback' studies, this framing made students more willing to revise their work.",
+          "Avoid labelling down, even in frustration: people take negative labels as seriously as positive ones.",
         ],
         examples: [
-          "\"I'm bringing this to you because you're the most rigorous reviewer we have — I need that rigor here.\"",
+          "\"I'm bringing this to you because you're the most rigorous reviewer we have, and I need that rigor here.\"",
           "\"I'm giving you this feedback because I have very high standards and I'm convinced you can meet them.\"",
         ],
+        caution:
+          "Expectation effects are real but small in most adult settings. A label only works if it is credible and anchored in something the person actually did; inflated praise is quickly discounted.",
       },
       {
         id: "mere-exposure",
@@ -1102,16 +1162,17 @@ export const phases: Phase[] = [
         id: "emotional-intelligence",
         code: "P-13",
         name: "The Emotional Intelligence Loop",
-        source: "Daniel Goleman — Emotional Intelligence; Working with Emotional Intelligence",
+        source:
+          "Daniel Goleman — Emotional Intelligence; Joseph & Newman (2010) meta-analysis",
         tagline:
-          "Self-awareness → self-regulation → empathy → skilled relationships: the base rate under every other technique on these sheets.",
+          "Self-awareness, then self-regulation, then empathy, then relationships: the sequence under every other technique on these sheets.",
         science:
-          "Goleman's synthesis of affective neuroscience and competence research established emotional intelligence as the substrate of influence: his analyses of leadership competency models found EI-based capabilities mattered roughly twice as much as IQ and technical skill combined for outstanding performance, with the gap widening at senior levels. The architecture is sequential: self-awareness (recognizing your emotion as it arises) enables self-regulation (choosing the response instead of being chosen by it — critical because of the 'amygdala hijack', where the threat system seizes control before the cortex weighs in); those two enable accurate empathy (you can't read others through your own emotional static); and all three enable relationship skill. Emotions are also contagious — leaders' moods propagate through groups measurably — making your own state management a group intervention, not private hygiene.",
+          "Goleman popularized emotional intelligence: the ability to notice, manage and use emotion in yourself and others. His headline claim, that it matters about twice as much as IQ and technical skill for outstanding performance, came from consulting analyses of competency models rather than peer-reviewed research. The research record is more modest: Joseph and Newman's 2010 meta-analysis found that emotional intelligence adds predictive value beyond personality and cognitive ability mainly in jobs high in emotional labor. The useful part is the sequence. Self-awareness (recognizing an emotion as it arises) makes self-regulation possible (choosing a response under threat instead of reacting); both make accurate empathy possible, because you can't read others through your own emotional static; and all three support relationship skill. Emotions are also contagious, spreading measurably through groups (see Be the Calm in the Room), so managing your own state is a group intervention, not private hygiene.",
         deployment: [
-          "Name your state in real time — 'I'm getting defensive' — the act of recognition itself re-engages the cortex and buys the choosing space (see affect labeling).",
-          "Install a hijack protocol before you need it: the 6-second pause, one slow breath, or a scripted phrase ('let me think about that') — decided in calm, executed in heat.",
-          "Treat your mood as broadcast infrastructure: before high-stakes rooms, deliberately set the state you want the room to catch.",
-          "Train the sequence in order: regulation without awareness is suppression, and empathy without regulation is absorption. The loop only works forward.",
+          "Name your state in real time ('I'm getting defensive'). Putting a feeling into words tends to reduce its intensity and buys space to choose (see affect labeling).",
+          "Decide your circuit-breaker in advance: a pause, one slow breath, or a scripted phrase ('let me think about that'), chosen in calm and used in heat.",
+          "Treat your mood as something the room will catch: before high-stakes meetings, deliberately set the state you want to bring in.",
+          "Train the sequence in order: regulation without awareness is suppression, and empathy without regulation is absorption.",
         ],
         examples: [
           "\"I notice I'm reacting to the tone more than the content — give me a second to separate them, because the content deserves a fair answer.\"",

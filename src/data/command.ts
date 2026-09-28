@@ -3,7 +3,7 @@ import type { Phase } from "./principles";
 export const commandPhases: Phase[] = [
   {
     id: "power-status",
-    code: "11",
+    code: "13",
     name: "Power & Status",
     brief:
       "The invisible hierarchy in every room — how power is actually acquired, how status is conferred, and how both are lost.",
@@ -71,30 +71,8 @@ export const commandPhases: Phase[] = [
         ],
       },
       {
-        id: "never-outshine",
-        code: "K-04",
-        name: "Never Outshine the Master",
-        source: "Robert Greene — The 48 Laws of Power (Law 1)",
-        tagline:
-          "Making superiors feel insecure about their position is career poison — make those above you feel comfortably superior.",
-        science:
-          "Greene's first law distills centuries of court history into a durable status dynamic: people in power experience a subordinate's conspicuous brilliance as threat, not asset — and threats get quietly removed. The mechanism is status anxiety: your competence is welcome exactly up to the point where it makes your superior look replaceable. The masterful version isn't hiding your talent; it's directing its glow — framing your wins as extensions of their leadership, asking their counsel, and letting them discover your brilliance rather than having it announced at them.",
-        deployment: [
-          "Frame your victories inside their agenda: 'this worked because of the direction you set' costs nothing and buys air cover.",
-          "Ask their advice on things you could figure out yourself — it affirms the hierarchy while showcasing your judgment in the questions you ask.",
-          "Let third parties deliver news of your brilliance; self-announced excellence in front of an insecure superior reads as a challenge.",
-          "Read the superior first: secure leaders WANT to be outshone by their people. This law applies in proportion to their insecurity.",
-        ],
-        examples: [
-          "\"Your call to delay the launch is what made this possible — we used the extra month to fix the thing that would have sunk us.\"",
-          "\"Before I take this to the committee, I want your read — you've seen ten of these politics play out.\"",
-        ],
-        caution:
-          "This is a defensive map of how insecure power behaves, not an endorsement. Deployed cynically it becomes flattery, and flattery detected destroys the trust it was faking. Also know when to leave: a superior who requires permanent dimming is a career ceiling.",
-      },
-      {
         id: "reputation-guard",
-        code: "K-05",
+        code: "K-04",
         name: "Guard the Reputation Asset",
         source: "Robert Greene — 48 Laws (Law 5); reputation-market research",
         tagline:
@@ -114,7 +92,7 @@ export const commandPhases: Phase[] = [
       },
       {
         id: "status-conferral",
-        code: "K-06",
+        code: "K-05",
         name: "Competence Plus Generosity",
         source: "Cameron Anderson — status research (UC Berkeley); Hardy & Van Vugt — competitive altruism",
         tagline:
@@ -135,8 +113,132 @@ export const commandPhases: Phase[] = [
     ],
   },
   {
+    id: "influence-without-authority",
+    code: "14",
+    name: "Influence Without Authority",
+    brief:
+      "Move bosses, peers and partners you don't control: understand what they need, trade in what they value, and line up support before the decision.",
+    principles: [
+      {
+        id: "managing-your-boss",
+        code: "U-01",
+        name: "Managing Your Boss",
+        source:
+          "John Gabarro & John Kotter — Managing Your Boss (Harvard Business Review, 1980)",
+        tagline:
+          "The relationship with your boss is mutual dependence. Manage it deliberately, around their goals, pressures and working style.",
+        science:
+          "Gabarro and Kotter, both Harvard Business School professors, observed that effective managers treat the relationship with their boss as something to manage, not merely endure. The logic is mutual dependence: bosses depend on subordinates for cooperation, reliability and honesty, while subordinates depend on bosses for connections to the rest of the organization, for priorities and for critical resources. Managing that relationship starts with understanding the boss (their goals, pressures, strengths, weaknesses and preferred working style) and yourself, then building a relationship that fits both: compatible styles, clear mutual expectations, a steady flow of information, dependability and honesty, and careful use of the boss's time. One of their sharpest distinctions is between 'readers', who want information in writing so they can study it first, and 'listeners', who want it in person so they can ask questions. Delivering the right content in the wrong format is a common and avoidable failure.",
+        deployment: [
+          "Map your boss's world: their top goals, the pressures on them from above, and what they need from you to succeed.",
+          "Learn whether they are a reader or a listener, and send important material in that form: a memo ahead of the meeting, or a conversation first and paper after.",
+          "Agree expectations explicitly instead of guessing: what they want to hear about, how often, and what you can decide alone.",
+          "Be dependable and honest: no surprises, bad news early, and never spend their time on what you could resolve yourself.",
+        ],
+        examples: [
+          "\"Before I build the plan, can I check what you're being measured on this quarter? I want mine to make yours easier.\"",
+          "For a reader: \"You'll have a one-page summary tonight, so you can read it before we talk on Thursday.\"",
+        ],
+        caution:
+          "Managing up is not flattery or telling the boss what they want to hear. Gabarro and Kotter's point is mutual effectiveness, and a relationship built on managed impressions breaks the first time the news is bad.",
+      },
+      {
+        id: "currencies-of-exchange",
+        code: "U-02",
+        name: "Currencies of Exchange",
+        source:
+          "Allan Cohen & David Bradford — Influence Without Authority",
+        tagline:
+          "Influence without authority runs on trade. Find what the other person values and pay in that currency.",
+        science:
+          "Cohen and Bradford built their model on the law of reciprocity: people expect good and bad turns to be repaid over time. When you need cooperation from people you don't manage, you trade. The difficulty is that people value different things, so they describe five families of 'currencies': inspiration (vision, doing something that matters), task (resources, help, information, challenge), position (recognition, visibility, reputation), relationship (acceptance, closeness, support) and personal (gratitude, ownership, comfort). Their six-step process: assume everyone is a potential ally; clarify your own goals; diagnose the other person's world, including their pressures and how they are measured; identify the currencies they value and the ones you can offer; attend to the state of the relationship; and influence through give and take. The most common mistake is offering what you would value instead of what they do.",
+        deployment: [
+          "Before asking, diagnose their world: what they're measured on, who puts pressure on them, and what they worry about.",
+          "Name the currency they value most (inspiration, task, position, relationship or personal) and what you can genuinely offer in it.",
+          "Offer first where you can, and make the exchange explicit when the relationship is new.",
+          "Keep the account balanced over time, and never write anyone off: today's obstacle can be next quarter's ally.",
+        ],
+        examples: [
+          "To a colleague who values visibility: \"If your team pilots this, I'll make sure the results go to the leadership review under your name.\"",
+          "To one who values the task: \"This is the hardest data problem we've got, and nobody's cracked it yet. I think you'd enjoy it.\"",
+        ],
+        caution:
+          "An explicit trade can cheapen a close relationship, where the currency is usually the relationship itself. And trading on promises you can't keep spends reputation faster than any favor earns it.",
+      },
+      {
+        id: "coalition-before-the-meeting",
+        code: "U-03",
+        name: "Build the Coalition Before the Meeting",
+        source:
+          "David Lax & James Sebenius — 3-D Negotiation (Harvard Business School)",
+        tagline:
+          "Most decisions are won before the meeting. Map back from the final yes and bring people on board in the right order.",
+        science:
+          "Lax and Sebenius argue that most negotiators fixate on the first dimension, tactics at the table, and neglect the third: setup. Before the decisive conversation, effective dealmakers make sure the right parties are involved, in the right sequence, addressing the right interests, and facing the right consequences if there is no deal. Their tool is backward mapping, borrowed from project planning: start from the final agreement you need, identify whose support the most critical party will look for, and work backwards to decide whom to approach first. Approaching the hardest and most important person first often fails; arriving with the people they trust already on board changes the conversation. The same logic applies inside organizations: a proposal that meets the decision-making meeting cold is being negotiated in the worst possible setting.",
+        deployment: [
+          "Write down who must say yes, and whose view each of those people will check before they do.",
+          "Map backwards: approach the people whose support makes the next person's yes easier, before you reach the decisive one.",
+          "Meet key stakeholders one to one before the group meeting, so objections surface where they can be answered, not in public.",
+          "Check the setup, not just the pitch: are the right parties involved, and is the alternative to agreeing clear to everyone?",
+        ],
+        examples: [
+          "Before asking the CFO for budget: \"I've walked the finance partner and the head of operations through the numbers. Both think it holds up.\"",
+          "\"Can I get fifteen minutes before Tuesday's review? I'd rather hear your concerns now than discover them in the room.\"",
+        ],
+        caution:
+          "Pre-wiring a decision becomes backroom politics if it shuts out people who should have a voice. Sequence the conversations, but don't hide them: the aim is a better-informed decision, not an ambush.",
+      },
+      {
+        id: "more-persuasive-than-you-think",
+        code: "U-04",
+        name: "You're More Persuasive Than You Think",
+        source:
+          "Francis Flynn & Vanessa Lake — 'If You Need Help, Just Ask' (2008); Vanessa Bohns (2016) review",
+        tagline:
+          "People say yes to direct requests for help far more often than you predict. Ask.",
+        science:
+          "Flynn and Lake asked participants to predict how many strangers they would need to approach before enough agreed to a request, such as filling out a questionnaire or lending a phone, and then sent them out to ask. Requesters consistently underestimated compliance, in the first studies by as much as half. Bohns's 2016 review of the effect, drawing on studies in which participants made requests of more than 14,000 strangers, found requesters underestimated how often people said yes by an average of 48 percent. The cause is a perspective gap: askers focus on what helping costs, while the person being asked feels the social cost of saying no, which is awkward and uncomfortable. Because that awkwardness is strongest in person, Bohns and colleagues also found requests are far less persuasive over email than people expect.",
+        deployment: [
+          "Ask directly and specifically: who, what and by when. Vague requests are easy to decline.",
+          "For requests that matter, ask in person or on a call rather than by email.",
+          "Stop refusing on other people's behalf ('they'll be too busy'). Let them decide.",
+          "Remember the flip side: people find it hard to say no to you, so make declining easy when the request is large.",
+        ],
+        examples: [
+          "Instead of not asking at all: \"Would you be willing to spend twenty minutes reviewing my draft this week?\"",
+          "Walking over to a colleague's desk instead of sending the same request as a message.",
+        ],
+        caution:
+          "The effect works because saying no is socially costly, which makes it easy to pressure people into things they don't want. For big or personal requests, give a genuine exit: 'It's completely fine if not.'",
+      },
+      {
+        id: "three-networks",
+        code: "U-05",
+        name: "Three Networks",
+        source:
+          "Herminia Ibarra & Mark Lee Hunter — How Leaders Create and Use Networks (Harvard Business Review, 2007)",
+        tagline:
+          "Operational networks get today's work done. Strategic networks shape what comes next. Rising leaders under-invest in the second.",
+        science:
+          "Ibarra and Hunter studied 30 managers making the transition into leadership and distinguished three kinds of networking. Operational networking builds the ties you need to do your current job: mostly internal, and shaped by routine, short-term demands. Personal networking is largely external: discretionary links to people outside the workplace who share your interests, useful for development, referrals and perspective. Strategic networking faces outward and toward the future: lateral and vertical ties, inside and outside the firm, to the stakeholders who shape where the business is going. The transition into leadership requires a network that reorients externally and toward the future, and that is the hard part: it means moving from hands-on functional contribution to the more ambiguous work of building and working through relationships whose payoff is indirect.",
+        deployment: [
+          "Audit your contacts by type: who helps you do today's job, who develops you, and who shapes where your field or company is heading.",
+          "Move time from operational to strategic: delegate enough routine work to free a few hours a month for outward-facing conversations.",
+          "Build strategic ties around a genuine agenda: bring a question, an insight or help, not just a request for coffee.",
+          "Use existing hubs such as cross-functional projects, industry groups and alumni networks, rather than relying on cold outreach.",
+        ],
+        examples: [
+          "\"I'm trying to understand where procurement is heading over the next two years. Could I buy you lunch and hear how you see it?\"",
+          "Volunteering for the cross-functional pricing review because it puts you in the room with finance, sales and the COO's office.",
+        ],
+        caution:
+          "Networks built only on usefulness feel transactional and decay quickly. The durable ones rest on repeated, genuine exchange (see Give Without Keeping Score).",
+      },
+    ],
+  },
+  {
     id: "frame-control",
-    code: "12",
+    code: "15",
     name: "Frame Control & Pitching",
     brief:
       "Every encounter runs inside a frame — whoever owns it owns the meaning of everything said within it.",
@@ -164,50 +266,8 @@ export const commandPhases: Phase[] = [
           "Frame moves are seasoning, not the meal. Defiance without substance is arrogance, and it collapses the moment content is demanded.",
       },
       {
-        id: "prizing",
-        code: "G-02",
-        name: "Prizing — Be the Prize",
-        source: "Oren Klaff — Pitch Anything",
-        tagline:
-          "Reverse the gravity: the money, the buyer, the approver must qualify for YOU — or you're the commodity.",
-        science:
-          "Klaff's prize frame inverts the default supplicant posture: in most pitches the seller chases and the buyer judges, which prices the seller as a commodity. Prizing flips the qualification direction — establishing (truthfully) that your time, product, or partnership is the scarce item and the counterpart must demonstrate fit. The psychology is scarcity plus status inference: people want what others compete for and instinctively value what evaluates them. Small behavioral moves carry it: asking qualification questions of the buyer, willingness to walk, declining to over-accommodate.",
-        deployment: [
-          "Ask qualifying questions in both directions from the start: 'For this to be worth both our time, I need to know two things about how you decide.'",
-          "Ration your accommodations: instant availability, unlimited revisions, and chase-up emails all announce that they're the prize.",
-          "Give the counterpart a way to win you: people value what they had to earn — 'we take on two of these a quarter; here's what we look for.'",
-          "Let your alternatives exist visibly (never as a threat): a calm mention of the other path re-centers who is choosing whom.",
-        ],
-        examples: [
-          "\"Before we go further — this only works when the client's team commits real hours in month one. Is that available on your side?\"",
-          "\"Thursday's gone, I'm afraid. I can do Monday at 2. If it's urgent, tell me what changes before Monday.\"",
-        ],
-        caution:
-          "Prizing must be backed by genuine scarcity and genuine quality. Faked aloofness from a weak position reads instantly — and you lose the deal AND the dignity.",
-      },
-      {
-        id: "croc-brain-pitch",
-        code: "G-03",
-        name: "Pitch to the Croc Brain",
-        source: "Oren Klaff — Pitch Anything (neurofinance framing)",
-        tagline:
-          "Pitches land in the survival brain first — which only asks: is this dangerous, is this new, can I ignore it?",
-        science:
-          "Klaff's structural insight: you compose your pitch with your neocortex, but the audience receives it with their oldest filtering circuitry — attention systems that evolved to triage for threat and novelty and to discard everything else. Anything abstract, long, or self-oriented gets classified as ignorable. The implications: lead with novelty and change ('why now'), keep the big idea concrete and visual, inject intrigue and stakes to hold the attention loop, and keep the whole thing short — Klaff caps the core pitch at roughly 20 minutes, with the idea itself delivered in the first five.",
-        deployment: [
-          "Open with the 'why now' — the three forces (market, technology, social) that make this moment different. Change is the croc brain's favorite food.",
-          "Deliver the idea in one concrete, visual sentence early ('For X who have problem Y, we do Z') — not after twenty slides of buildup.",
-          "Alternate analysis with intrigue: a cliffhanger, a stake, a human moment every few minutes re-arms decaying attention.",
-          "Cut everything that serves you rather than them: credentials up front, methodology tours, and hedged qualifiers all trigger the ignore reflex.",
-        ],
-        examples: [
-          "\"Two years ago this product was impossible and one year ago it was illegal. Both just changed — that's why we're in this room.\"",
-          "\"Here's the whole idea in one sentence, then I'll prove it: every warehouse in this state is paying double for insurance it doesn't need.\"",
-        ],
-      },
-      {
         id: "luntz-words",
-        code: "G-04",
+        code: "G-02",
         name: "It's What They Hear",
         source: "Frank Luntz — Words That Work",
         tagline:
@@ -229,7 +289,7 @@ export const commandPhases: Phase[] = [
       },
       {
         id: "berger-magic-words",
-        code: "G-05",
+        code: "G-03",
         name: "Identity Language",
         source: "Jonah Berger — Magic Words (Wharton); Bryan, Walton et al. — 'be a voter' studies",
         tagline:
@@ -249,7 +309,7 @@ export const commandPhases: Phase[] = [
       },
       {
         id: "certainty-language",
-        code: "G-06",
+        code: "G-04",
         name: "Hedges, Fillers & the Sound of Certainty",
         source: "Jonah Berger — Magic Words; Hosman — powerless-language research",
         tagline:
@@ -271,7 +331,7 @@ export const commandPhases: Phase[] = [
   },
   {
     id: "conversation-science",
-    code: "13",
+    code: "16",
     name: "Conversation Science",
     brief:
       "The last decade of research on what actually makes conversations connect — measured, replicated, and operational.",
@@ -400,7 +460,7 @@ export const commandPhases: Phase[] = [
   },
   {
     id: "reading-social",
-    code: "14",
+    code: "17",
     name: "Reading & Social Intelligence",
     brief:
       "Decode the person in front of you — the signals they broadcast, the styles they speak in, and the games they play.",
@@ -426,50 +486,31 @@ export const commandPhases: Phase[] = [
         ],
       },
       {
-        id: "cues-vanedwards",
+        id: "ability-benevolence-integrity",
         code: "I-02",
-        name: "Cues — Engineering Your Signal",
-        source: "Vanessa Van Edwards — Cues; Captivate (Science of People lab)",
+        name: "Ability, Benevolence, Integrity",
+        source:
+          "Mayer, Davis & Schoorman — An Integrative Model of Organizational Trust (1995); Frances Frei & Anne Morriss — Begin with Trust (Harvard Business Review, 2020)",
         tagline:
-          "You are always broadcasting warmth and competence cues — most people just haven't audited the transmission.",
+          "Build trust on three beliefs: that you can deliver, that you care about them, and that you keep to principles. Find your weak side.",
         science:
-          "Van Edwards operationalizes the warmth–competence research into trainable signals. Warmth cues: genuine (Duchenne) smiling, head tilts, triple nods (which measurably extend the other person's talking time), audible 'mmhm's, and open palms. Competence cues: lower vocal tone under stress (versus the credibility-killing question inflection on statements), steepled or purposeful hands, still posture, and comfortable eye contact while speaking. Her lab's analyses of TED talks found the most-viewed speakers used roughly double the hand gestures of the least-viewed — hands explain and hands build trust (visible hands signal no threat). The skill is matching your cue mix to the moment: warmth to open, competence to close.",
+          "Mayer, Davis and Schoorman defined trust as the willingness to be vulnerable to another person, and proposed that it rests on three perceptions of that person: ability (the skills to deliver in this domain), benevolence (wanting to do good by you, beyond self-interest) and integrity (keeping to principles you find acceptable). Their model is among the most cited in the trust literature. Frei and Morriss, both at Harvard Business School, offer a practical version for leaders: people trust you when they experience the real you (authenticity), believe in your judgment (logic) and believe you care about them (empathy). Their key idea is the 'wobble': most people are reliably strong on two drivers and weaker on the third, and lost trust can almost always be traced to a breakdown in one of them. Diagnosing which one is the fastest route to repair.",
         deployment: [
-          "Audit your resting signal on video once: most people discover they broadcast one axis strongly and the other barely at all.",
-          "Deploy the triple nod and head tilt when you want elaboration — they extend the speaker's disclosure without a word.",
-          "Keep hands visible and gesturing when explaining; hidden hands and frozen posture read as concealment or nerves.",
-          "Control the statement drop: end assertions with falling pitch. The uptalked price, deadline, or boundary invites its own renegotiation.",
+          "When trust is shaky, ask which leg is in doubt: your competence, your care for them, or your consistency.",
+          "Find your usual wobble: logic (judgment or delivery), empathy (distracted or impatient) or authenticity (a guarded, managed self).",
+          "Repair the specific leg: show your reasoning and track record for logic, give undivided attention for empathy, and share more of your real views for authenticity.",
+          "Remember that trust is domain-specific: people can trust your analysis and not your judgment of people. Build it where you need it.",
         ],
         examples: [
-          "Opening a tense meeting: open palms on the table, slight head tilt, \"I want to hear the version of this you'd tell if I weren't in the room.\"",
-          "Video-call fix: raise the camera, sit back so hands are in frame, and gesture while explaining — engagement scores change measurably.",
-        ],
-      },
-      {
-        id: "berne-games",
-        code: "I-03",
-        name: "Spotting the Game",
-        source: "Eric Berne — Games People Play (transactional analysis)",
-        tagline:
-          "Repetitive, predictable conflicts aren't accidents — they're games with payoffs, and naming the game ends it.",
-        science:
-          "Berne's transactional analysis models every exchange as coming from one of three ego states — Parent (critical or nurturing scripts), Adult (present-tense reality processing), or Child (adapted or rebellious feeling states). Straight transactions (Adult–Adult) are productive; 'games' are repeating transaction patterns with a hidden agenda and a predictable negative payoff — familiar bad feelings that confirm a life script. Classics: 'Why Don't You — Yes But' (help is solicited, every suggestion is defeated; the payoff is proving nobody can help), 'Now I've Got You' (a small error is banked and detonated), and 'Kick Me' (provocation until rejection confirms worthlessness). Games can't be won from inside; they end when one party declines their role and responds from the Adult.",
-        deployment: [
-          "Spot games by repetition and residue: the same argument with the same person ending in the same bad feeling is a game, not a disagreement.",
-          "Identify the invitation: 'Yes But' invites you to keep offering solutions for defeat. Decline the role: 'Sounds like a genuinely hard problem. What have you considered?'",
-          "Respond to Parent or Child hooks from the Adult: a scolding tone or a helpless one both invite complementary roles — answer the content, flat and factual, not the tone.",
-          "Watch your own favorite game: everyone runs at least one. The recurring conflict where you're always the victim or always the rescuer is yours.",
-        ],
-        examples: [
-          "Third solution defeated in a row: \"I'm out of suggestions — you know the problem best. What's your plan?\" (the game needs your next 'why don't you...' — starve it)",
-          "Them, banking a gotcha: 'Well, this wouldn't have happened if SOMEONE had reviewed it.' You, Adult: \"Correct — the review got skipped. Here's the check that prevents the repeat.\"",
+          "After a missed deadline, the doubt is ability, not care: \"Here's the revised plan, the risk I missed, and a checkpoint on Friday so you can see it's on track.\"",
+          "An empathy wobble often shows up as distraction. Putting the phone away and asking one real follow-up question repairs more than any speech.",
         ],
         caution:
-          "Diagnosing games in others is seductive and easy to abuse — the labels are for changing YOUR moves, not for armchair-analyzing colleagues out loud.",
+          "Trust takes far longer to build than to lose. Performing a trait (manufactured vulnerability, scripted empathy) damages the authenticity leg while trying to shore up another.",
       },
       {
         id: "tannen-styles",
-        code: "I-04",
+        code: "I-03",
         name: "Conversational Style Literacy",
         source: "Deborah Tannen — That's Not What I Meant!; You Just Don't Understand (Georgetown linguistics)",
         tagline:
@@ -488,30 +529,33 @@ export const commandPhases: Phase[] = [
         ],
       },
       {
-        id: "hidden-genius",
-        code: "I-05",
-        name: "Operator Frameworks — Watch the Tape",
-        source: "Polina Pompliano — The Hidden Genius (profiles of elite performers)",
+        id: "high-low-context",
+        code: "I-04",
+        name: "High- and Low-Context Communication",
+        source:
+          "Erin Meyer (INSEAD) — The Culture Map (2014); Edward T. Hall — high- and low-context cultures",
         tagline:
-          "Elite operators read people through revealed behavior over stated identity — everyone tells you who they are through what they repeatedly do.",
+          "Across cultures, some people say exactly what they mean and others mean more than they say. Know which you're dealing with, and default to explicit in mixed teams.",
         science:
-          "Pompliano's study of hundreds of top performers — investors, special-forces operators, athletes, founders — extracts recurring people-reading frameworks. The core discipline: weight revealed preferences over declared ones (what someone does with their time, money, and attention under no observation is the signal; the self-narrative is marketing). Supporting practices: watch behavior under stress and toward the powerless (the waiter test — character shows where status incentives vanish); collect patterns across contexts before concluding (one data point is an anecdote, the third is a trait); and pre-commit your standards before charm arrives, because skilled operators are read THROUGH their consistency, and skilled manipulators are exposed by their variance — charming to you, cold to the assistant.",
+          "The anthropologist Edward Hall distinguished low-context communication, where meaning sits in the words, from high-context communication, where much of it sits in shared context, relationships and what is left unsaid. Erin Meyer of INSEAD made it the first of the eight scales in The Culture Map, her framework for international business. At the low-context end (the United States is the most extreme in her data, with countries such as Germany and the Netherlands nearby), good communication is precise, simple and explicit, repetition is welcome if it clarifies, and important points are put in writing. At the high-context end (Japan is a leading example), good communication is layered and nuanced, and a skilled listener reads between the lines. The friction is predictable: low-context speakers can seem blunt or condescending to high-context listeners, while high-context speakers can seem vague or evasive in return. Meyer's rule of thumb for multicultural teams is to use low-context processes, because explicitness is the common denominator.",
         deployment: [
-          "Audit the tape, not the trailer: before trusting a partner, look at their last three conflicts, exits, or deals — how they treated people when it ended is how they'll treat you when it ends.",
-          "Run the waiter test consciously: how they treat service staff, juniors, and anyone useless to them is the baseline personality; the version facing you is the negotiated one.",
-          "Distrust context-dependent character: warmth that appears only when you have something they want isn't warmth — variance across power gradients is the manipulator's signature.",
-          "Write your read before the charm offensive: pre-committed criteria ('what would make me walk away?') survive charisma; improvised ones don't.",
+          "Before important cross-border conversations, place yourself and your counterparts on the scale. Position is relative, so compare yourselves to each other, not to an average.",
+          "With higher-context counterparts, listen for what is implied: hesitation, what is left unsaid, and phrases like 'that will be difficult', which may mean no.",
+          "With lower-context counterparts, say it plainly and confirm in writing. Don't expect a hint to land.",
+          "In mixed teams, set explicit norms: summarize decisions aloud, confirm next steps in writing, and invite questions directly.",
         ],
         examples: [
-          "Diligence beyond the references they gave you: \"Who did they fire, and how? Who quit, and why? Get me one person from the losing side of their last deal.\"",
-          "\"He was brilliant with us and dismissive to the coordinator setting up the room. Believe the coordinator's version.\"",
+          "A partner says, \"We will consider it carefully.\" In a high-context setting that may be a polite no, so ask: \"What would need to change for this to work for you?\"",
+          "Closing a mixed-team call: \"Let me confirm what we decided and who owns each step. I'll put it in writing within the hour.\"",
         ],
+        caution:
+          "Cultural scales describe averages, not individuals, and they shift with generation, industry and personal history. Use the map to generate questions about a person, never to predict them.",
       },
     ],
   },
   {
     id: "commanding-room",
-    code: "15",
+    code: "18",
     name: "Commanding the Room",
     brief:
       "Gatherings, meetings, and audiences are designed experiences — the host who designs deliberately owns the outcome.",
@@ -635,6 +679,52 @@ export const commandPhases: Phase[] = [
           "\"Before we decide — three people haven't weighed in. Lena, you see the customer side of this daily: what are we missing?\"",
           "\"Building on Dana's point — and to be clear, it was Dana's — the phased option solves both objections.\"",
         ],
+      },
+      {
+        id: "premortem",
+        code: "M-07",
+        name: "The Premortem",
+        source:
+          "Gary Klein — Performing a Project Premortem (Harvard Business Review, 2007); Mitchell, Russo & Pennington (1989); Veinott, Klein & Wiggins (2010)",
+        tagline:
+          "Before you commit, imagine the plan has already failed and ask why. People find risks they would never voice in a normal review.",
+        science:
+          "In a premortem, a team imagines that its plan has been carried out and has failed completely, then each person writes down the reasons why. Klein built the method on research into 'prospective hindsight': Mitchell, Russo and Pennington found in 1989 that imagining an event has already happened increased people's ability to correctly identify reasons for future outcomes by 30 percent. The frame also changes the social dynamics. In an ordinary review, raising doubts can look disloyal; in a premortem, finding the failure is the assignment, so people surface concerns they would otherwise keep to themselves. In an experiment on an emergency-response plan, Veinott, Klein and Wiggins found the premortem reduced overconfidence more than a standard critique or a list of pros and cons.",
+        deployment: [
+          "Once a plan is agreed but before it launches, say: 'Imagine it's a year from now and this has failed badly. Write down every reason why.'",
+          "Give everyone a few minutes to write silently first, so the loudest voice doesn't set the list.",
+          "Go round the room taking one reason at a time until every list is exhausted.",
+          "Pick the two or three most plausible failures, change the plan to address them, and assign owners to watch for the early signs.",
+        ],
+        examples: [
+          "\"It's March next year and the migration has been rolled back. What happened?\" One engineer writes: \"The vendor's rate limits were never load-tested.\"",
+          "Closing it out: \"Of these twelve, which three would we bet on? Those get owners today.\"",
+        ],
+        caution:
+          "A premortem is not a vote on whether to proceed, and it can become a pile-on if the plan's owner feels attacked. Frame it as stress-testing a plan everyone wants to succeed, and act on what it finds, or people will stop taking part.",
+      },
+      {
+        id: "hidden-profile",
+        code: "M-08",
+        name: "Surface the Hidden Profile",
+        source:
+          "Garold Stasser & William Titus — hidden-profile research (1985); Lu, Yuan & McLeod — meta-analysis (2012); Cass Sunstein & Reid Hastie — Wiser (2015)",
+        tagline:
+          "Groups spend their time on what everyone already knows. The information that decides the question is often held by one person who never says it.",
+        science:
+          "Stasser and Titus designed experiments in which the information needed for the best decision was split among group members, while information pointing to a worse option was shared by everyone. Groups consistently discussed the shared information and missed the unshared facts, a pattern known as the hidden profile. A 2012 meta-analysis of 65 studies (Lu, Yuan and McLeod) found that groups mentioned far more common than unique information, and that groups facing a hidden profile were eight times less likely to find the right answer than groups given the full picture. Shared information gets repeated because others validate it and it feels safer to say; unique information is easy to doubt and easy to drop. Sunstein and Hastie, in Wiser, show how leaders can counter this: signal early that they want dissent and new information, keep their own views back, assign roles, and gather individual views before the group converges.",
+        deployment: [
+          "Collect views and relevant facts individually, in writing, before the discussion starts.",
+          "Ask each person directly: 'What do you know about this that the rest of us might not?'",
+          "As the leader, speak last, so your view doesn't anchor the room.",
+          "Give people explicit roles tied to their expertise (the customer view, the legal view), which licenses them to bring what only they know.",
+        ],
+        examples: [
+          "\"Before we debate the vendor choice, send me two things you know about these suppliers that you suspect others don't. I'll read them out without names.\"",
+          "\"Priya, you've dealt with their support team directly. What have you seen that isn't in the deck?\"",
+        ],
+        caution:
+          "Unique information is not automatically right: some of it is stale, anecdotal or wrong. The goal is to get it on the table and tested, not to give it special weight.",
       },
     ],
   },

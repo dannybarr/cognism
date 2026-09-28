@@ -8,8 +8,24 @@ const STOPWORDS = new Set([
   "or", "the", "to", "what", "when", "with", "you", "your",
 ]);
 
-const terms = (query: string) =>
-  [...new Set(query.toLowerCase().split(/[^a-z0-9-]+/))].filter((t) => t.length > 1 && !STOPWORDS.has(t));
+// Light stemming so word forms match each other: "names" finds "name",
+// "stonewalling" finds "stonewalls", "motivate" finds "motivator".
+const stem = (t: string) => {
+  if (t.length > 5 && t.endsWith("ing")) return t.slice(0, -3);
+  if (t.length > 3 && t.endsWith("s") && !t.endsWith("ss")) t = t.slice(0, -1);
+  if (t.length > 5 && t.endsWith("e")) return t.slice(0, -1);
+  return t;
+};
+
+const terms = (query: string) => [
+  ...new Set(
+    query
+      .toLowerCase()
+      .split(/[^a-z0-9-]+/)
+      .filter((t) => t.length > 1 && !STOPWORDS.has(t))
+      .map(stem),
+  ),
+];
 
 export default defineTool({
   name: "search_principles",

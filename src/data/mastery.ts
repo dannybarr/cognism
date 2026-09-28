@@ -164,50 +164,29 @@ export const masteryPhases: Phase[] = [
       {
         id: "microexpressions",
         code: "V-01",
-        name: "Microexpressions & Emotional Leakage",
-        source: "Paul Ekman — cross-cultural emotion research",
+        name: "Microexpressions, Correctly Scoped",
+        source:
+          "Paul Ekman — cross-cultural emotion research; Barrett et al. (2019); Bond & DePaulo (2006)",
         tagline:
-          "Seven emotions flash across every human face in under half a second — before the mask goes up.",
+          "Faces flash real emotion, but they can't tell you who is lying. Treat an expression as a prompt to ask, never as proof.",
         science:
-          "Ekman's cross-cultural studies (including preliterate Papua New Guinea) established that seven emotions produce universal facial expressions: anger, fear, sadness, disgust, contempt, surprise, and happiness. When people suppress an emotion, it still 'leaks' as a microexpression lasting 1/25 to 1/5 of a second. Trained observers catch these flashes and gain access to what the person actually feels versus what they're presenting — most valuably, the flash of contempt or fear that contradicts a confident 'yes'.",
+          "Ekman's cross-cultural studies, including fieldwork in preliterate Papua New Guinea, found that a handful of emotions (anger, fear, sadness, disgust, surprise and happiness, with contempt added later) are recognized from facial expressions across cultures at better than chance. He also described brief 'microexpressions' that appear when people suppress a feeling. Both claims need scoping. A 2019 review led by Lisa Feldman Barrett concluded that people do not reliably make the same face for the same emotion, so expressions cannot be read like fingerprints without context. And the leap to lie detection fails: a meta-analysis of 24,483 observers found people judge lies correctly only 54 percent of the time, barely above a coin toss, and do better from what they hear than from what they see (Bond and DePaulo, 2006). What survives is modest but useful: a flicker of discomfort at a key moment is a cue to ask a question, not a verdict.",
         deployment: [
-          "Watch the face at decision moments — when you state the price, the deadline, the ask. The first half-second of reaction is the honest one.",
-          "Learn the big three tells: contempt (one-sided lip corner tightening), masked fear (brows pulled together and raised), and the fake smile (mouth without the eye crinkle of a true Duchenne smile).",
-          "Treat a microexpression as a flag, not a verdict — it tells you an emotion occurred, not why. Probe with a label: 'It seems like something about that number lands wrong.'",
-          "Check congruence: when the face says one thing and the words another, believe the face and investigate the gap.",
+          "Watch reactions at decision moments (the price, the deadline, the ask) as prompts for a question, not conclusions.",
+          "Read the face in context: the situation, the person's usual manner and what they say next matter more than any single expression.",
+          "Probe with a label: 'It seems like something about that number lands wrong.' Let their answer, not your read, decide.",
+          "Never treat an expression as evidence of lying. Inconsistencies in what people say are more diagnostic than how they look.",
         ],
         examples: [
-          "You quote the timeline; their 'sounds fine' follows a flash of pressed-lip anger. \"It seems like the timeline creates a problem on your end — what am I missing?\"",
-          "A one-sided smirk during your proposal: contempt leak. Don't push forward — surface the objection now.",
+          "You quote the timeline and their 'sounds fine' comes with a tight-lipped pause: \"It seems like the timeline creates a problem on your end. What am I missing?\"",
+          "Instead of 'I saw contempt, they're against us': \"Something shifted when I mentioned the budget. I'll ask about it directly.\"",
         ],
         caution:
-          "Amateur face-reading breeds overconfidence. Microexpressions reveal that an emotion exists, never its cause — always verify with questions.",
-      },
-      {
-        id: "body-comfort",
-        code: "V-02",
-        name: "Comfort / Discomfort Tells",
-        source: "Joe Navarro — What Every BODY Is Saying (FBI counterintelligence)",
-        tagline:
-          "The limbic brain answers before the mouth does — read comfort and discomfort, especially in the feet.",
-        science:
-          "Navarro's 25 years in FBI counterintelligence codified a working principle: the limbic system reacts to threat and reward instantly and honestly, while the thinking brain scripts the words. The most honest body parts are the least consciously controlled — feet and legs first (pointing toward exits or interesting people, happy feet, freeze), then torso (leaning, ventral fronting or blading away), then hands (pacifying behaviors: neck-touching, face-rubbing signal stress). The face is the LEAST reliable — it's the most practiced liar.",
-        deployment: [
-          "Establish a baseline first: how does this person sit, gesture, and hold their feet when relaxed? Deviations from baseline are the signal, not any single gesture.",
-          "Watch for pacifying behaviors after your questions — neck touching, lip compression, collar pull. They mark which topic caused stress.",
-          "Read the feet: feet aimed at the door mean the conversation is over regardless of the polite words. Torso turned fully toward you means engagement.",
-          "Look for clusters and timing: one gesture means little; three discomfort tells right after your price does.",
-        ],
-        examples: [
-          "Their words say 'we're open to it' while their torso blades away and their feet point at the door — the deal is not open. Address it: \"I get the sense this isn't landing. What's the real hesitation?\"",
-          "Sudden lip compression the moment you mention the exclusivity clause: that clause is the issue. Slow down there.",
-        ],
-        caution:
-          "No gesture has a fixed meaning — crossed arms may mean cold, comfort, or habit. Only deviations from that person's baseline, in clusters, in context, carry information.",
+          "Face-reading courses sell far more confidence than the evidence supports. An expression tells you, at most, that something registered. It never tells you why, and it cannot tell you whether someone is lying.",
       },
       {
         id: "charisma-ppw",
-        code: "V-03",
+        code: "V-02",
         name: "Presence, Power, Warmth",
         source: "Olivia Fox Cabane — The Charisma Myth",
         tagline:
@@ -227,7 +206,7 @@ export const masteryPhases: Phase[] = [
       },
       {
         id: "vocal-tonality",
-        code: "V-04",
+        code: "V-03",
         name: "Vocal Command",
         source: "Klofstad et al. (2012) pitch research; Voss — late-night FM DJ voice",
         tagline:
@@ -247,7 +226,7 @@ export const masteryPhases: Phase[] = [
       },
       {
         id: "mehrabian-scoped",
-        code: "V-05",
+        code: "V-04",
         name: "Mehrabian, Correctly Scoped",
         source: "Albert Mehrabian — 1967 studies on inconsistent messages",
         tagline:
@@ -267,7 +246,7 @@ export const masteryPhases: Phase[] = [
       },
       {
         id: "chameleon-effect",
-        code: "V-06",
+        code: "V-05",
         name: "The Chameleon Effect",
         source: "Chartrand & Bargh (1999) — behavioral mimicry research",
         tagline:
@@ -289,7 +268,7 @@ export const masteryPhases: Phase[] = [
       },
       {
         id: "charisma-styles",
-        code: "V-07",
+        code: "V-06",
         name: "The Four Charisma Styles",
         source: "Olivia Fox Cabane — The Charisma Myth",
         tagline:
@@ -309,7 +288,7 @@ export const masteryPhases: Phase[] = [
       },
       {
         id: "internal-state",
-        code: "V-08",
+        code: "V-07",
         name: "Internal-State Engineering",
         source: "Olivia Fox Cabane — The Charisma Myth",
         tagline:
@@ -332,7 +311,7 @@ export const masteryPhases: Phase[] = [
   {
     id: "storytelling",
     code: "08",
-    name: "Storytelling & Speaking",
+    name: "Storytelling",
     brief:
       "Structure ideas so they stick, move audiences, and survive retelling in rooms you never enter.",
     principles: [
@@ -340,7 +319,8 @@ export const masteryPhases: Phase[] = [
         id: "success-model",
         code: "T-01",
         name: "SUCCESs — Made to Stick",
-        source: "Chip & Dan Heath — Made to Stick",
+        source:
+          "Chip & Dan Heath — Made to Stick",
         tagline:
           "Sticky ideas are Simple, Unexpected, Concrete, Credible, Emotional Stories.",
         science:
@@ -360,7 +340,8 @@ export const masteryPhases: Phase[] = [
         id: "sparkline",
         code: "T-02",
         name: "The Sparkline",
-        source: "Nancy Duarte — Resonate (analysis of history's great speeches)",
+        source:
+          "Nancy Duarte — Resonate (analysis of history's great speeches)",
         tagline:
           "Great talks oscillate between 'what is' and 'what could be' — ending in the new bliss.",
         science:
@@ -377,18 +358,119 @@ export const masteryPhases: Phase[] = [
         ],
       },
       {
-        id: "ted-methods",
+        id: "ethos-pathos-logos",
         code: "T-03",
+        name: "Ethos, Pathos, Logos",
+        source:
+          "Aristotle — Rhetoric (4th century BC)",
+        tagline:
+          "Every act of persuasion runs on three currents: credibility, emotion and logic. When one fails, the other two cannot carry the argument.",
+        science:
+          "Aristotle's Rhetoric remains the foundational taxonomy of persuasion: ethos (the audience's belief in your character, good sense and goodwill, which Aristotle insisted must be earned by what the speaker says, not by reputation before they begin), pathos (the emotional state of the audience; Damasio's studies of patients with damaged emotional processing found they struggled to make even simple decisions, so emotion is part of judgment, not its enemy), and logos (the argument's logical structure, necessary but never sufficient). Aristotle set no order among them. Most technical communicators fail by leading with logos to an audience that hasn't granted them ethos or been moved by pathos; most demagogues succeed on pathos alone. Mastery is running all three at once.",
+        deployment: [
+          "Earn ethos inside the message: show precise understanding of THEIR situation, show sound judgment, and make a disarming admission against interest. Credentials help, but Aristotle's point stands: credibility is built by what you say.",
+          "Engage pathos through specifics: one named person's story, a vivid consequence, stakes the audience already cares about.",
+          "Deliver logos in pyramid form: claim, reasons, evidence. Weave it with the other two rather than saving it for last.",
+          "Diagnose failed persuasion by channel: Did they doubt you (ethos)? Not care (pathos)? Not follow (logos)? Fix the failing current, not the whole speech.",
+        ],
+        examples: [
+          "\"I've run this migration twice at companies your size — both hit the same wall we're about to discuss (ethos). Last time, the team found out at 2 a.m. on a Saturday (pathos). Here are the three ways to avoid it (logos).\"",
+        ],
+      },
+      {
+        id: "ted-lasso-effect",
+        code: "T-04",
+        name: "The Ted Lasso Effect",
+        source:
+          "Shannon Jenkins — How to Tell Stories Better Than 99% of People (2026; CART framework); Loewenstein (1994); Fiske, Cuddy & Glick (2007)",
+        tagline:
+          "Withhold the payoff, zoom into one moment, reveal the human behind the skill, then land what it means.",
+        science:
+          "Jenkins dissects two Ted Lasso scenes (the darts game, S1E8 'The Diamond Dogs'; the press conference after Earl's death, S2E1 'Goodbye Earl') and finds the same short-story engine. Ted opens with an unresolved question and delays the answer, which opens what Loewenstein calls an information gap: curiosity felt as a deprivation the listener wants closed. He drops into one concrete scene rather than a summary, spends time on the moments that matter and races through the connective years. Then he reveals a personal detail that recasts the story. In the darts scene that detail signals warmth alongside competence, the two dimensions Fiske, Cuddy and Glick identify as universal in how we judge others. He closes with an explicit takeaway, the 'T' in Jenkins' CART structure (Context, Action, Result, Takeaway), so the audience knows why they heard it.",
+        deployment: [
+          "Open with the question, not the answer: state the puzzle ('people have underestimated me my whole life') and hold the payoff until the end.",
+          "Zoom into one scene: a day, a room, a sentence someone said. Replace 'we realized things had to change' with where you were and what you saw.",
+          "Change speed deliberately: slow down on the moment you want felt, compress the years and logistics into a line.",
+          "Land the takeaway out loud: say what it meant and connect it to the people in the room. Never leave them asking why you told it.",
+        ],
+        examples: [
+          "\"Three weeks before launch, our biggest customer looked across the table and said, 'This is never going to work.'\" (zoom in, open loop)",
+          "Personal reveal, not private: \"I learned negotiation at my dad's market stall, every Saturday from age twelve.\" One detail shows skill and humanity together.",
+          "Close: \"That's why I'd rather hear the bad number on Monday than Friday.\" (takeaway tied back to the room)",
+        ],
+        caution:
+          "The show's timing is scripted; in real life, holding back too long with a hostile or time-pressed audience reads as evasive. An odd opening in a sensitive moment can sound cold until the turn arrives, so make sure it does. Personal does not mean private. And do not repeat Ted's attribution: 'Be curious, not judgmental' is not Walt Whitman's.",
+      },
+      {
+        id: "and-but-therefore",
+        code: "T-05",
+        name: "And, But, Therefore",
+        source:
+          "Randy Olson — Houston, We Have a Narrative (2015); Trey Parker & Matt Stone (South Park)",
+        tagline:
+          "Turn any update or summary into a story: replace 'and, and, and' with 'and, but, therefore'. Context, conflict, consequence.",
+        science:
+          "Olson, a scientist turned filmmaker, took the rule from South Park's creators. In a documentary on the show's production, Trey Parker describes rewriting scenes by replacing every 'and' between story beats with 'but' or 'therefore', because beats joined by 'and' make a list, while beats joined by 'but' and 'therefore' make a story. Olson turned it into a one-sentence template for any message. And sets up the agreed context. But introduces the problem or tension. Therefore gives the consequence or the action. The 'but' is the engine: it opens the gap the listener wants closed, the same information gap that drives curiosity (D-08). Without it, a report is a string of facts with no stakes. With too many turns, it becomes hard to follow. ABT sits in between, and it works at the scale of a sentence, a paragraph or a whole talk.",
+        deployment: [
+          "Draft your update as one sentence: '[context] AND [more context], BUT [problem], THEREFORE [what we do].'",
+          "Test the 'but': if nothing in the sentence is at stake, you have a list, not a story. Find the tension before you speak.",
+          "Use one clear turn per message. Stacking several ('despite this, however, yet') loses the listener.",
+          "Scale it up: one ABT as the summary line, then one for each section of a longer piece.",
+        ],
+        examples: [
+          "\"Retention has been steady all year AND the support team has hit every target, BUT new customers are leaving in their first 30 days, THEREFORE we're moving two engineers onto onboarding this quarter.\"",
+          "Instead of \"This sprint we did A, and B, and C\": \"We shipped the new checkout, but mobile conversion dropped, so this sprint is about fixing that.\"",
+        ],
+        caution:
+          "The 'but' must be real. A manufactured problem, added for drama, reads as spin. ABT frames an argument; it doesn't prove one, so the 'therefore' still needs evidence behind it.",
+      },
+    ],
+  },
+  {
+    id: "presenting",
+    code: "09",
+    name: "Presenting",
+    brief:
+      "Plan, build and deliver a talk that holds the room from the first line and leaves it with one idea it can repeat.",
+    principles: [
+      {
+        id: "five-openers",
+        code: "O-01",
+        name: "The Five Openers",
+        source:
+          "Philipp Humm — How to Start a Speech That Makes People Whisper 'Damn, that's good.' (StoryLab, 2026)",
+        tagline:
+          "Open a talk or keynote with a hook, not a housekeeping notice.",
+        science:
+          "Most speakers spend their opening on name, role and context: the lowest-value content, delivered while attention is highest. Humm's five openers each break that pattern in a different way. A question starts the listener's own search for an answer. A surprising statement contradicts what the room assumed and forces a second look. A story dropped straight into the moment moves listeners from evaluating to experiencing. Green and Brock (2000) called this narrative transportation and showed that absorbed readers hold more story-consistent beliefs and notice fewer false notes. A big promise answers the audience's silent question, what's in it for me, and matches Patrick Winston's MIT advice to open with an 'empowerment promise' instead of a joke, because a room still putting laptops away is not ready to laugh. A visual action hook does something before saying anything, so the eyes commit before the ears. All five buy the speaker the next minute. None of them substitutes for content.",
+        deployment: [
+          "Cut the preamble. Move your name, title and thanks to after the hook, or drop them if the host already introduced you.",
+          "Pick one opener to fit the room: a question for skeptics, a surprising fact for the indifferent, a story for the tired, a promise for the busy, an action for a stage.",
+          "For a surprising statement, pause before it, say the key number slowly, then pause again so it lands.",
+          "For a story, start in the scene: where, when, what is going wrong. Background comes later or not at all.",
+        ],
+        examples: [
+          "\"For those of you who don't know me, I'm Michelle's husband.\" (Barack Obama, cited by Humm)",
+          "\"By the end of this talk, you'll know how to appear confident in any high-pressure situation.\" (Humm's rewrite of 'Today I will talk about body language')",
+          "\"It's 6 a.m., I'm standing in the parking lot of our biggest client, and I've just read the email saying they're leaving.\"",
+        ],
+        caution:
+          "Hooks that are not paid off feel like clickbait and cost credibility. A surprising statistic must be true and sourced, because one debunked fact poisons the whole talk. Visual stunts and shock lines misfire at eulogies, board meetings and in cultures where formality signals respect. Avoid opening with a joke: Winston found the room is not yet tuned to you.",
+      },
+      {
+        id: "ted-methods",
+        code: "O-02",
         name: "The 18-Minute Rule & the Jaw-Drop",
-        source: "Carmine Gallo — Talk Like TED; TED curation research",
+        source:
+          "Carmine Gallo — Talk Like TED; TED curation research",
         tagline:
           "Constrain the talk, engineer one unforgettable moment, and never present more than the mind can hold.",
         science:
-          "TED caps every talk at 18 minutes by design — curator Chris Anderson calls it long enough to be serious, short enough to hold attention; cognitive-load research supports it (listening is metabolically expensive; attention decays sharply well before the hour). Gallo's analysis of the most-viewed talks adds the 'jaw-drop moment': one emotionally charged, unexpected event — a demonstration, statistic, or image — that hijacks attention and becomes THE thing people retell (Bill Gates releasing mosquitoes on stage: 'there's no reason only poor people should have the experience').",
+          "TED caps every talk at 18 minutes by design: curator Chris Anderson calls it long enough to be serious, short enough to hold attention. The popular claim that attention collapses after 10 to 15 minutes is weaker than it sounds (Wilson and Korn's 2007 review found little evidence for it), so the real case for the cap is compression: a hard limit forces the speaker to cut to what matters. Gallo's analysis of the most-viewed talks adds the 'jaw-drop moment': one emotionally charged, unexpected event — a demonstration, statistic, or image — that hijacks attention and becomes THE thing people retell (Bill Gates releasing mosquitoes on stage: 'there's no reason only poor people should have the experience').",
         deployment: [
           "Whatever time you're given, prepare the 18-minute version — the discipline of compression sharpens every argument. If you're given less, the core survives.",
           "Design one jaw-drop deliberately: a demonstration, a shocking-but-true number made visceral, an image no one expects. One. More dilutes.",
-          "Place it where attention naturally sags — roughly the middle — not the opening (which has free attention) or the close (which the recap owns).",
+          "Place it where energy tends to dip, often around the middle, not the opening (which has free attention) or the close (which the recap owns).",
           "Cut ruthlessly: three key messages maximum. The talk is what they remember, not what you say.",
         ],
         examples: [
@@ -397,16 +479,165 @@ export const masteryPhases: Phase[] = [
         ],
       },
       {
-        id: "pyramid-principle",
-        code: "T-04",
-        name: "The Pyramid Principle",
-        source: "Barbara Minto — The Pyramid Principle (McKinsey)",
+        id: "rhetorical-devices",
+        code: "O-03",
+        name: "Anaphora, Tricolon & the Applause Machine",
+        source:
+          "Classical rhetoric; Max Atkinson — Our Masters' Voices (claptrap research)",
         tagline:
-          "Lead with the answer. Then support it with grouped reasons, each resting on its own evidence.",
+          "Repetition and threes are the load-bearing structures of memorable speech — they cue rhythm, completion, and applause.",
         science:
-          "Minto, McKinsey's first female consultant, codified how executives actually consume reasoning: conclusions first, support on demand. The pyramid: one governing thought at the top, supported by 3-ish mutually exclusive, collectively exhaustive (MECE) groupings, each backed by its data. Audiences receiving the answer first can slot every subsequent detail into a frame; audiences forced through your discovery journey get lost and impatient. The mystery-novel structure feels natural to the author and is hostile to every reader.",
+          "Atkinson's analysis of political speeches found that audience applause follows predictable rhetorical structures — above all the tricolon (three-part list: Lincoln's 'of the people, by the people, for the people') and contrastive pairs ('ask not what your country can do for you...'). Three is the smallest number that creates a pattern, and the completed pattern signals 'respond now'. Anaphora — repeating the opening phrase ('We shall fight on the beaches... we shall fight on the landing grounds...') — builds accumulating force and makes passages quotable. These aren't decoration; they are cognitive packaging that makes ideas rhythmically inevitable.",
         deployment: [
-          "State the answer in the first sentence: recommendation, ask, or conclusion. Not background, not methodology.",
+          "Put your key claims in threes: three reasons, three examples, three commitments. Two feels thin; four dissolves into a list.",
+          "Use anaphora for building sequences: open three consecutive sentences with the same phrase when you want force.",
+          "Use contrastive pairs for the quotable line: 'not X, but Y' — the structure does half the writing.",
+          "End the tricolon on the longest, strongest element: rhythm resolves on weight. Even history rounds to three. Churchill offered 'blood, toil, tears and sweat', four items, and popular memory trimmed it to 'blood, sweat and tears'.",
+        ],
+        examples: [
+          "\"We tried waiting. We tried patching. We tried hoping. None of it worked — here's what will.\" (anaphora into pivot)",
+          "\"This isn't a tooling problem. It's a trust problem.\" (contrastive pair)",
+          "\"Faster onboarding, fewer escalations, and a support queue that finally sleeps at night.\" (tricolon, weighted ending)",
+        ],
+      },
+      {
+        id: "cycle-fence-punctuate",
+        code: "O-04",
+        name: "Cycle, Fence, Punctuate",
+        source:
+          "Patrick Winston — How to Speak (MIT OpenCourseWare, 2018)",
+        tagline:
+          "Say the core idea three times, mark what it is not, and signpost every turn.",
+        science:
+          "A reader can re-read. A listener cannot, and attention in a live room is never total. Winston, who gave this lecture at MIT for over 40 years, estimated that at any given moment about 20 percent of an audience is 'fogged out', so an idea said once reaches only whoever happened to be present for it. His answer is three moves. Cycling: return to the core idea several times, from different angles, so the odds that everyone catches it at least once rise sharply. Fencing: define the idea against its nearest neighbor, because ideas are recognized by their boundaries and an unfenced idea gets filed under something the audience already knows. Verbal punctuation: announce the seams, number the parts, and say when one ends, so drifting listeners have a landmark where they can 'get back on the bus'. Richard Mayer's signaling principle from multimedia-learning research points the same way: explicit cues to a presentation's structure help audiences build a coherent model of it.",
+        deployment: [
+          "Write your core idea as one sentence, then plan three places to say it: the opening, the middle, and the close, each time in a slightly different form.",
+          "Fence it: add one line that says what your idea is not, naming the closest alternative the audience might confuse it with.",
+          "Number your parts out loud at the start, and mark each transition: 'That's the first idea. Here's the second.'",
+          "After any dense stretch, give a one-sentence recap before moving on.",
+        ],
+        examples: [
+          "\"My algorithm might seem similar to Jones's algorithm, except his is exponential, and mine's linear.\" (Winston, on fencing)",
+          "\"This is not a cost-cutting plan. Nobody loses their job. It's a plan to stop doing three things so we can do one thing well.\"",
+          "\"So that's problem one, the pricing gap. Problem two is harder, and it's where most of the money is.\"",
+        ],
+        caution:
+          "Cycling is not verbatim repetition. The same sentence three times sounds like padding, so vary the angle each time. Heavy signposting in a short toast or a five-minute update feels mechanical, so scale it to the length and density of the talk. The 20 percent figure is Winston's working estimate, not a measured constant.",
+      },
+      {
+        id: "glance-test",
+        code: "O-05",
+        name: "The Glance Test",
+        source:
+          "Nancy Duarte — Slide:ology (2008); Richard E. Mayer — Multimedia Learning",
+        tagline:
+          "If a slide needs reading, it's competing with you.",
+        science:
+          "Duarte's heuristic is that an audience should grasp each slide in about three seconds, because 'an audience can't listen to your presentation and read detailed, text-heavy slides at the same time'. The three-second figure is her practical rule of thumb, not a measured threshold. The mechanism behind it has experimental support. Mayer's redundancy principle holds that people learn more deeply from graphics with spoken narration than from graphics, narration and the same words printed on screen: duplicated text makes listeners reconcile two verbal streams instead of understanding one. Winston made the same case from the lectern: humans have 'one language processor', so a slide full of words switches the audience from listening to reading. The slide's job is to show what speech cannot, such as a picture, a shape, a single number or a comparison, while the speaker carries the argument.",
+        deployment: [
+          "Give each slide one point, stated as a short headline or shown as one image, chart or number.",
+          "Cut every sentence you plan to say aloud. If it's in your mouth, it doesn't belong on the screen.",
+          "Test each slide: show it to someone for three seconds, hide it, and ask what it said. If they can't answer, simplify.",
+          "Put detail in a handout or appendix, and highlight the element you're discussing on the slide rather than using a laser pointer.",
+        ],
+        examples: [
+          "Instead of five bullets on churn causes, one bar chart with the largest bar in the accent color and the headline 'Onboarding drives most of our churn'.",
+          "\"Don't read this slide. It's one number: the day we run out of cash if nothing changes.\"",
+        ],
+        caution:
+          "Some rooms need dense slides: pre-reads, board packs, technical reviews and decks sent without a speaker. There the document is the product, so send it as a document. Stripping the words out of a slide only works if the speaker has rehearsed enough to carry the content without them.",
+      },
+      {
+        id: "end-on-contributions",
+        code: "O-06",
+        name: "End on Contributions, Not Thanks",
+        source:
+          "Patrick Winston — How to Speak (MIT OpenCourseWare, 2018); Kahneman et al. (1993)",
+        tagline:
+          "Your last slide and last line should say what you gave, not that you're done.",
+        science:
+          "Endings carry disproportionate weight in memory. Kahneman and colleagues' 1993 'When More Pain Is Preferred to Less' study found that people judged an experience largely by its most intense moment and its final moments, with duration mostly ignored. Winston applies this to the close of a talk. 'Thank you' is 'a weak move', he argued, because it suggests the audience stayed out of politeness. 'Conclusions' is weaker still, since they may be 'perfectly legitimate conclusions that nobody cares about'. What people care about is what you have done, so the final slide, the one on screen through Q&A while people file out, should be titled Contributions and list them. The last spoken line should be one of a small set of true endings: a call to action, a salute that tells the audience specifically what you valued about being with them, or a joke that sends them out feeling they had fun throughout.",
+        deployment: [
+          "Build a final slide titled 'Contributions', or 'What you now have', listing the two to four things the audience gained. Leave it up during Q&A.",
+          "Script your last sentence word for word. Make it a call to action, a specific salute to the audience, or a closing line that echoes your opening.",
+          "Deliver the last line, stop and hold eye contact. If applause starts, a mouthed 'thank you' is fine; don't make it the ending.",
+          "Take Q&A before the true close, then return to your contributions and final line so the last word is yours, not the last question's.",
+        ],
+        examples: [
+          "\"It's been great fun being here. It's been fascinating to see what you folks are doing here at MIT.\" (Winston, demonstrating a salute)",
+          "\"You came in with a pricing problem. You're leaving with a test you can run on Monday. Run it.\"",
+          "Final slide: 'Contributions: a churn model that works on 30 days of data; three onboarding fixes; an open dataset.'",
+        ],
+        caution:
+          "In some cultures and formal settings, thanking the host or audience is expected courtesy. Do it early or near the end, but not as the final word. A salute must be specific and true, because generic flattery reads as filler. Ending on a joke requires one that actually lands: a flat joke is the worst possible last impression.",
+      },
+      {
+        id: "get-excited-not-calm",
+        code: "O-07",
+        name: "Get Excited, Not Calm",
+        source:
+          "Alison Wood Brooks — Get Excited: Reappraising Pre-Performance Anxiety as Excitement (Journal of Experimental Psychology: General, 2014)",
+        tagline:
+          "Nervous before you speak? Don't fight the adrenaline. Rename it: say 'I am excited.'",
+        science:
+          "Nearly everyone's instinct is to calm down. In Brooks's pilot, 91 percent of 300 respondents chose 'try to relax and calm down' as the best advice before a big speech. But anxiety and excitement are both high-arousal states with near-identical physiology, while calm is low-arousal. Moving from anxious to calm means fighting your body, whereas moving from anxious to excited only changes the label. In one study, 140 students prepared a two-minute persuasive speech to be filmed and 'judged by a committee', then said either 'I am excited' or 'I am calm' before delivering it. Blind raters scored the 'excited' group as more persuasive, confident, competent and persistent. In her singing study, heart rate did not differ by condition: the arousal stayed and the interpretation changed. Brooks links the effect to an opportunity mindset rather than a threat mindset.",
+        deployment: [
+          "When the nerves arrive, don't tell yourself to calm down. Say out loud, or firmly to yourself, 'I am excited.'",
+          "Read the physical signs as fuel: a racing heart means your body is ready to perform, not that something is wrong.",
+          "Frame the talk as an opportunity to win something, not a test you might fail: 'This is my chance to get the budget.'",
+          "Coaching someone else? Say 'Get excited', not 'Relax'.",
+        ],
+        examples: [
+          "Backstage, two minutes out: \"I am excited. This is the room I wanted.\"",
+          "To a nervous colleague before a pitch: \"That buzz is good. Get excited, you've earned this slot.\"",
+        ],
+        caution:
+          "This is a one-line state shift, not a treatment for clinical anxiety or a substitute for preparation. The evidence comes from one author's studies with modest, mostly student samples, so treat it as a strong nudge, not a guarantee. Telling someone in real distress to 'just get excited' can feel dismissive. Offer it as a tool, not a correction.",
+      },
+      {
+        id: "praise-the-deed",
+        code: "O-08",
+        name: "Praise the Deed",
+        source:
+          "Aristotle — Rhetoric, Book I.9; Toastmasters International; Peggy Noonan — Simply Speaking (1998)",
+        tagline:
+          "At a toast or a eulogy, tell what they did. Let the room name the virtue.",
+        science:
+          "Aristotle defined ceremonial oratory as speech that praises or blames, concerned with the present, and his instruction for praise has aged well: 'we must display his actions as the product of such qualities', because encomium 'refers to what he has actually done'. Adjectives such as kind, generous or brave are claims. A deed is evidence, and a room that infers the virtue from the story believes it more than a room that is told it. He added two moves that still separate great tributes from polite ones. First, praise and advice are the same content in different grammar: 'whenever you want to praise any one, think what you would urge people to do'. So the best eulogies end as a charge to the living. Second, fit the praise to what this audience honors. Toastmasters' guidance gives the modern shape: a eulogy is 'not the chronology of a life but a tribute to it', limited to two or three points, and a toast runs two to three minutes. Noonan, Reagan's speechwriter, whose book covers toasts, tributes and eulogies, adds three things: write the text out, include humor, and sound 'like you, only a better, clearer you'.",
+        deployment: [
+          "Pick two or three moments that show who they are. Skip the CV and the timeline.",
+          "Tell each moment as a scene with a detail only insiders would know, then name the quality once at most, or not at all.",
+          "Turn the praise into a charge: close with what the room should do because of this person, then raise the glass or step down.",
+          "Write it out word for word, rehearse aloud the lines most likely to make you choke up, and time it: two to three minutes for a toast.",
+        ],
+        examples: [
+          "\"When the factory flooded, Dad didn't call a meeting. He drove there at 3 a.m. and was carrying stock out when the first shift arrived. If you want to honor him, be the first one there.\"",
+          "\"Priya once rewrote an entire launch plan overnight so her team could have the weekend off. To Priya, and to the weekends she gave us.\"",
+        ],
+        caution:
+          "Inside jokes exclude most of the room, and roast humor aimed at a bride, groom or the deceased rarely survives mixed company. Honesty beats whitewash, but a eulogy is not the place to settle scores. The most common failure is making it about the speaker: every story should end with them, not you. Fitting praise to the audience's values can slide into flattery, so praise what is true.",
+      },
+    ],
+  },
+  {
+    id: "speaking",
+    code: "10",
+    name: "Speaking & Writing",
+    brief:
+      "Say it clearly where decisions get made: briefings, memos, meetings and the hard question across the table.",
+    principles: [
+      {
+        id: "pyramid-principle",
+        code: "L-01",
+        name: "The Pyramid Principle",
+        source:
+          "Barbara Minto — The Pyramid Principle (McKinsey); US Army — AR 25-50 (BLUF)",
+        tagline:
+          "In any briefing, memo or email, lead with the answer. Then support it with grouped reasons, each resting on its own evidence.",
+        science:
+          "Minto, the first female MBA McKinsey hired (1963), codified how executives actually consume reasoning: conclusions first, support on demand. The pyramid: one governing thought at the top, supported by 3-ish mutually exclusive, collectively exhaustive (MECE) groupings, each backed by its data. The document opens with a short Situation, Complication, Question: the context everyone accepts, what changed, and the question that change raises, so the answer arrives as the natural reply. Audiences receiving the answer first can slot every subsequent detail into a frame; audiences forced through your discovery journey get lost and impatient. The US Army codified the same rule for its correspondence as BLUF, bottom line up front (AR 25-50). The mystery-novel structure feels natural to the author and is hostile to every reader.",
+        deployment: [
+          "Open with two lines of SCQ: the Situation everyone agrees on, the Complication that changed it, the Question that raises. Then state the answer at once: recommendation, ask, or conclusion. Not background, not methodology.",
           "Support with exactly two to four reasons, grouped so they don't overlap and don't leave gaps (MECE).",
           "Order reasons by strength for a friendly audience, or lead with the one that pre-empts the biggest objection for a hostile one.",
           "Answer the question each level provokes: every assertion should trigger 'why?' or 'how?', which the level below answers.",
@@ -417,50 +648,101 @@ export const masteryPhases: Phase[] = [
         ],
       },
       {
-        id: "ethos-pathos-logos",
-        code: "T-05",
-        name: "Ethos, Pathos, Logos",
-        source: "Aristotle — Rhetoric (4th century BC)",
+        id: "what-so-what-now-what",
+        code: "L-02",
+        name: "What? So What? Now What?",
+        source:
+          "Matt Abrahams — Think Faster, Talk Smarter (2023; Stanford Graduate School of Business)",
         tagline:
-          "Every act of persuasion runs on three currents: credibility, emotion, and logic — in that order of operations.",
+          "Put on the spot, answer in three moves: the point, why it matters to them, what happens next.",
         science:
-          "Aristotle's Rhetoric remains the foundational taxonomy of persuasion: ethos (the audience's belief in your character and competence — established first, or nothing else lands), pathos (emotional state of the audience — the engine of decision; modern neuroscience agrees decisions are made emotionally and justified rationally), and logos (the argument's logical structure — necessary but never sufficient). Most technical communicators fail by leading with logos to an audience that hasn't granted them ethos or been moved by pathos; most demagogues succeed on pathos alone. Mastery is deploying all three in sequence.",
+          "Most speaking in small rooms is unplanned: the question across the table, the 'any thoughts?' in a meeting, the update requested without warning. Abrahams, who teaches strategic communication at Stanford Graduate School of Business, argues that the failure there is rarely a shortage of ideas. It is a shortage of structure: the speaker thinks out loud, circles, and buries the point. His remedy is to carry a few portable structures, and this is the one he calls the Swiss Army knife. What states the idea plainly. So What makes it relevant to the listener, not the speaker. Now What names the action, decision or next step. The structure works twice over: as scaffolding for the speaker, supplying a start, a transition and an end, and as a map for listeners, because structured information is easier to process and remember. It also forces relevance, the step impromptu speakers most often skip.",
         deployment: [
-          "Establish ethos before arguing: credentials via third party, demonstrated understanding of THEIR situation, or a disarming admission against interest.",
-          "Engage pathos through specifics: one named person's story, a vivid consequence, stakes the audience already cares about.",
-          "Deliver logos in pyramid form — claim, reasons, evidence — only after the first two have opened the channel.",
-          "Diagnose failed persuasion by channel: Did they doubt you (ethos)? Not care (pathos)? Not follow (logos)? Fix the failing current, not the whole speech.",
+          "When asked for a view, take a breath and sort your answer into the three slots before you start speaking.",
+          "What: one or two sentences of substance. No preamble, no jargon.",
+          "So what: tie it to the listener's goals ('For you, this means...'). If you can't fill this slot, the point may not be worth making.",
+          "Now what: end on a concrete next step, a decision you need, or a question for the room. Then stop talking.",
         ],
         examples: [
-          "\"I've run this migration twice at companies your size — both hit the same wall we're about to discuss (ethos). Last time, the team found out at 2 a.m. on a Saturday (pathos). Here are the three ways to avoid it (logos).\"",
+          "\"The pilot missed its target by 12 percent. [What] That puts our Q3 renewals below plan. [So what] I'd like two weeks to test a revised onboarding flow before we decide on rollout. [Now what]\"",
+          "As feedback: \"Your summary slide ran to 14 bullets, and the board skimmed past the one decision we needed. Next time, lead with the decision and move the bullets to the appendix.\"",
         ],
+        caution:
+          "It is a structure, not a script. Recited with the labels showing, it sounds canned, so keep the order and drop the signposts. On complex or contested issues it can oversimplify: use it to open the discussion, not to close it. In a brainstorm, where half-formed thinking is the point, it can shut ideas down too early.",
       },
       {
-        id: "rhetorical-devices",
-        code: "T-06",
-        name: "Anaphora, Tricolon & the Applause Machine",
-        source: "Classical rhetoric; Max Atkinson — Our Masters' Voices (claptrap research)",
+        id: "buffer-answer-topspin",
+        code: "L-03",
+        name: "Buffer, Answer, Topspin",
+        source:
+          "Jerry Weissman — In the Line of Fire: How to Handle Tough Questions",
         tagline:
-          "Repetition and threes are the load-bearing structures of memorable speech — they cue rhythm, completion, and applause.",
+          "Find the real question, restate it neutrally, answer it straight, then turn back to your point.",
         science:
-          "Atkinson's analysis of political speeches found that audience applause follows predictable rhetorical structures — above all the tricolon (three-part list: 'blood, sweat, and tears') and contrastive pairs ('ask not what your country can do for you...'). Three is the smallest number that creates a pattern, and the completed pattern signals 'respond now'. Anaphora — repeating the opening phrase ('We shall fight on the beaches... we shall fight on the landing grounds...') — builds accumulating force and makes passages quotable. These aren't decoration; they are cognitive packaging that makes ideas rhythmically inevitable.",
+          "Weissman built his method coaching executives through IPO roadshows, starting with Cisco's, where one investor's hard question can move a valuation. He treats Q&A as the moment audiences judge a speaker most, because it is the part that cannot be scripted. First, listen for what he calls the Roman Column: the core issue under the wording, often buried in a long or hostile question. Then buffer: paraphrase the question, or name its key issue, in neutral language. The buffer buys thinking time, confirms you heard correctly, and strips out loaded framing, so you never repeat an accusation in your own voice. Then answer the question actually asked, directly and briefly, because evasion is what audiences punish most. Finally, topspin: link the answer back to a point in your core message, so each question advances your story instead of derailing it.",
         deployment: [
-          "Put your key claims in threes: three reasons, three examples, three commitments. Two feels thin; four dissolves into a list.",
-          "Use anaphora for building sequences: open three consecutive sentences with the same phrase when you want force.",
-          "Use contrastive pairs for the quotable line: 'not X, but Y' — the structure does half the writing.",
-          "End the tricolon on the longest, strongest element — rhythm resolves on weight ('blood, sweat, and tears', not 'tears, sweat, and blood').",
+          "Listen to the end of the question without drafting your reply. Identify the one issue underneath it.",
+          "Buffer with a neutral paraphrase or key word: not 'Why did you blow the budget?' but 'The question is about cost control.'",
+          "Answer that issue in your first sentence. If the answer is no, or you don't know, say so.",
+          "Add one sentence of topspin that links back to your main message, then stop and take the next question.",
         ],
         examples: [
-          "\"We tried waiting. We tried patching. We tried hoping. None of it worked — here's what will.\" (anaphora into pivot)",
-          "\"This isn't a tooling problem. It's a trust problem.\" (contrastive pair)",
-          "\"Faster onboarding, fewer escalations, and a support queue that finally sleeps at night.\" (tricolon, weighted ending)",
+          "Question: \"Isn't this just another reorg that'll be reversed in a year?\" Buffer: \"You're asking whether this one will last.\" Answer: \"Two of the last three didn't, because nobody owned the results.\" Topspin: \"That's why every new team lead has a named target from day one.\"",
         ],
+        caution:
+          "A buffer that dodges the question is worse than none: audiences spot spin fast. Keep topspin to one line, or every answer turns into a speech. Don't paraphrase a simple, friendly question, because it sounds like stalling.",
+      },
+      {
+        id: "busy-readers",
+        code: "L-04",
+        name: "Write for Busy Readers",
+        source:
+          "Todd Rogers & Jessica Lasky-Fink — Writing for Busy Readers (2023; Harvard Kennedy School)",
+        tagline:
+          "Assume your reader will skim. Fewer words, one clear ask, and a structure they can navigate in seconds.",
+        science:
+          "Rogers, a Harvard professor of public policy, and Lasky-Fink, research director of the People Lab at Harvard Kennedy School, built six principles from field experiments on how real people read: less is more, make reading easy, design for easy navigation, use enough formatting but no more, tell readers why they should care, and make responding easy. In one experiment they emailed 7,002 US school board members asking them to complete a short survey. A 49-word version got a 4.8 percent response rate against 2.7 percent for a 127-word version, an improvement of 78 percent, and follow-up work suggested readers used the length of the message to judge how much effort the request would take. The underlying fact is simple: readers are busy and triage everything, so every extra word, request or idea competes with the one you care about.",
+        deployment: [
+          "Cut ruthlessly: remove every word, sentence and idea the reader doesn't need in order to act. Include fewer ideas, not just fewer words.",
+          "Put the ask or key point first, and keep each message to one main request.",
+          "Make it easy to navigate: short paragraphs, informative headings, and formatting only for what truly matters.",
+          "Tell readers why it matters to them, and make responding effortless: a yes/no question, a single link, a clear deadline.",
+        ],
+        examples: [
+          "Subject line: \"Decision needed by Friday: approve Q3 hiring plan (yes/no)\"",
+          "Instead of four paragraphs of context: \"Can you approve the attached plan by Friday? It adds two engineers within budget. Details below if useful.\"",
+        ],
+        caution:
+          "Brevity is not bluntness: short messages can still be warm, and some readers need context before a request makes sense. Cut what the reader doesn't need, not what they do.",
+      },
+      {
+        id: "narrative-memo",
+        code: "L-05",
+        name: "The Narrative Memo",
+        source:
+          "Jeff Bezos — Amazon's 2004 'no PowerPoint' email and 2017 shareholder letter",
+        tagline:
+          "Write the argument out in full sentences before the meeting. Prose exposes gaps that bullet points hide.",
+        science:
+          "In 2004 Bezos banned slide presentations from Amazon's senior meetings in favor of narrative memos, arguing that a good four-page memo is harder to write than a twenty-page deck because the narrative structure 'forces better thought and better understanding of what's more important than what, and how things are related.' In his 2017 shareholder letter he described the practice: meetings open with everyone silently reading a six-page memo, 'a kind of study hall', so discussion starts from a shared and complete understanding. The best memos, he wrote, are written and rewritten, shared with colleagues who are asked to improve them, set aside for a couple of days and edited again with a fresh mind. This is an established company practice rather than a tested finding, but the mechanism is sound: full sentences force the writer to state how ideas connect (because, therefore, unless), which bullet points let them skip.",
+        deployment: [
+          "For any decision that matters, write the case as a narrative: the situation, the problem, the options, the recommendation and what could go wrong.",
+          "Use full sentences and explicit connectives such as 'because', 'therefore' and 'unless'. If you can't write the link, you haven't found it.",
+          "Open the meeting with silent reading, so everyone discusses the same complete argument and nobody performs their way through slides.",
+          "Draft early, ask a colleague to attack it, set it aside, then edit with fresh eyes.",
+        ],
+        examples: [
+          "A memo's first line: \"We recommend closing the Leeds office by June, because it serves 4 percent of revenue at 11 percent of cost and its clients already prefer remote service.\"",
+          "\"We'll spend the first fifteen minutes reading. Mark anything you disagree with, and we'll start there.\"",
+        ],
+        caution:
+          "Six pages is Amazon's convention, not a rule; for most decisions one or two pages will do. A memo culture can also slow a small team down, so use it where the decision deserves full thought.",
       },
     ],
   },
   {
     id: "feedback-leadership",
-    code: "09",
+    code: "11",
     name: "Feedback & Leadership",
     brief:
       "Say the hard thing in a way people can hear — and build rooms where the truth gets spoken back.",
@@ -528,11 +810,12 @@ export const masteryPhases: Phase[] = [
         id: "psych-safety",
         code: "F-04",
         name: "Psychological Safety",
-        source: "Amy Edmondson (Harvard); Google's Project Aristotle",
+        source:
+          "Amy Edmondson (Harvard); Frazier et al. (2017) meta-analysis; Google's Project Aristotle",
         tagline:
-          "The #1 predictor of team performance is whether members can take interpersonal risks without fear.",
+          "When people can raise problems, questions and mistakes without fear, teams learn faster and perform better.",
         science:
-          "Edmondson's hospital research found the best teams REPORTED more errors — not because they made more, but because they could admit them. Google's Project Aristotle, studying 180+ teams, confirmed psychological safety as the strongest single predictor of team effectiveness, above talent composition. Psychological safety is the shared belief that the team is safe for interpersonal risk-taking: questions, dissent, half-formed ideas, and admissions of error won't be punished. Without it, the leader operates blind — every room becomes an echo of what people think you want to hear.",
+          "Edmondson's hospital research found the best teams REPORTED more errors, not because they made more, but because they could admit them. Google's Project Aristotle, an internal study of 180+ teams, found psychological safety the most important of the five team dynamics it examined, more than who was on the team. That was a company study rather than peer-reviewed research, but it matches the wider evidence: a 2017 meta-analysis of 136 samples (Frazier and colleagues) linked psychological safety to learning behavior, speaking up, engagement and performance. Psychological safety is the shared belief that the team is safe for interpersonal risk-taking: questions, dissent, half-formed ideas and admissions of error won't be punished. Without it, the leader operates blind, and every room becomes an echo of what people think you want to hear.",
         deployment: [
           "Frame work as learning problems, not execution problems: 'we've never done this before; I need every set of eyes' licenses speaking up.",
           "Model fallibility as the leader: admit your own mistakes and unknowns FIRST — safety is set by what the most powerful person in the room confesses.",
@@ -569,27 +852,53 @@ export const masteryPhases: Phase[] = [
         id: "start-with-why",
         code: "F-06",
         name: "Start With Why",
-        source: "Simon Sinek — Start With Why (the Golden Circle)",
+        source:
+          "Adam Grant — beneficiary-contact studies (2007) and 'It's Not All About Me' (with Hofmann, 2011); Simon Sinek — Start With Why",
         tagline:
-          "People don't buy what you do; they buy why you do it. Communicate from the inside out.",
+          "Lead with who the work is for and why it matters. Purpose moves people when it is concrete, human and about someone else.",
         science:
-          "Sinek's Golden Circle: most communication moves outside-in — WHAT we do, HOW we're different, and (rarely) WHY. Inspiring communicators invert it: purpose first, then method, then product. The claim maps loosely onto brain architecture — the 'why' speaks to emotion and decision-making, the 'what' to rationalization — and holds up as communication practice regardless: a purpose gives people a cause to join rather than a task to complete, and decisions framed by why survive contact with obstacles that kill decisions framed by what. Apple's 'everything we do challenges the status quo' precedes any product mention.",
+          "Sinek popularized communicating purpose before product. His explanation, that 'why' speaks to the emotional brain and 'what' to the rational one, is not supported by neuroscience, and his company examples are chosen after the fact. The instinct underneath has better evidence in Adam Grant's field experiments. In a university call centre, fundraisers who spent five minutes meeting one scholarship student their calls had funded increased their weekly phone time by 142 percent and the revenue they raised by 171 percent over the following month; colleagues who only read a letter from a student showed no change. In hospitals, signs reading 'Hand hygiene prevents patients from catching diseases' raised soap and gel use by about 45 percent, while 'prevents you from catching diseases' did nothing. The lesson is sharper than 'start with why': purpose motivates when it is specific, human and points to someone other than the listener.",
         deployment: [
-          "Open every significant ask with the why: the purpose or belief the work serves — before any task, spec, or deadline.",
-          "Make the why a cause, not a euphemism for profit: 'so support tickets stop ruining weekends' is a why; 'to hit Q3 targets' is a what wearing a costume.",
-          "Test delegation quality: if the person can make a good judgment call at 5 p.m. Friday without calling you, you communicated the why. If not, you handed them a what.",
-          "Return to the why when energy flags or priorities conflict — it's the tiebreaker that doesn't need you present.",
+          "Open significant asks with who benefits and how, before the task, spec or deadline.",
+          "Make the purpose concrete: a named customer, a real case or the words of the person helped beats a mission statement.",
+          "Where you can, connect people to the beneficiaries directly. In Grant's study a five-minute conversation outperformed a written message.",
+          "Point the why outward: messages about other people's outcomes often move people more than messages about their own benefit.",
         ],
         examples: [
           "\"Everything about this project exists so a customer never again waits four days for an answer. That's the bar. The redesign is just how we get there.\"",
-          "\"If you hit a tradeoff I didn't anticipate: optimize for the customer finding out early. That principle outranks the spec.\"",
+          "\"Before we start, this is Maria. She runs one of the clinics we supply, and she's going to tell you what happens on the days our deliveries are late.\"",
         ],
+        caution:
+          "Purpose talk that isn't backed by real impact reads as spin, and quickly. Don't use 'why' to paper over a weak 'what': people still need clear goals, resources and fair treatment.",
+      },
+      {
+        id: "progress-principle",
+        code: "F-07",
+        name: "The Progress Principle",
+        source:
+          "Teresa Amabile & Steven Kramer — The Progress Principle (2011; Harvard Business School)",
+        tagline:
+          "The strongest motivator in a working day is progress on work that matters. Clear the path.",
+        science:
+          "Amabile and Kramer analyzed nearly 12,000 daily diary entries from 238 people across seven companies, each describing the day's events and how they felt. The strongest factor on people's best days was making progress in meaningful work, even a small step forward, and setbacks had an even larger negative effect. They call the supporting conditions catalysts (events that directly help the work, such as clear goals, autonomy, resources and help) and nourishers (interpersonal support such as encouragement, respect and recognition). When they asked 669 managers to rank five potential motivators, progress came last: only 35, about 5 percent, put it first, and most chose recognition. The diary data are correlational, but the implication for leaders is practical: much of motivation is removing obstacles to work people already care about.",
+        deployment: [
+          "Break big goals into steps small enough that people can see progress weekly, and make that progress visible.",
+          "Ask in one-to-ones: 'What's slowing you down?' Then remove it. It is often the most motivating thing you can do.",
+          "Protect meaning: explain how the work connects to outcomes people care about, and never dismiss it as busywork.",
+          "Treat setbacks quickly: acknowledge them, fix the cause and help the team back to momentum.",
+        ],
+        examples: [
+          "\"Three things got unblocked this week: data access, the legal sign-off and the test environment. Next up is the pilot.\"",
+          "An end-of-week habit: each person names one thing that moved forward. It takes five minutes and changes how the week is remembered.",
+        ],
+        caution:
+          "Progress only motivates when the work is meaningful to the person; manufactured wins and vanity metrics read as condescension. Recognition still matters. It just isn't the whole story.",
       },
     ],
   },
   {
     id: "defense",
-    code: "10",
+    code: "12",
     name: "Defense & Counter-Influence",
     brief:
       "The same weapons, pointed at you — recognize them, name them, and neutralize them without breaking rapport.",
@@ -619,11 +928,12 @@ export const masteryPhases: Phase[] = [
         id: "presuasion-awareness",
         code: "X-02",
         name: "Pre-Suasion Awareness",
-        source: "Robert Cialdini — Pre-Suasion (2016)",
+        source:
+          "Robert Cialdini — Pre-Suasion (2016)",
         tagline:
           "The persuasion happened before the message: whoever controls your attention in the moment before controls the frame.",
         science:
-          "Cialdini's follow-up thesis: skilled influencers win in the 'privileged moment' BEFORE the message, by directing attention to a concept that makes the audience receptive — what we attend to becomes temporarily important and shapes what follows. Demonstrations: asking 'do you consider yourself adventurous?' before a request multiplied compliance; a French-music background shifted wine purchases French; asking 'are you unhappy with your current provider?' primes a catalog of grievances. The defense is noticing the opener: what state is this question, image, or environment designed to put me in?",
+          "Cialdini's follow-up thesis is that skilled influencers work in the moment before the message, directing attention to a concept that makes the audience receptive. The core mechanism is sound: what we attend to feels more important for a while, the same effect agenda-setting research finds at the scale of news coverage. Treat the book's specific demonstrations with care, though. Many rest on subtle 'priming' studies, such as background music shifting wine choices, and a large share of social-priming findings failed to replicate in the 2010s. Direct openers are better supported: a question like 'are you unhappy with your current provider?' sends the listener searching memory for grievances, and that search shapes what they conclude. The defense is the same either way: notice the opener, and ask what state it is designed to put you in.",
         deployment: [
           "Audit openers: when a conversation begins with an odd question ('would you say you're a helpful person?'), ask what answer-state it's designed to install.",
           "Notice environment as a channel: the music, imagery, and first agenda item of any pitch were chosen. Ask what they point your attention toward.",
@@ -634,6 +944,8 @@ export const masteryPhases: Phase[] = [
           "Salesperson: 'Do you consider yourself someone who invests in quality?' You: \"I consider myself someone who compares options for a week. Let's start with the spec sheet.\"",
           "Noticing: \"Interesting that the deck opens with three slides about my competitors. Let's start with my requirements instead.\"",
         ],
+        caution:
+          "Don't over-read environments. Most openers are just openers. The dependable effects are the explicit ones: the question asked first, the frame chosen and the item put at the top of the agenda.",
       },
       {
         id: "gaslighting",

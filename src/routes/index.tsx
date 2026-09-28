@@ -243,7 +243,7 @@ function Schematic() {
       </header>
       <div className="blueprint-grid">
         {/* Left: all principles as an evenly-balanced matrix of phase cells */}
-        <div className="principles-field">
+        <div className={`principles-field phases-${phases.length}`}>
           {phases.map((phase) => (
             <PhaseGroup
               key={phase.code}
