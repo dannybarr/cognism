@@ -293,9 +293,9 @@ export const commandPhases: Phase[] = [
         name: "Identity Language",
         source: "Jonah Berger — Magic Words (Wharton); Bryan, Walton et al. — 'be a voter' studies",
         tagline:
-          "Turn actions into identities: 'be a helper' outperforms 'please help' — and 'I don't' outperforms 'I can't.'",
+          "Turn actions into identities: 'be a helper' can outperform 'please help', and 'I don't' outperforms 'I can't.'",
         science:
-          "Berger's compilation of computational-linguistics findings shows tiny word shifts move behavior measurably. Nouns beat verbs because they invoke identity: asking people to 'be a voter' raised turnout over 'to vote' (Bryan et al.), and children asked to 'be a helper' helped more than those asked 'to help' — people act to claim desirable identities, not just to perform tasks. Refusal language works the same way: 'I don't miss workouts' (identity, closed) proved far more resistant to temptation than 'I can't miss workouts' (external rule, negotiable). Related findings: 'recommend' outperforms 'like', and concrete language raises perceived listening and satisfaction.",
+          "Berger's compilation of computational-linguistics findings shows tiny word shifts move behavior measurably. Nouns beat verbs because they invoke identity: asking people to 'be a voter' raised turnout over 'to vote' in Bryan and colleagues' original studies (though two much larger field experiments by Gerber and colleagues found no effect), and children asked to 'be a helper' helped more than those asked 'to help' — people act to claim desirable identities, not just to perform tasks. Refusal language works the same way: 'I don't miss workouts' (identity, closed) proved far more resistant to temptation than 'I can't miss workouts' (external rule, negotiable). Related findings: 'recommend' outperforms 'like', and concrete language raises perceived listening and satisfaction.",
         deployment: [
           "Convert asks into identity offers: 'be the reviewer everyone trusts' recruits the self-concept; 'please review carefully' recruits nothing.",
           "Set your own boundaries in 'don't' language: 'I don't take meetings before ten' ends negotiation; 'I can't' invites help dismantling the obstacle.",
@@ -306,6 +306,8 @@ export const commandPhases: Phase[] = [
           "\"You're a builder — and this quarter I need builders, not caretakers. Which piece do you want?\"",
           "\"I don't ship without a rollback plan.\" (identity — conversation over) versus \"I can't ship without one\" (rule — here comes the exception request)",
         ],
+        caution:
+          "Several headline findings here come from small studies, and the best known, the voter study, failed to replicate at scale. Treat identity framing as a low-cost nudge, not a guaranteed lever.",
       },
       {
         id: "certainty-language",
@@ -666,9 +668,9 @@ export const commandPhases: Phase[] = [
         name: "Airtime Engineering & Amplification",
         source: "Woolley et al. — collective intelligence (Science, 2010); Obama White House 'amplification' practice",
         tagline:
-          "Group intelligence tracks equal conversational turn-taking — and ideas can be deliberately kept alive and credited.",
+          "Groups decide better when airtime is shared, and good ideas can be deliberately kept alive and credited.",
         science:
-          "Woolley's collective-intelligence studies found that a group's performance across diverse tasks is predicted less by members' average IQ than by interaction pattern: equality of conversational turn-taking and members' social sensitivity were the strong correlates of the group's 'c factor' — groups dominated by a few voices measurably underperform their own talent. The companion technique comes from practice: women staffers in the Obama White House adopted 'amplification' — deliberately repeating a colleague's overlooked point with attribution ('as Susan proposed...') — to counter the documented pattern of contributions being lost or re-credited. Amplification exploits mere-exposure and social proof legitimately: repetition raises an idea's perceived merit, and attribution locks the credit to its author.",
+          "Woolley's collective-intelligence studies found that a group's performance across diverse tasks is predicted less by members' average IQ than by interaction pattern: equality of conversational turn-taking and members' social sensitivity were the strong correlates of the group's 'c factor' — groups dominated by a few voices measurably underperform their own talent. The existence of a single collective-intelligence 'c factor' is contested, however: independent attempts to reproduce it have partly or completely failed. Treat equal airtime as good practice backed by related evidence, such as the hidden-profile research, rather than as a proven intelligence multiplier. The companion technique comes from practice: women staffers in the Obama White House adopted 'amplification' — deliberately repeating a colleague's overlooked point with attribution ('as Susan proposed...') — to counter the documented pattern of contributions being lost or re-credited. Amplification exploits mere-exposure and social proof legitimately: repetition raises an idea's perceived merit, and attribution locks the credit to its author.",
         deployment: [
           "Track airtime as a chair: who hasn't spoken bears directly on decision quality, not just fairness — call on the silent by name with a real question.",
           "Amplify deliberately: when a good point sinks without trace, resurface it with the author's name attached — 'I want to come back to what Priya said, because I think it's the answer.'",

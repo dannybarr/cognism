@@ -580,6 +580,274 @@
   scrollbar-color: var(--grid-color-dark) transparent;
 }
 
+/* ---- Evidence & references ---- */
+
+.evidence-stamp {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 1px 6px;
+  margin-right: 4px;
+  border: 1px solid var(--ink-light);
+  color: var(--ink-color);
+  vertical-align: 1px;
+}
+
+.evidence-meta-analysis,
+.evidence-experimental {
+  border-color: var(--ink-color);
+  box-shadow: 2px 2px 0 rgba(44, 62, 80, 0.12);
+}
+
+.evidence-practitioner,
+.evidence-classical {
+  border-style: dashed;
+  color: var(--ink-light);
+}
+
+.evidence-note {
+  font-style: italic;
+  color: var(--ink-light);
+}
+
+.dossier-refs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: clamp(0.78rem, 0.74rem + 0.12vw, 0.85rem);
+  line-height: 1.45;
+}
+
+.dossier-refs li + li {
+  margin-top: 6px;
+}
+
+.dossier-refs a {
+  color: var(--ink-light);
+  text-decoration: underline;
+  text-decoration-color: rgba(74, 104, 144, 0.35);
+  text-underline-offset: 2px;
+  transition: color 0.2s, text-decoration-color 0.2s;
+}
+
+.dossier-refs a:hover,
+.dossier-refs a:focus-visible {
+  color: var(--accent-color);
+  text-decoration-color: var(--accent-color);
+  outline: none;
+}
+
+/* ---- Connect your AI ---- */
+
+.connect-trigger {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  align-self: flex-end;
+  margin-bottom: 2px;
+  padding: 4px clamp(8px, 1vw, 14px);
+  border: 1px solid var(--accent-color);
+  background: none;
+  color: var(--accent-color);
+  font-family: var(--app-font-mono);
+  font-size: clamp(0.65rem, 0.6rem + 0.15vw, 0.75rem);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 rgba(192, 57, 43, 0.2);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.connect-trigger:hover,
+.connect-trigger:focus-visible {
+  background-color: rgba(192, 57, 43, 0.06);
+  box-shadow: 3px 3px 0 rgba(192, 57, 43, 0.28);
+  outline: none;
+}
+
+.connect-trigger-code {
+  font-size: 0.65rem;
+  opacity: 0.75;
+}
+
+.connect-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: rgba(44, 62, 80, 0.35);
+}
+
+.connect-panel {
+  position: fixed;
+  z-index: 70;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(640px, calc(100vw - 32px));
+  max-height: min(86dvh, 820px);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  border: 1px solid var(--ink-color);
+  box-shadow: 6px 6px 0 rgba(44, 62, 80, 0.12);
+}
+
+.connect-panel::before {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(90, 120, 160, 0.2);
+  pointer-events: none;
+}
+
+.connect-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--grid-color-dark);
+  flex-shrink: 0;
+}
+
+.connect-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: var(--accent-color);
+}
+
+.connect-body {
+  overflow-y: auto;
+  padding: var(--dossier-pad) calc(var(--dossier-pad) + 4px) calc(var(--dossier-pad) + env(safe-area-inset-bottom, 0px));
+  scrollbar-width: thin;
+  scrollbar-color: var(--grid-color-dark) transparent;
+}
+
+.connect-body .dossier-tagline {
+  border-bottom: 2px solid var(--ink-color);
+  padding-bottom: clamp(10px, 1.4vh, 16px);
+  margin-bottom: clamp(12px, 1.8vh, 20px);
+}
+
+.connect-url,
+.connect-code {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--grid-color-dark);
+  background: rgba(255, 255, 255, 0.55);
+  padding: 8px 10px;
+}
+
+.connect-url code,
+.connect-code code {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 0.78rem;
+  color: var(--ink-color);
+  overflow-wrap: anywhere;
+}
+
+.connect-copy {
+  flex-shrink: 0;
+  background: none;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.connect-copy:hover,
+.connect-copy:focus-visible {
+  background-color: rgba(192, 57, 43, 0.06);
+  outline: none;
+}
+
+.connect-note {
+  margin-top: 6px;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-light);
+}
+
+.connect-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.connect-tab {
+  padding: 4px 10px;
+  border: 1px solid var(--ink-light);
+  background: none;
+  color: var(--ink-light);
+  font-family: var(--app-font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.connect-tab:hover,
+.connect-tab:focus-visible {
+  color: var(--ink-color);
+  border-color: var(--ink-color);
+  outline: none;
+}
+
+.connect-tab.active {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.connect-steps .dossier-text {
+  margin-bottom: 8px;
+}
+
+.connect-disclaimer {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--ink-light);
+  border-top: 1px dotted var(--ink-light);
+  padding-top: 10px;
+}
+
+@media (max-width: 899px) {
+  .connect-trigger {
+    align-self: flex-start;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 639px) {
+  .connect-trigger {
+    padding: 6px 10px;
+  }
+
+  .connect-panel {
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: none;
+    width: 100%;
+    max-height: 88dvh;
+    border: none;
+    border-top: 2px solid var(--ink-color);
+    box-shadow: 0 -4px 0 rgba(44, 62, 80, 0.1);
+  }
+
+  .connect-panel::before {
+    display: none;
+  }
+}
+
 /* ---- Breakpoints ---- */
 
 /* Laptop: 900–1199px — tighter columns */
@@ -614,8 +882,8 @@
   }
 }
 
-/* Header condenses below 1100px */
-@media (max-width: 1099px) {
+/* Header condenses below 1440px: the decorative meta block gives way to the Connect button */
+@media (max-width: 1439px) {
   .blueprint-meta {
     display: none;
   }

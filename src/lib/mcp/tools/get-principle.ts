@@ -5,7 +5,7 @@ import { allPrinciples, toPrincipleJson } from "../data";
 export default defineTool({
   name: "get_principle",
   title: "Get principle",
-  description: "Get the full dossier for one principle: its source, the science behind it, step-by-step deployment, worked examples and any caution. Look up by code (e.g. N-06) or id (e.g. ackerman).",
+  description: "Get the full dossier for one principle: its source, evidence level, references, the science behind it, step-by-step deployment, worked examples and any caution. Look up by code (e.g. N-06) or id (e.g. ackerman).",
   inputSchema: { idOrCode: z.string().min(1).describe("Principle id (e.g. calibrated-questions) or code (e.g. D-01).") },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: ({ idOrCode }) => {

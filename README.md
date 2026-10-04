@@ -1,6 +1,6 @@
 # Cognism
 
-**A curated library of 162 communication and influence principles, served as an MCP server so AI agents can draw on proven playbooks instead of the open web.**
+**An evidence-graded library of 162 principles for communication, influence and professional conduct, from 200+ researchers and authors. Use it as a field manual, or connect it to your AI so its advice rests on tested theory, not the loudest thread.**
 
 [Live app](https://cognism.lovable.app) · [MCP endpoint](https://cognism.lovable.app/mcp) · [Connect in one line](#connect)
 
@@ -8,24 +8,24 @@
 
 ## Why this exists
 
-Ask an AI assistant how to handle a price objection and it answers from everything it has ever read: forum threads, listicles, half-remembered sales blogs. The advice is plausible and generic.
+AI has become where people go for career, communication and relationship advice. "Practical guidance" is the largest category of ChatGPT use, at 28 percent of messages ([NBER, 2025](https://www.nber.org/papers/w34255)). But the answers lean on what the web rewards: Reddit, YouTube and LinkedIn are the three most-cited domains in AI answers ([Peec AI analysis of 30M citations](https://searchengineland.com/ai-search-engines-cite-reddit-youtube-and-linkedin-most-study-473138)). And on advice questions, models tend to tell people what they want to hear: in a Stanford study they validated the user 72 percent of the time, against 22 percent for human respondents ([Cheng et al.](https://arxiv.org/pdf/2505.13995)).
 
-Cognism narrows that context. It gives agents a small, vetted library of principles drawn from negotiation, sales, psychology and leadership sources, each broken down into the science, the deployment steps, worked examples and the cautions. An agent searches it, pulls the one or two principles that fit, and grounds its advice in them.
+Cognism gives your AI a better foundation. Each principle carries its source, an evidence level, references where checked, step-by-step deployment, examples and the cautions that say where it backfires. Connected agents are instructed to cite the principle, state how strong the evidence is, and name at least one way the user's framing may be wrong, rather than simply agreeing.
 
-The result is shorter, more specific advice with a traceable source, in place of a blend of the whole internet.
-
-| Without Cognism | With Cognism |
+| Typical AI advice | With Cognism |
 | --- | --- |
-| Advice synthesised from unknown sources | Advice grounded in a named principle and its source |
-| Generic tips | Step-by-step deployment and a worked example |
-| Large, noisy context | A few hundred tokens of high-signal material |
-| Nothing to cite | Citable codes, e.g. `N-06 Ackerman Bargaining` |
+| Synthesised from forums, posts and listicles | Grounded in a named principle and its source |
+| Evidence strength unknown | Every principle graded, from meta-analysis to practitioner framework |
+| Tends to validate the user | Required to raise cautions and counter-points |
+| Nothing to check | Citable codes and, increasingly, reference links |
+
+Cognism covers communication, influence and professional conduct. It is not a substitute for medical, legal, financial or mental-health advice.
 
 ## What an agent sees
 
 A user asks: *"The supplier quoted £8,000. How do I get them down without souring the relationship?"*
 
-The agent calls `search_principles` with `"bargain a supplier down on price"`. The top match is `N-06`, so it calls `get_principle` for the full dossier:
+The agent calls `advise` with the situation and a few topics (`"price negotiation"`, `"supplier"`). Among the principles returned is `N-06`, with its full dossier:
 
 ```json
 {
@@ -80,15 +80,30 @@ claude mcp add --transport http cognism https://cognism.lovable.app/mcp
 
 | Tool | Input | Returns |
 | --- | --- | --- |
-| `search_principles` | `query`: a keyword or plain description of the situation | Up to 10 principles ranked by relevance, with code, name and tagline |
-| `get_principle` | `idOrCode`: e.g. `N-06` or `ackerman` | The full dossier: source, science, deployment steps, examples, caution |
+| `advise` | `situation`, plus `topics`: two to six short phrases the agent infers | The best one to three principles in full, a coverage rating (strong, partial, none), the topics the library doesn't cover, and the answer format and rules to follow |
+| `search_principles` | `query`: a keyword or plain description | Up to 10 principles ranked by relevance, each with its evidence level |
+| `get_principle` | `idOrCode`: e.g. `N-06` or `ackerman` | The full dossier: source, evidence level, references, science, deployment steps, examples, caution |
 | `list_principles` | `deck` (optional): one of the four sheets | The full index of sheets, phases, codes and names |
 
-All three tools are marked read-only and idempotent. The server also ships instructions that tell the agent when to reach for the library and how to cite it.
+All four tools are read-only and idempotent. The server ships instructions that tell agents when to use the library, how to structure an answer, and to say plainly when a question falls outside it.
+
+## Evidence levels
+
+Every principle is graded so agents and readers can weigh it:
+
+| Level | Meaning | Principles |
+| --- | --- | --- |
+| Meta-analysis | A synthesis of many studies supports the core claim | 17 |
+| Experimental | Controlled experiments support it | 60 |
+| Observational | Field, longitudinal, diary or survey research supports it | 22 |
+| Practitioner | An expert framework from practice: plausible and widely used, not formally tested | 61 |
+| Classical | Classical philosophy or rhetoric | 2 |
+
+Where it matters, a grade carries a note: a small effect, a failed replication, or a narrow scope. References with links are being added in batches; principles without them are not yet referenced, not unsourced.
 
 ## The library
 
-162 principles across four sheets and 23 phases. Every principle carries a short code for fast reference.
+162 principles across four sheets and 23 phases. Every principle carries a short code for fast reference. Codes are stable: new principles take the next free number, so a citation keeps pointing at the same principle.
 
 | Sheet | Focus | Phases | Principles |
 | --- | --- | --- | --- |
@@ -100,6 +115,8 @@ All three tools are marked read-only and idempotent. The server also ships instr
 Each entry follows the same structure:
 
 - **Source**: the book, researcher or practitioner it comes from
+- **Evidence**: its level, with a note on limits where relevant
+- **References**: links to the primary sources, where checked
 - **Tagline**: the principle in one line
 - **Science**: why it works
 - **Deployment**: how to use it, step by step
@@ -110,11 +127,12 @@ Each entry follows the same structure:
 
 ```
 src/
-├── data/            The library: one typed file per sheet
-├── lib/mcp/         MCP server definition and the three tools
+├── data/            The library: one typed file per sheet, plus evidence and references
+├── lib/mcp/         MCP server definition and the four tools
 │   ├── index.ts     Server metadata and agent instructions
 │   ├── data.ts      Shared lookup over all sheets
-│   └── tools/       list, get and search
+│   ├── rank.ts      Relevance ranking and topic matching
+│   └── tools/       advise, search, get and list
 ├── routes/
 │   ├── index.tsx    The web app (human-facing field manual)
 │   └── mcp.ts       MCP endpoint at /mcp
@@ -145,8 +163,8 @@ npx @modelcontextprotocol/inspector
 
 ## Roadmap
 
-- Situation-to-principle recommendations, returning a short sequence of principles for a scenario rather than single matches
-- MCP resources and prompts, so clients can browse sheets and start guided sessions directly
+- Reference links for every principle, added in checked batches
+- New sections on careers and transitions, and on deciding well
 - Usage analytics on which principles agents reach for most
 
 ## Licence

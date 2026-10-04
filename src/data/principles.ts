@@ -782,9 +782,9 @@ export const phases: Phase[] = [
         name: "Reciprocity of Concessions",
         source: "Robert Cialdini — door-in-the-face research (1975)",
         tagline:
-          "A rejected larger request makes the smaller one far harder to refuse.",
+          "A rejected larger request makes a smaller one easier to agree to. It reliably wins a yes; it is less reliable at changing what people actually do.",
         science:
-          "Cialdini's classic experiment: asking students to chaperone a zoo trip got 17% compliance — but asking first for a two-year mentoring commitment (rejected), then the zoo trip, tripled compliance to 50%. The retreat from a larger to a smaller request is perceived as a concession, and the norm of reciprocity compels a concession in return. Concessions, like gifts, create debts.",
+          "Cialdini's classic experiment: asking students to chaperone a zoo trip got 17% compliance — but asking first for a two-year mentoring commitment (rejected), then the zoo trip, tripled compliance to 50%. The retreat from a larger to a smaller request is perceived as a concession, and the norm of reciprocity compels a concession in return. Concessions, like gifts, create debts. The effect has limits, though: a 2012 meta-analysis of 35 years of door-in-the-face research (Feeley, Anker and Aloe) found it reliably increases verbal agreement, but across 39 comparisons of actual behavior it did no better than simply making the smaller request. Use it to open a conversation, not to secure follow-through.",
         deployment: [
           "Open with an ambitious (but not absurd) ask you can retreat from; the retreat itself becomes currency.",
           "Make every concession explicit and labeled — unnoticed concessions earn no reciprocity: 'That's a real stretch for us, but we'll do it.'",
@@ -795,6 +795,8 @@ export const phases: Phase[] = [
           "\"We couldn't do the full program — but a scaled pilot? That we could make work.\" (the fallback was the goal)",
           "\"We can move on the timeline, and that's genuinely painful for us. What can you do on scope?\"",
         ],
+        caution:
+          "An obviously inflated opening request reads as manipulation, and in repeated negotiations the tactic can cost trust that outlasts the deal.",
       },
       {
         id: "mesos",
@@ -981,7 +983,7 @@ export const phases: Phase[] = [
         tagline:
           "Under uncertainty, people copy what similar others do — 'people like you chose this.'",
         science:
-          "The hotel-towel studies showed reuse jumped 33% when the sign said 'guests in this room' reused towels — similarity is the multiplier. Social proof is strongest when people are uncertain and when the reference group resembles them. The negative form is equally potent and dangerous: publicizing that many do the wrong thing normalizes it.",
+          "In the original hotel-towel studies (Goldstein, Cialdini and Griskevicius), signs saying most guests reused their towels beat a standard environmental appeal, and norms about guests in the same room did best. A 2014 replication in German hotels (Bohner and Schlüter) found both kinds of message raised reuse over no message, but the descriptive norm did no better than the standard appeal, so treat the 'similar others' boost as plausible rather than proven. Social proof is strongest when people are uncertain and when the reference group resembles them. The negative form is equally potent and dangerous: publicizing that many do the wrong thing normalizes it.",
         deployment: [
           "Cite what similar others — same role, same industry, same situation — have done, with specifics.",
           "Use peer numbers when adoption is genuinely strong; use trending momentum ('fastest-growing choice') when it's not yet majority.",

@@ -578,7 +578,7 @@ export const masteryPhases: Phase[] = [
         source:
           "Alison Wood Brooks — Get Excited: Reappraising Pre-Performance Anxiety as Excitement (Journal of Experimental Psychology: General, 2014)",
         tagline:
-          "Nervous before you speak? Don't fight the adrenaline. Rename it: say 'I am excited.'",
+          "Nervous before you speak? Don't fight the nerves or the adrenaline. Rename them: say 'I am excited.'",
         science:
           "Nearly everyone's instinct is to calm down. In Brooks's pilot, 91 percent of 300 respondents chose 'try to relax and calm down' as the best advice before a big speech. But anxiety and excitement are both high-arousal states with near-identical physiology, while calm is low-arousal. Moving from anxious to calm means fighting your body, whereas moving from anxious to excited only changes the label. In one study, 140 students prepared a two-minute persuasive speech to be filmed and 'judged by a committee', then said either 'I am excited' or 'I am calm' before delivering it. Blind raters scored the 'excited' group as more persuasive, confident, competent and persistent. In her singing study, heart rate did not differ by condition: the arousal stayed and the interpretation changed. Brooks links the effect to an opportunity mindset rather than a threat mindset.",
         deployment: [
@@ -878,7 +878,7 @@ export const masteryPhases: Phase[] = [
         source:
           "Teresa Amabile & Steven Kramer — The Progress Principle (2011; Harvard Business School)",
         tagline:
-          "The strongest motivator in a working day is progress on work that matters. Clear the path.",
+          "The strongest driver of motivation and morale at work is progress on work that matters. Clear the path.",
         science:
           "Amabile and Kramer analyzed nearly 12,000 daily diary entries from 238 people across seven companies, each describing the day's events and how they felt. The strongest factor on people's best days was making progress in meaningful work, even a small step forward, and setbacks had an even larger negative effect. They call the supporting conditions catalysts (events that directly help the work, such as clear goals, autonomy, resources and help) and nourishers (interpersonal support such as encouragement, respect and recognition). When they asked 669 managers to rank five potential motivators, progress came last: only 35, about 5 percent, put it first, and most chose recognition. The diary data are correlational, but the implication for leaders is practical: much of motivation is removing obstacles to work people already care about.",
         deployment: [

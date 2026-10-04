@@ -2,6 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import type { Principle, Phase } from "@/data/principles";
 import { decks, totalPrinciples } from "@/data/decks";
+import { evidenceFor, evidenceLevels } from "@/data/evidence";
+import { referencesFor } from "@/data/references";
 import brainEngraving from "@/assets/brain-engraving.png.asset.json";
 import iconLightbulb from "@/assets/icon-lightbulb.png.asset.json";
 import iconOwl from "@/assets/icon-owl.png.asset.json";
@@ -16,7 +18,7 @@ import iconTelescope from "@/assets/icon-telescope.png.asset.json";
 
 const TITLE = "Cognitive Connection";
 const DESCRIPTION =
-  "Cognitive Connection — a personal intelligence console of research-backed communication and influence principles, free and fully unlocked.";
+  "160+ research-backed principles for communication, influence and professional conduct, from 200+ researchers and authors. Use it as a field manual, or connect it to your AI so its advice rests on tested theory, not the loudest thread.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -130,7 +132,17 @@ function PhaseGroup({
   );
 }
 
+const EVIDENCE_LABEL: Record<string, string> = {
+  "meta-analysis": "Meta-analysis",
+  experimental: "Experimental",
+  observational: "Observational",
+  practitioner: "Practitioner",
+  classical: "Classical",
+};
+
 function DossierContent({ selected }: { selected: Principle }) {
+  const evidence = evidenceFor(selected.id);
+  const refs = referencesFor(selected.id);
   return (
     <>
       <div className="dossier-header">
@@ -143,6 +155,17 @@ function DossierContent({ selected }: { selected: Principle }) {
         <div className="dossier-section-title mono">Source</div>
         <div className="dossier-text serif">{selected.source}</div>
       </div>
+
+      {evidence && (
+        <div className="dossier-section">
+          <div className="dossier-section-title mono">Evidence</div>
+          <div className="dossier-text serif">
+            <span className={`evidence-stamp mono evidence-${evidence.level}`}>{EVIDENCE_LABEL[evidence.level]}</span>{" "}
+            {evidenceLevels[evidence.level]}
+            {evidence.note && <span className="evidence-note"> {evidence.note}</span>}
+          </div>
+        </div>
+      )}
 
       <div className="dossier-section">
         <div className="dossier-section-title mono">The Science</div>
@@ -167,6 +190,25 @@ function DossierContent({ selected }: { selected: Principle }) {
         </ul>
       </div>
 
+      {refs.length > 0 && (
+        <div className="dossier-section">
+          <div className="dossier-section-title mono">References</div>
+          <ul className="dossier-refs serif">
+            {refs.map((r) => (
+              <li key={r.citation}>
+                {r.url ? (
+                  <a href={r.url} target="_blank" rel="noopener noreferrer">
+                    {r.citation}
+                  </a>
+                ) : (
+                  r.citation
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       {selected.caution && (
         <div className="dossier-section">
           <div className="dossier-section-title mono caution">Caution</div>
@@ -177,12 +219,153 @@ function DossierContent({ selected }: { selected: Principle }) {
   );
 }
 
+const MCP_URL = "https://cognism.lovable.app/mcp";
+
+const SETUP_TABS: { id: string; label: string; steps: string; code?: string }[] = [
+  {
+    id: "claude",
+    label: "Claude",
+    steps:
+      "In Claude (web or desktop), open Settings, then Connectors, then Add custom connector. Name it Cognism and paste the server address.",
+  },
+  {
+    id: "claude-code",
+    label: "Claude Code",
+    steps: "Run this once in your terminal:",
+    code: `claude mcp add --transport http cognism ${MCP_URL}`,
+  },
+  {
+    id: "cursor",
+    label: "Cursor",
+    steps: "Add this to ~/.cursor/mcp.json:",
+    code: `{ "mcpServers": { "cognism": { "url": "${MCP_URL}" } } }`,
+  },
+  {
+    id: "vscode",
+    label: "VS Code",
+    steps: "Add this to .vscode/mcp.json in your project:",
+    code: `{ "servers": { "cognism": { "type": "http", "url": "${MCP_URL}" } } }`,
+  },
+  {
+    id: "other",
+    label: "Other",
+    steps:
+      "Any AI app that supports remote MCP servers over HTTP can connect. Add a new server and paste the address. No account or API key is needed.",
+  },
+];
+
+function CopyButton({ text, label = "COPY" }: { text: string; label?: string }) {
+  const [copied, setCopied] = useState(false);
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1600);
+    } catch {
+      setCopied(false);
+    }
+  };
+  return (
+    <button type="button" className="connect-copy mono" onClick={copy} aria-live="polite">
+      {copied ? "COPIED" : label}
+    </button>
+  );
+}
+
+function ConnectPanel({ open, onClose }: { open: boolean; onClose: () => void }) {
+  const [tab, setTab] = useState(SETUP_TABS[0]!.id);
+  const active = SETUP_TABS.find((t) => t.id === tab)!;
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open, onClose]);
+
+  if (!open) return null;
+  return (
+    <>
+      <div className="connect-backdrop" onClick={onClose} aria-hidden="true" />
+      <div className="connect-panel" role="dialog" aria-modal="true" aria-labelledby="connect-title">
+        <div className="connect-bar">
+          <span className="mono connect-label">MCP SERVER</span>
+          <button type="button" className="dossier-sheet-close mono" onClick={onClose} autoFocus>
+            CLOSE ✕
+          </button>
+        </div>
+        <div className="connect-body">
+          <h2 id="connect-title" className="dossier-title serif">
+            Connect your AI
+          </h2>
+          <p className="dossier-tagline serif">
+            AI answers lean on forum threads and social posts, and on advice questions they tend to tell
+            you what you want to hear. Connect Cognism and your AI grounds its advice in {totalPrinciples}{" "}
+            principles from 200+ researchers and authors.
+          </p>
+
+          <div className="dossier-section connect-section">
+            <div className="dossier-section-title mono">Server address</div>
+            <div className="connect-url">
+              <code className="mono">{MCP_URL}</code>
+              <CopyButton text={MCP_URL} />
+            </div>
+            <div className="connect-note mono">Free · read-only · no account or API key</div>
+          </div>
+
+          <div className="dossier-section">
+            <div className="dossier-section-title mono">Set it up</div>
+            <div className="connect-tabs mono" role="tablist" aria-label="AI app">
+              {SETUP_TABS.map((t) => (
+                <button
+                  key={t.id}
+                  type="button"
+                  role="tab"
+                  aria-selected={t.id === tab}
+                  className={`connect-tab ${t.id === tab ? "active" : ""}`}
+                  onClick={() => setTab(t.id)}
+                >
+                  {t.label}
+                </button>
+              ))}
+            </div>
+            <div className="connect-steps" role="tabpanel">
+              <p className="dossier-text serif">{active.steps}</p>
+              {active.code && (
+                <div className="connect-code">
+                  <code className="mono">{active.code}</code>
+                  <CopyButton text={active.code} />
+                </div>
+              )}
+            </div>
+          </div>
+
+          <div className="dossier-section">
+            <div className="dossier-section-title mono">What changes</div>
+            <ul className="dossier-list serif">
+              <li>Your AI searches the library when you ask about a negotiation, a hard conversation, a pitch or a career move.</li>
+              <li>Its answers name the principle, the research behind it and how strong that evidence is.</li>
+              <li>It tells you where the advice can backfire and where your framing may be wrong, instead of simply agreeing.</li>
+            </ul>
+          </div>
+
+          <p className="connect-disclaimer serif">
+            Cognism covers communication, influence and professional conduct. It is not a substitute for
+            medical, legal, financial or mental-health advice.
+          </p>
+        </div>
+      </div>
+    </>
+  );
+}
+
 function Schematic() {
   const [deckIndex, setDeckIndex] = useState(0);
   const deck = decks[deckIndex]!;
   const [selected, setSelected] = useState<Principle>(decks[0]!.phases[0]!.principles[3]!);
   const isSmall = useMediaQuery("(max-width: 899px)");
   const [sheetOpen, setSheetOpen] = useState(false);
+  const [connectOpen, setConnectOpen] = useState(false);
   const [today, setToday] = useState("");
 
   useEffect(() => {
@@ -235,6 +418,15 @@ function Schematic() {
             </button>
           ))}
         </nav>
+        <button
+          type="button"
+          className="connect-trigger mono"
+          onClick={() => setConnectOpen(true)}
+          aria-haspopup="dialog"
+        >
+          <span className="connect-trigger-code">MCP</span>
+          <span>Connect your AI</span>
+        </button>
         <div className="blueprint-meta mono">
           <div>REV: 3.0.0</div>
           <div>SCALE: 1:1</div>
@@ -301,6 +493,7 @@ function Schematic() {
           </div>
         </>
       )}
+      <ConnectPanel open={connectOpen} onClose={() => setConnectOpen(false)} />
     </div>
   );
 }

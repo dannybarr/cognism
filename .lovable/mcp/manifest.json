@@ -8,14 +8,14 @@
   "mcp": {
     "server": {
       "name": "cognism",
-      "version": "0.1.0",
+      "version": "0.2.0",
       "title": "Cognism"
     },
     "tools": [
       {
-        "name": "list_principles",
-        "title": "List principles",
-        "description": "Browse the full index: four sheets (Operations, Mastery, Command, Principles), each split into phases, with every principle code and name. Optionally filter to one sheet.",
+        "name": "advise",
+        "title": "Advise on a situation",
+        "description": "Get a grounded, structured playbook for a real situation: a negotiation, a difficult conversation, a pitch, a meeting, a career or influence problem. Describe the situation in plain language. Returns the best-matching principles in full (steps, evidence level, references, cautions), a coverage rating, and the answer format and rules to follow. Prefer this over search_principles when the user wants advice rather than a lookup.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -25,11 +25,51 @@
           "$schema": "https://json-schema.org/draft/2020-12/schema",
           "type": "object",
           "properties": {
-            "deck": {
-              "description": "Sheet name, e.g. Operations, Mastery, Command, Principles.",
-              "type": "string"
+            "situation": {
+              "type": "string",
+              "minLength": 1,
+              "description": "The user's situation and goal in plain language, e.g. 'my manager keeps blocking my proposal and I need budget by Q3'."
+            },
+            "topics": {
+              "description": "Two to six short topic phrases you infer from the situation, used for matching, e.g. ['managing up', 'stakeholder resistance', 'budget request']. Strongly recommended: matching on topics is far more accurate than on the raw situation.",
+              "minItems": 1,
+              "maxItems": 6,
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
             }
           },
+          "required": [
+            "situation"
+          ],
+          "additionalProperties": false
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "search_principles",
+        "title": "Search principles",
+        "description": "Find principles that fit a situation. Accepts a keyword or a plain-language description (e.g. 'price objection', 'difficult feedback to a senior colleague'). Matches across codes, names, taglines, phases, sources, science, deployment steps and examples, ranked by relevance. Returns up to 10 results, each with its evidence level; call get_principle on the best match for the full playbook, or use advise for a complete, structured answer.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Keyword, phrase or short description of the situation."
+            }
+          },
+          "required": [
+            "query"
+          ],
           "additionalProperties": false
         },
         "outputSchema": null
@@ -37,7 +77,7 @@
       {
         "name": "get_principle",
         "title": "Get principle",
-        "description": "Get the full dossier for one principle: its source, the science behind it, step-by-step deployment, worked examples and any caution. Look up by code (e.g. N-06) or id (e.g. ackerman).",
+        "description": "Get the full dossier for one principle: its source, evidence level, references, the science behind it, step-by-step deployment, worked examples and any caution. Look up by code (e.g. N-06) or id (e.g. ackerman).",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -61,9 +101,9 @@
         "outputSchema": null
       },
       {
-        "name": "search_principles",
-        "title": "Search principles",
-        "description": "Find principles that fit a situation. Accepts a keyword or a plain-language description (e.g. 'price objection', 'difficult feedback to a senior colleague'). Matches across codes, names, taglines, phases, sources, science, deployment steps and examples, ranked by relevance. Returns up to 10 results; call get_principle on the best match for the full playbook.",
+        "name": "list_principles",
+        "title": "List principles",
+        "description": "Browse the full index: four sheets (Operations, Mastery, Command, Principles), each split into phases, with every principle code and name. Optionally filter to one sheet.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -73,15 +113,11 @@
           "$schema": "https://json-schema.org/draft/2020-12/schema",
           "type": "object",
           "properties": {
-            "query": {
-              "type": "string",
-              "minLength": 1,
-              "description": "Keyword, phrase or short description of the situation."
+            "deck": {
+              "description": "Sheet name, e.g. Operations, Mastery, Command, Principles.",
+              "type": "string"
             }
           },
-          "required": [
-            "query"
-          ],
           "additionalProperties": false
         },
         "outputSchema": null
