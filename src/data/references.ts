@@ -196,6 +196,106 @@ export const references: Record<string, Reference[]> = {
   "prepare-to-be-wrong": [
     { citation: "Heath, C. & Heath, D. (2013). Decisive: How to Make Better Choices in Life and Work. Crown.", url: "https://readingraphics.com/book-summary-decisive/" },
   ],
+  "public-narrative": [
+    { citation: "Ganz, M. What is public narrative: Self, us and now. Leading Change Network working paper.", url: "https://leadingchangenetwork.org/resource_center/what-is-public-narrative-self-us-and-now-public-narrative-worksheet-working-paper/" },
+    { citation: "Harvard Kennedy School. Public Narrative: Leadership, Storytelling, and Action.", url: "https://www.hks.harvard.edu/educational-programs/executive-education/public-narrative-leadership-storytelling-and-action" },
+  ],
+  "storytelling-with-data": [
+    { citation: "Knaflic, C. N. (2015). Storytelling with Data: A Data Visualization Guide for Business Professionals. Wiley.", url: "https://www.storytellingwithdata.com/books" },
+  ],
+  "characters-and-actions": [
+    { citation: "Williams, J. M. & Bizup, J. Style: Lessons in Clarity and Grace. Pearson.", url: "https://goodreads.com/book/show/6966800.Style_Lessons_in_Clarity_and_Grace" },
+  ],
+  "jobs-to-be-done": [
+    { citation: "Christensen, C. M., Hall, T., Dillon, K. & Duncan, D. S. (2016). Competing Against Luck. Harper Business.", url: "https://www.goodreads.com/book/show/28820024-competing-against-luck" },
+  ],
+  "deep-canvassing": [
+    { citation: "Broockman, D. & Kalla, J. (2016). Durably reducing transphobia: A field experiment on door-to-door canvassing. Science, 352(6282).", url: "https://www.science.org/doi/10.1126/science.aad9713" },
+  ],
+  "objective-criteria": [
+    { citation: "Fisher, R., Ury, W. & Patton, B. Getting to Yes: Negotiating Agreement Without Giving In. Penguin.", url: "https://www.beyondintractability.org/bksum/fisher-getting" },
+  ],
+  "moral-reframing": [
+    { citation: "Feinberg, M. & Willer, R. (2015). From gulf to bridge: When do moral arguments facilitate political influence? Personality and Social Psychology Bulletin, 41(12).", url: "https://www.semanticscholar.org/paper/From-Gulf-to-Bridge-Feinberg-Willer/613dc1e41bd748cd574c05b8d52ce590d93b63b4" },
+    { citation: "Feinberg, M. & Willer, R. (2019). Moral reframing: A technique for effective and persuasive communication across political divides. Social and Personality Psychology Compass, 13.", url: "https://compass.onlinelibrary.wiley.com/doi/abs/10.1111/spc3.12501" },
+  ],
+  "fundamental-attribution-error": [
+    { citation: "Gilbert, D. T. & Malone, P. S. (1995). The correspondence bias. Psychological Bulletin.", url: "https://scholar.harvard.edu/files/danielgilbert/files/gilbert__malone_correspondence_bias.pdf" },
+    { citation: "Morris, M. W. & Peng, K. (1994). Culture and cause: American and Chinese attributions for social and physical events. Journal of Personality and Social Psychology.", url: "https://culcog.studentorg.berkeley.edu/Publications/1994JPSP_MorrisPeng.pdf" },
+  ],
+  "coaching-habit": [
+    { citation: "Bungay Stanier, M. (2016). The Coaching Habit: Say Less, Ask More and Change the Way You Lead Forever. Box of Crayons Press.", url: "https://news.stthomas.edu/seven-questions-that-will-change-the-way-you-lead/" },
+  ],
+  "one-on-ones": [
+    { citation: "Rogelberg, S. G. (2024). Glad We Met: The Art and Science of 1:1 Meetings. Oxford University Press.", url: "https://fisher.osu.edu/blogs/leadreadtoday/glad-we-met-art-and-science-11-meetings" },
+  ],
+  "superforecasting": [
+    { citation: "Mellers, B. et al. (2014). Psychological strategies for winning a geopolitical forecasting tournament. Psychological Science, 25(5).", url: "https://www.sas.upenn.edu/tetlock/publications" },
+    { citation: "AI Impacts. Evidence on good forecasting practices from the Good Judgment Project.", url: "https://aiimpacts.org/evidence-on-good-forecasting-practices-from-the-good-judgment-project/" },
+  ],
+  "decision-hygiene": [
+    { citation: "Kahneman, D., Sibony, O. & Sunstein, C. R. (2021). Noise: A Flaw in Human Judgment. Little, Brown Spark.", url: "https://en.wikipedia.org/wiki/Noise:_A_Flaw_in_Human_Judgment" },
+  ],
+  "outcome-bias": [
+    { citation: "Baron, J. & Hershey, J. C. (1988). Outcome bias in decision evaluation. Journal of Personality and Social Psychology, 54(4).", url: "https://www.sas.upenn.edu/~baron/papers/outcomebias.pdf" },
+    { citation: "Outcomes affect evaluations of decision quality: Replication and extensions of Baron and Hershey's (1988) outcome bias experiment 1.", url: "https://pubmed.ncbi.nlm.nih.gov/40951810/" },
+  ],
+  "intuitive-expertise": [
+    { citation: "Kahneman, D. & Klein, G. (2009). Conditions for intuitive expertise: A failure to disagree. American Psychologist, 64(6).", url: "https://www.semanticscholar.org/paper/Conditions-for-intuitive-expertise:-a-failure-to-Kahneman-Klein/f1a5fb0c4b9703b3213bc3bd2dfe1f79ee35d511" },
+  ],
+  "surrogation": [
+    { citation: "Gilbert, D. T., Killingsworth, M. A., Eyre, R. N. & Wilson, T. D. (2009). The surprising power of neighborly advice. Science, 323(5921).", url: "https://www.science.org/doi/10.1126/science.1166632" },
+  ],
+  "strategy-kernel": [
+    { citation: "Rumelt, R. P. (2011). Good Strategy/Bad Strategy: The Difference and Why It Matters. Crown Business.", url: "https://www.amazon.com/Good-Strategy-Bad-Difference-Matters/dp/0307886239" },
+  ],
+  "develop-passion": [
+    { citation: "O'Keefe, P. A., Dweck, C. S. & Walton, G. M. (2018). Implicit theories of interest: Finding your passion or developing it? Psychological Science.", url: "https://journals.sagepub.com/doi/abs/10.1177/0956797618780643" },
+  ],
+  "first-90-days": [
+    { citation: "Watkins, M. D. The First 90 Days: Proven Strategies for Getting Up to Speed Faster and Smarter. Harvard Business Review Press.", url: "https://readingraphics.com/book-summary-the-first-90-days/" },
+  ],
+  "deliberate-practice": [
+    { citation: "Macnamara, B. N., Hambrick, D. Z. & Oswald, F. L. (2014). Deliberate practice and performance in music, games, sports, education, and professions: A meta-analysis. Psychological Science.", url: "https://scottbarrykaufman.com/wp-content/uploads/2014/07/Macnamara-et-al.-2014.pdf" },
+  ],
+  "retrieval-spacing": [
+    { citation: "Dunlosky, J. et al. (2013). Improving students' learning with effective learning techniques. Psychological Science in the Public Interest, 14(1).", url: "https://journals.sagepub.com/doi/abs/10.1177/1529100612453266" },
+    { citation: "Roediger, H. L. & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3).", url: "https://www.researchgate.net/publication/7270829_Test-Enhanced_Learning_Taking_Memory_Tests_Improves_Long-Term_Retention" },
+    { citation: "Cepeda, N. J. et al. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. Psychological Bulletin.", url: "https://augmentingcognition.com/assets/Cepeda2006.pdf" },
+  ],
+  "implementation-intentions": [
+    { citation: "Gollwitzer, P. M. & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38.", url: "https://www.socmot.uni-konstanz.de/publications/implementation-intentions-and-goal-achievement-meta-analysis-effects-and-processes" },
+  ],
+  "attention-residue": [
+    { citation: "Leroy, S. (2009). Why is it so hard to do my work? The challenge of attention residue when switching between work tasks. Organizational Behavior and Human Decision Processes, 109(2).", url: "https://www.semanticscholar.org/paper/Why-is-it-so-hard-to-do-my-work-The-challenge-of-Leroy/58a602c378da63993ab19b514e1bd57817bc18e5" },
+  ],
+  "checklists": [
+    { citation: "Haynes, A. B. et al. (2009). A surgical safety checklist to reduce morbidity and mortality in a global population. New England Journal of Medicine, 360.", url: "https://news.harvard.edu/gazette/story/2009/01/surgical-safety-checklist-drops-deaths-and-complications-by-more-than-one-third/" },
+  ],
+  "five-forces": [
+    { citation: "Porter, M. E. (2008). The five competitive forces that shape strategy. Harvard Business Review, 86(1).", url: "https://hbr.org/2008/01/the-five-competitive-forces-that-shape-strategy" },
+    { citation: "McGahan, A. M. & Porter, M. E. (1997). How much does industry matter, really? Strategic Management Journal, 18(S1)." },
+  ],
+  "strategic-tradeoffs": [
+    { citation: "Porter, M. E. (1996). What is strategy? Harvard Business Review, 74(6).", url: "https://hbr.org/1996/11/what-is-strategy" },
+  ],
+  "disruptive-innovation": [
+    { citation: "King, A. A. & Baatartogtokh, B. (2015). How useful is the theory of disruptive innovation? MIT Sloan Management Review, 57(1).", url: "https://sloanreview.mit.edu/article/how-useful-is-the-theory-of-disruptive-innovation/" },
+    { citation: "Lepore, J. (2014). The disruption machine. The New Yorker, 23 June.", url: "https://www.newyorker.com/magazine/2014/06/23/the-disruption-machine" },
+  ],
+  "scientific-entrepreneurship": [
+    { citation: "Camuffo, A., Cordova, A., Gambardella, A. & Spina, C. (2020). A scientific approach to entrepreneurial decision making: Evidence from a randomized control trial. Management Science, 66(2).", url: "https://pubsonline.informs.org/doi/10.1287/mnsc.2018.3249" },
+  ],
+  "ambidexterity": [
+    { citation: "O'Reilly, C. A. & Tushman, M. L. (2004). The ambidextrous organization. Harvard Business Review, 82(4).", url: "https://hbr.org/2004/04/the-ambidextrous-organization" },
+    { citation: "March, J. G. (1991). Exploration and exploitation in organizational learning. Organization Science, 2(1).", url: "https://pubsonline.informs.org/doi/10.1287/orsc.2.1.71" },
+  ],
+  "okrs-goal-setting": [
+    { citation: "Locke, E. A. & Latham, G. P. (2002). Building a practically useful theory of goal setting and task motivation: A 35-year odyssey. American Psychologist, 57(9).", url: "https://doi.org/10.1037/0003-066X.57.9.705" },
+  ],
+  "leverage-points": [
+    { citation: "Meadows, D. (1999). Leverage points: Places to intervene in a system. The Sustainability Institute.", url: "https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/" },
+  ],
 };
 
 export const referencesFor = (id: string): Reference[] => references[id] ?? [];

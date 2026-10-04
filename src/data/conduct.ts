@@ -677,6 +677,118 @@ export const conductPhases: Phase[] = [
           "Being the person who asks the expert a genuine question rather than performing what you already know.",
         ],
       },
+      {
+        id: "deliberate-practice",
+        code: "A-09",
+        name: "Practice at the Edge, With Feedback",
+        source:
+          "Anders Ericsson & Robert Pool — Peak (2016); Macnamara, Hambrick & Oswald (2014) meta-analysis",
+        tagline:
+          "Repetition alone plateaus. Improvement comes from practicing what you can't yet do, with fast feedback.",
+        science:
+          "Ericsson's research on expert performers distinguished deliberate practice (focused effort on specific weaknesses, just beyond current ability, with immediate feedback and often a coach) from simply accumulating experience, which tends to plateau once performance becomes automatic. Peak presents it as the main route to expertise. The meta-analytic evidence is more modest: Macnamara, Hambrick and Oswald found that deliberate practice explained about 26 percent of performance differences in games, 21 percent in music, 18 percent in sports, 4 percent in education and about 1 percent in professions. Practice matters, but far less in loosely defined work than in structured domains. For professionals, the practical lesson is to create the conditions of deliberate practice (specific targets, rehearsal and feedback) rather than assume that years on the job make you better.",
+        deployment: [
+          "Pick one specific sub-skill to improve, such as opening a pitch or handling price objections, not 'presenting' in general.",
+          "Rehearse it deliberately: record yourself, run mock negotiations, or practice the first two minutes of a talk until they're automatic.",
+          "Get fast, specific feedback from a recording, a coach or a peer, and adjust before the next attempt.",
+          "Work just beyond your comfort zone; if it feels easy, you're rehearsing, not improving.",
+        ],
+        examples: [
+          "Recording three versions of a two-minute investor pitch, comparing them with a mentor, and reworking the weakest section.",
+        ],
+        caution:
+          "In most professions practice explains only a small share of performance, so don't expect it to override talent, opportunity or judgment. Much professional work also lacks clear feedback, so you may need to build feedback loops before practice can work.",
+      },
+      {
+        id: "retrieval-spacing",
+        code: "A-10",
+        name: "Learn by Retrieval and Spacing",
+        source:
+          "Peter Brown, Henry Roediger & Mark McDaniel — Make It Stick (2014); Dunlosky et al. (2013) review",
+        tagline:
+          "Rereading feels productive but fades. Test yourself and spread practice out, and you'll remember far more.",
+        science:
+          "Roediger and Karpicke found that students who took a practice test after reading a passage remembered more a week later than students who reread it several times. A 2013 review of ten learning techniques by Dunlosky and colleagues rated only two as high utility: practice testing (retrieving information from memory) and distributed practice (spreading study over time). Cepeda and colleagues' meta-analysis of hundreds of experiments found spaced practice beat massed practice in the large majority of comparisons, with longer gaps better for longer retention. Popular habits such as rereading and highlighting were rated low utility. The effort of recall is what strengthens memory, which is why effective learning often feels harder than ineffective learning.",
+        deployment: [
+          "After reading or a briefing, close it and write down or say the key points from memory, then check what you missed.",
+          "Space review over days and weeks rather than cramming: revisit material the next day, then a week later.",
+          "Before an important meeting or exam, quiz yourself on likely questions instead of rereading your notes.",
+          "Mix related topics within a practice session rather than mastering one at a time.",
+        ],
+        examples: [
+          "Preparing for a board meeting by having a colleague fire likely questions at you, rather than rereading the deck.",
+          "Learning a new market by writing a one-page summary from memory at the end of each day.",
+        ],
+        caution:
+          "Retrieval practice works best once you've understood the material; testing yourself on something you never learned just produces confusion. The benefits show up over time, so the method can feel slower at first.",
+      },
+      {
+        id: "implementation-intentions",
+        code: "A-11",
+        name: "If-Then Plans",
+        source:
+          "Peter Gollwitzer & Paschal Sheeran — Implementation Intentions and Goal Achievement (2006 meta-analysis)",
+        tagline:
+          "Goals fail at the moment of action. To follow through, decide in advance: 'If situation X arises, then I will do Y.'",
+        science:
+          "Most goals fail not because people don't want them but because the moment to act passes unnoticed or is overtaken by habit. Gollwitzer's implementation intentions link a specific situation to a specific response in an if-then plan ('If it's 8 a.m. on Monday, then I'll draft the proposal before opening email'). Because the plan is formed in advance, the situation itself triggers the action, without needing fresh willpower. A meta-analysis of 94 studies by Gollwitzer and Sheeran found a medium-to-large effect on goal attainment (d = 0.65) compared with holding the goal alone, across achievement, health and interpersonal goals. If-then plans also work against obstacles: 'If I feel the urge to interrupt, then I'll write the thought down instead.'",
+        deployment: [
+          "For any important goal, name when and where you'll act: 'If [situation], then I will [action].'",
+          "Plan for the most likely obstacle with its own if-then: 'If the meeting overruns, then I'll do it at 4 p.m.'",
+          "Keep the trigger concrete: a time, a place, or an event you're sure to notice.",
+          "Use them in conversations too: 'If they raise price, then I'll ask what's driving their budget before responding.'",
+        ],
+        examples: [
+          "\"If it's Friday at 3 p.m., then I'll send each team member one specific piece of appreciation.\"",
+          "Before a tense meeting: \"If I feel myself getting defensive, then I'll ask a question before I answer.\"",
+        ],
+        caution:
+          "If-then plans help you act on goals you're already committed to; they don't create motivation. Too many plans at once dilute each other, so focus on the few that matter most.",
+      },
+      {
+        id: "attention-residue",
+        code: "A-12",
+        name: "Finish Before You Switch",
+        source:
+          "Sophie Leroy — Why Is It So Hard to Do My Work? (2009); Cal Newport — Deep Work",
+        tagline:
+          "Every switch and interruption leaves part of your attention behind. Protect long blocks of focus for your hardest work.",
+        science:
+          "Leroy coined the term attention residue: when people switch from one task to another, part of their attention stays with the first, especially if it was left unfinished. In her experiments, people who switched away from an incomplete task performed worse on the next one than those who had finished first, and the cost persisted rather than fading after a moment. Cal Newport builds on this in Deep Work, arguing that the ability to concentrate without distraction on cognitively demanding tasks is increasingly rare and valuable, and that constant connectivity, with email, messages and meetings fragmenting the day, keeps knowledge workers in a state of shallow, residue-laden attention. The practical implication is to batch shallow tasks and protect uninterrupted blocks for the work that matters.",
+        deployment: [
+          "Block 60 to 90 minutes for your most demanding task, with notifications and email closed.",
+          "Finish or reach a clear stopping point before switching, and note your next step so the open task stops tugging at you.",
+          "Batch shallow work (email, messages, admin) into set times rather than checking continuously.",
+          "Agree response-time norms with your team so focus time doesn't feel like neglect.",
+        ],
+        examples: [
+          "Starting the day with ninety minutes on the board paper before opening email, then handling messages in two batches.",
+        ],
+        caution:
+          "Some roles are rightly reactive, and fast responses may be part of the job, so deep-work blocks must fit the role. The evidence comes mainly from lab tasks, so treat the size of the cost as uncertain even though the direction is clear.",
+      },
+      {
+        id: "checklists",
+        code: "A-13",
+        name: "Checklists for What Matters Most",
+        source:
+          "Atul Gawande — The Checklist Manifesto; Haynes et al. (New England Journal of Medicine, 2009)",
+        tagline:
+          "Experts fail on routine steps, not hard problems. A short checklist catches what skill and memory miss.",
+        science:
+          "Gawande, a surgeon, argues that in complex work most failures are failures of execution, not knowledge: people know what to do but skip a step under pressure. He led the World Health Organization program that produced a 19-item surgical safety checklist, including team introductions and confirming the patient and procedure. In a study of eight hospitals in eight cities around the world, comparing about 3,700 patients before the checklist with about 3,900 after, deaths after major surgery fell from 1.5 to 0.8 percent and major complications from 11 to 7 percent. The design lessons matter as much as the result: good checklists are short, cover only the critical steps that are easy to miss, and include communication checkpoints that give everyone permission to speak up.",
+        deployment: [
+          "Identify the few steps in your critical routines that are most often missed and most costly when they are: launches, hiring, client handovers, board papers.",
+          "Keep each checklist short, roughly five to nine items, in plain language.",
+          "Include communication checks, such as 'everyone has confirmed the deadline', not just tasks.",
+          "Run it at a defined pause point, such as before sending or before go-live.",
+        ],
+        examples: [
+          "A pre-send checklist for client proposals: names correct, figures reconciled with the model, pricing approved, attachments opened, next step stated.",
+        ],
+        caution:
+          "The surgical study compared periods before and after the checklist rather than randomizing, so part of the improvement may reflect greater attention to safety overall. Checklists fail when they grow long or turn into box-ticking; they support judgment rather than replace it.",
+      },
     ],
   },
   {
@@ -778,6 +890,50 @@ export const conductPhases: Phase[] = [
         caution:
           "Participants were self-selected people already considering a change, happiness was self-reported, and many didn't answer the follow-up. This is a tie-breaker for genuinely close decisions, not a reason to make rash ones, and it doesn't apply when the downside is severe or irreversible.",
       },
+      {
+        id: "develop-passion",
+        code: "J-05",
+        name: "Develop Your Passion, Don't Find It",
+        source:
+          "O'Keefe, Dweck & Walton — Implicit Theories of Interest (Psychological Science, 2018); Cal Newport — So Good They Can't Ignore You",
+        tagline:
+          "Passion is usually built through skill and engagement, not discovered. Waiting to find it can stop you developing one.",
+        science:
+          "O'Keefe, Dweck and Walton compared two beliefs about interests: that they are fixed and must be found, or that they can be developed. People with the fixed belief showed less interest in material outside their existing passions, were more likely to expect a true passion to provide endless motivation with few obstacles, and lost interest more readily when a topic they found fascinating became difficult. Cal Newport makes the career version of the argument: satisfying work usually comes from building rare and valuable skills, which he calls career capital, and then using that capital to gain what people love about their work, such as autonomy, mastery and impact. Both point the same way: interest deepens with competence, so 'follow your passion' gets the sequence backwards for many people.",
+        deployment: [
+          "Treat early interest as a starting point, not a verdict: invest long enough to get good before judging fit.",
+          "Expect difficulty; struggling with something hard is not a sign it isn't for you.",
+          "Build rare, valuable skills in your current role, then trade them for more autonomy and the work you want.",
+          "Explore beyond your existing interests; believing interests can grow makes people more open to new fields.",
+        ],
+        examples: [
+          "\"I'm not sure finance is my passion yet, but I'm getting good at modeling, and that gives me options to move toward the deals I find most interesting.\"",
+        ],
+        caution:
+          "This isn't an argument for staying in work that's wrong for you: persistent misery, a toxic environment or a poor values fit are reasons to move. Career capital takes years to build, and some fields reward it more than others.",
+      },
+      {
+        id: "first-90-days",
+        code: "J-06",
+        name: "Diagnose the Situation Before You Lead",
+        source:
+          "Michael Watkins — The First 90 Days",
+        tagline:
+          "In a new role, first identify the situation you've inherited, then match your approach, early wins and conversations to it.",
+        science:
+          "Watkins argues that new leaders most often stumble by applying what worked in their last role to a situation that needs something different. His STARS model distinguishes five business situations: start-up, turnaround, accelerated growth, realignment and sustaining success. Each demands a different approach: a turnaround rewards fast, decisive action, while a realignment requires first convincing people that change is needed, and sustaining success means protecting what already works. He also stresses securing early wins to build credibility, and 'negotiating success' with a new boss through explicit conversations about the situation, expectations, working style and resources.",
+        deployment: [
+          "In your first weeks, diagnose the situation: start-up, turnaround, accelerated growth, realignment or sustaining success? Different parts of your remit may differ.",
+          "Agree the diagnosis with your boss explicitly, along with expectations, how you'll communicate and the resources you'll need.",
+          "Pick early wins that matter to your key stakeholders and that model the behavior you want.",
+          "Learn before you change: in a realignment or sustaining-success situation, rushing reforms can destroy what works.",
+        ],
+        examples: [
+          "\"My read is that we're in a realignment: the numbers still look fine, but the pipeline has shrunk two quarters running. Does that match your view?\"",
+        ],
+        caution:
+          "STARS is a diagnostic aid, not a law, and real situations mix types. Ninety days is a heuristic: the point is to plan the transition deliberately, not to hit a date.",
+      },
     ],
   },
   {
@@ -855,6 +1011,138 @@ export const conductPhases: Phase[] = [
         ],
         caution:
           "Tripwires set too tight kill good ideas before they've had a fair chance; set them from realistic base rates. And a tripwire only works if someone is committed to acting when it's crossed.",
+      },
+      {
+        id: "superforecasting",
+        code: "Y-04",
+        name: "Think in Probabilities, Update Often",
+        source:
+          "Philip Tetlock & Dan Gardner — Superforecasting (2015); Mellers et al. (2014), Good Judgment Project",
+        tagline:
+          "Replace 'will it happen?' with 'how likely is it?', then update in small steps as evidence arrives.",
+        science:
+          "Tetlock's earlier research found that many experts' long-range political forecasts were little better than chance. In the Good Judgment Project, which won a forecasting tournament run by the US intelligence research agency IARPA from 2011 to 2015, his team studied which volunteers forecast well. The best, the 'superforecasters', beat a prediction market of intelligence analysts with access to classified information by roughly 25 to 30 percent. Their habits were learnable: they expressed beliefs as precise probabilities, started from base rates (the outside view), broke questions into parts, sought out disconfirming views, and updated often, usually in small increments. A one-hour training module on probabilistic reasoning and avoiding biases improved accuracy, and working in teams helped further.",
+        deployment: [
+          "State important forecasts as probabilities: 'I'd put this at 70 percent', not 'this will probably work'.",
+          "Start from the base rate for similar cases, then adjust for what's specific (see Y-02).",
+          "Write forecasts down with a date, and update them in small steps as new evidence arrives.",
+          "Keep score: check past forecasts against outcomes to learn whether your 70 percents come true about 70 percent of the time.",
+        ],
+        examples: [
+          "\"I'd say there's a 60 percent chance the client renews. If they haven't confirmed budget by the 15th, I'll drop that to 40.\"",
+        ],
+        caution:
+          "Forecasting skill was measured on questions that resolve within months to about a year; accuracy is much lower for long-range or truly novel questions. A precise-sounding probability is still a judgment, so don't let the number imply more certainty than you have.",
+      },
+      {
+        id: "decision-hygiene",
+        code: "Y-05",
+        name: "Decision Hygiene",
+        source:
+          "Daniel Kahneman, Olivier Sibony & Cass Sunstein — Noise: A Flaw in Human Judgment (2021)",
+        tagline:
+          "Judgments of the same case vary far more than anyone expects. Make them independently, break them into parts, then combine.",
+        science:
+          "Kahneman, Sibony and Sunstein distinguish bias, a consistent error in one direction, from noise: unwanted variability in judgments that should be identical. In a noise audit at an insurance company, underwriters pricing the same policies differed by a median of 55 percent, where executives had expected about 10. Noise matters wherever professionals make repeated judgments: hiring, performance ratings, credit, pricing, medicine. Because noise is invisible until measured, the authors recommend 'decision hygiene', procedures that reduce error without needing to know its direction: have people judge independently before discussing, break complex judgments into separate assessments made one at a time, hold back the overall intuition until the parts are scored, and average several independent judgments.",
+        deployment: [
+          "For repeated decisions such as hiring or pricing, run a noise audit: have several people judge the same cases independently and compare.",
+          "Collect independent judgments before any discussion, so the first or loudest view doesn't anchor the rest.",
+          "Break the decision into a few defined criteria, score each separately, and form an overall view only at the end.",
+          "Average independent judgments, and use structured interviews and checklists for recurring decisions.",
+        ],
+        examples: [
+          "An interview panel where each interviewer scores the candidate against four criteria and submits before the debrief begins.",
+        ],
+        caution:
+          "Hygiene adds process, so reserve it for decisions that are repeated or consequential. Removing noise doesn't remove bias: a consistent, structured process can still be consistently wrong.",
+      },
+      {
+        id: "outcome-bias",
+        code: "Y-06",
+        name: "Judge the Decision, Not the Outcome",
+        source:
+          "Jonathan Baron & John Hershey — Outcome Bias in Decision Evaluation (1988); Annie Duke — Thinking in Bets",
+        tagline:
+          "A good decision can turn out badly, and a bad one can get lucky. Review the reasoning, not just the result.",
+        science:
+          "In five studies, Baron and Hershey gave people descriptions of decisions made under uncertainty, such as medical choices and monetary gambles, and varied only the outcome. Participants rated the same decision as better reasoned, and the decision-maker as more competent, when it turned out well, even though they agreed outcomes shouldn't matter. The effect has been replicated, most recently in 2023. Annie Duke, a former professional poker player, calls the habit 'resulting': treating the quality of an outcome as a verdict on the quality of a decision. Because most real decisions involve luck and incomplete information, judging by results punishes good decisions that were unlucky and rewards reckless ones that got lucky, and so teaches people the wrong lessons.",
+        deployment: [
+          "In reviews, separate three questions: what did we know, what did we decide and why, and what happened.",
+          "Ask whether you would make the same call again with the same information. If yes, a bad result may just be bad luck.",
+          "Record the reasoning and your confidence at the time of the decision, so hindsight can't rewrite them later.",
+          "Praise good process even when results disappoint, and question reckless choices even when they work.",
+        ],
+        examples: [
+          "\"The launch missed target, but given what we knew in March, was launching the right call? If so, what didn't we know, and could we have found out?\"",
+        ],
+        caution:
+          "Outcomes are still evidence: a run of bad results should prompt hard questions about the process. 'It was just bad luck' can become an excuse; the discipline is to check the reasoning honestly in both directions.",
+      },
+      {
+        id: "intuitive-expertise",
+        code: "Y-07",
+        name: "Trust Intuition Only Where It Was Trained",
+        source:
+          "Daniel Kahneman & Gary Klein — Conditions for Intuitive Expertise: A Failure to Disagree (American Psychologist, 2009)",
+        tagline:
+          "Gut feel is reliable only in a predictable environment where you've had years of clear feedback. Elsewhere, check it.",
+        science:
+          "Kahneman, who studied the biases of intuition, and Klein, who studied the expertise of firefighters and other professionals, set out to resolve their disagreement and found they largely agreed. Intuitive judgment can be trusted when two conditions hold: the environment is regular enough to be predictable, and the person has had adequate opportunity to learn its regularities through extended practice with timely, clear feedback. Firefighters, chess players and experienced nurses meet both conditions, and their fast recognitions are real expertise. Where an environment is unpredictable, or feedback is slow, rare or ambiguous, as with long-range forecasts or stock picking, confident intuitions are often illusions. Subjective confidence is not a reliable guide, because people can feel equally sure in both situations.",
+        deployment: [
+          "Before trusting a gut call, ask: does this domain have stable patterns, and have I made many decisions in it with quick, clear feedback?",
+          "If both are true, give your intuition real weight, and use it to generate options fast.",
+          "If either is false, treat the intuition as a hypothesis and test it with data, base rates or a premortem.",
+          "Notice when confidence comes from how familiar a story feels rather than from a track record of verified calls.",
+        ],
+        examples: [
+          "A recruiter with years of feedback on hires for one role can trust early impressions more than a manager making a first senior hire, who should lean on a structured process.",
+        ],
+        caution:
+          "Even experts lose their edge outside their domain: a great negotiator's instincts about a market forecast deserve no special trust. Checking intuition doesn't mean ignoring it; in predictable environments, overriding real expertise with weak analysis can make things worse.",
+      },
+      {
+        id: "surrogation",
+        code: "Y-08",
+        name: "Ask Someone Who's Been There",
+        source:
+          "Daniel Gilbert et al. — The Surprising Power of Neighborly Advice (Science, 2009); Gilbert & Wilson — affective forecasting",
+        tagline:
+          "To predict how a choice will feel, ask people who've lived it. Their reactions beat your imagination.",
+        science:
+          "Gilbert and Wilson's research on affective forecasting shows that people mispredict how future events will make them feel, typically overestimating how intense and how lasting their reactions will be, partly because they imagine the event in isolation and underestimate how quickly they adapt. In a study published in Science, Gilbert and colleagues found that undergraduates predicted their reactions to a five-minute speed date, and to a peer's evaluation of them, more accurately when they knew only how another student had reacted than when they had detailed information about the event itself. Yet both participants and independent judges believed the detailed information would be the better guide, so people rarely use the more accurate strategy.",
+        deployment: [
+          "Before a big personal decision (a new role, a move, a career change), find several people who've made it and ask how it actually felt a few months in.",
+          "Prefer the experiences of people similar to you; one enthusiastic story is an anecdote, several are evidence.",
+          "Expect to adapt: whatever you choose, the highs and lows will likely be less intense and shorter-lived than you imagine.",
+          "Use your own analysis for the facts, and other people's experience for how it will feel.",
+        ],
+        examples: [
+          "Before accepting a first management role: \"You moved from engineer to manager two years ago. Six months in, how did it actually feel compared with what you expected?\"",
+        ],
+        caution:
+          "Other people's experience helps most when they resemble you in the ways that matter; a colleague who loves travel is a poor guide to how a travel-heavy role will feel for you. Recollections are imperfect too, so ask several people.",
+      },
+      {
+        id: "strategy-kernel",
+        code: "Y-09",
+        name: "The Kernel of a Strategy",
+        source:
+          "Richard Rumelt — Good Strategy/Bad Strategy (2011)",
+        tagline:
+          "A real strategy diagnoses the problem, sets a guiding policy and commits to coherent action. Goals and slogans aren't strategy.",
+        science:
+          "Rumelt, a strategy professor at UCLA, argues that much of what organizations call strategy is a list of goals, ambitions or slogans. Good strategy has a kernel of three parts: a diagnosis that defines the challenge and simplifies a complex situation by identifying what matters most; a guiding policy, the overall approach to that challenge, which rules some options out; and coherent actions, coordinated steps and resource commitments that carry out the policy and reinforce one another. He names four hallmarks of bad strategy: fluff (impressive-sounding language with little substance), failure to face the challenge, mistaking goals for strategy, and bad strategic objectives that are vague or unachievable. For communication, the kernel is also a test: if you can't state the diagnosis in a sentence, you aren't ready to ask anyone to follow.",
+        deployment: [
+          "Start with the diagnosis: in one or two sentences, what is the critical obstacle we face, and why?",
+          "State the guiding policy: the approach we'll take, including what we will deliberately not do.",
+          "List the coherent actions: a small set of coordinated commitments, with owners and resources, that follow from the policy.",
+          "Before a strategy document goes out, check it for fluff, an unstated challenge, and goals posing as strategy.",
+        ],
+        examples: [
+          "Diagnosis: \"We're losing mid-size customers because onboarding takes three months.\" Guiding policy: \"Win on speed to value, not features.\" Actions: \"Freeze new features for two quarters, rebuild onboarding, and tie sales incentives to time to go live.\"",
+        ],
+        caution:
+          "A clear kernel can still rest on a wrong diagnosis, so test it with data and dissent before committing (see M-07 and M-08). Strategy is iterative: revisit the kernel when the situation changes.",
       },
     ],
   },

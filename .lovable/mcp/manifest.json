@@ -15,7 +15,7 @@
       {
         "name": "advise",
         "title": "Advise on a situation",
-        "description": "Get a grounded, structured playbook for a real situation: a negotiation, a difficult conversation, a pitch, a meeting, a career or influence problem. Describe the situation in plain language. Returns the best-matching principles in full (steps, evidence level, references, cautions), a coverage rating, and the answer format and rules to follow. Prefer this over search_principles when the user wants advice rather than a lookup.",
+        "description": "Get a grounded, structured playbook for a real situation: a negotiation, a difficult conversation, a pitch, a meeting, a career, influence or strategy problem. Describe the situation in plain language. Returns the best-matching principles in full (steps, evidence level, references, cautions), a coverage rating, and the answer format and rules to follow. Prefer this over search_principles when the user wants advice rather than a lookup.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -103,7 +103,7 @@
       {
         "name": "list_principles",
         "title": "List principles",
-        "description": "Browse the full index: four sheets (Operations, Mastery, Command, Principles), each split into phases, with every principle code and name. Optionally filter to one sheet.",
+        "description": "Browse the full index: five sheets (Operations, Mastery, Command, Principles, Strategy), each split into phases, with every principle code and name. Optionally filter to one sheet.",
         "annotations": {
           "readOnlyHint": true,
           "idempotentHint": true,
@@ -114,7 +114,7 @@
           "type": "object",
           "properties": {
             "deck": {
-              "description": "Sheet name, e.g. Operations, Mastery, Command, Principles.",
+              "description": "Sheet name, e.g. Operations, Mastery, Command, Principles, Strategy.",
               "type": "string"
             }
           },

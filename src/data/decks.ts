@@ -2,6 +2,7 @@ import { phases, type Phase } from "./principles";
 import { masteryPhases } from "./mastery";
 import { commandPhases } from "./command";
 import { conductPhases } from "./conduct";
+import { strategyPhases } from "./strategy";
 
 export interface Deck {
   id: string;
@@ -34,6 +35,12 @@ export const decks: Deck[] = [
     code: "SHEET 04",
     name: "Principles",
     phases: conductPhases,
+  },
+  {
+    id: "strategy",
+    code: "SHEET 05",
+    name: "Strategy",
+    phases: strategyPhases,
   },
 ];
 

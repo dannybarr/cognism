@@ -890,6 +890,13 @@
   }
 }
 
+/* Five sheet tabs plus Connect crowd the title below 1600px: drop the sheet numbers */
+@media (max-width: 1599px) and (min-width: 900px) {
+  .deck-tab-code {
+    display: none;
+  }
+}
+
 /* Tablet portrait & mobile: < 900px — stacked layout, body scroll allowed */
 @media (max-width: 899px) {
   body {

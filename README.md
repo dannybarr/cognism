@@ -1,6 +1,6 @@
 # Cognism
 
-**An evidence-graded library of 169 principles for communication, influence, careers and professional conduct, from 200+ researchers and authors. Use it as a field manual, or connect it to your AI so its advice rests on tested theory, not the loudest thread.**
+**An evidence-graded library of 210 principles for communication, influence, careers, decisions, strategy and professional conduct, from 200+ researchers and authors. Use it as a field manual, or connect it to your AI so its advice rests on tested theory, not the loudest thread.**
 
 [Live app](https://cognism.lovable.app) · [MCP endpoint](https://cognism.lovable.app/mcp) · [Connect in one line](#connect)
 
@@ -83,7 +83,7 @@ claude mcp add --transport http cognism https://cognism.lovable.app/mcp
 | `advise` | `situation`, plus `topics`: two to six short phrases the agent infers | The best one to three principles in full, a coverage rating (strong, partial, none), the topics the library doesn't cover, and the answer format and rules to follow |
 | `search_principles` | `query`: a keyword or plain description | Up to 10 principles ranked by relevance, each with its evidence level |
 | `get_principle` | `idOrCode`: e.g. `N-06` or `ackerman` | The full dossier: source, evidence level, references, science, deployment steps, examples, caution |
-| `list_principles` | `deck` (optional): one of the four sheets | The full index of sheets, phases, codes and names |
+| `list_principles` | `deck` (optional): one of the five sheets | The full index of sheets, phases, codes and names |
 
 All four tools are read-only and idempotent. The server ships instructions that tell agents when to use the library, how to structure an answer, and to say plainly when a question falls outside it.
 
@@ -93,24 +93,25 @@ Every principle is graded so agents and readers can weigh it:
 
 | Level | Meaning | Principles |
 | --- | --- | --- |
-| Meta-analysis | A synthesis of many studies supports the core claim | 18 |
-| Experimental | Controlled experiments support it | 62 |
-| Observational | Field, longitudinal, diary or survey research supports it | 25 |
-| Practitioner | An expert framework from practice: plausible and widely used, not formally tested | 62 |
+| Meta-analysis | A synthesis of many studies supports the core claim | 22 |
+| Experimental | Controlled experiments support it | 71 |
+| Observational | Field, longitudinal, diary or survey research supports it | 35 |
+| Practitioner | An expert framework from practice: plausible and widely used, not formally tested | 80 |
 | Classical | Classical philosophy or rhetoric | 2 |
 
 Where it matters, a grade carries a note: a small effect, a failed replication, or a narrow scope. References with links are being added in batches; principles without them are not yet referenced, not unsourced.
 
 ## The library
 
-169 principles across four sheets and 25 phases. Every principle carries a short code for fast reference. Codes are stable: new principles take the next free number, so a citation keeps pointing at the same principle.
+210 principles across five sheets and 30 phases. Every principle carries a short code for fast reference. Codes are stable: new principles take the next free number, so a citation keeps pointing at the same principle.
 
 | Sheet | Focus | Phases | Principles |
 | --- | --- | --- | --- |
-| **Operations** | Running a live conversation or deal | Discovery, Rapport, Solutioning, Negotiation, Psychology | 54 |
-| **Mastery** | Harder interpersonal situations | Conflict & Repair, Presence & Nonverbal, Storytelling, Presenting, Speaking & Writing, Feedback & Leadership, Defense & Counter-Influence | 45 |
+| **Operations** | Running a live conversation or deal | Discovery, Rapport, Solutioning, Negotiation, Psychology | 57 |
+| **Mastery** | Harder interpersonal situations | Conflict & Repair, Presence & Nonverbal, Storytelling, Presenting, Speaking & Writing, Feedback & Leadership, Defense & Counter-Influence | 50 |
 | **Command** | Status, influence and decisions in the room | Power & Status, Influence Without Authority, Frame Control & Pitching, Conversation Science, Reading & Social Intelligence, Commanding the Room | 32 |
-| **Principles** | Personal conduct, careers and decisions | Presence & Approach, Integrity & Word, Grace Under Fire, Generosity & Regard, Self-Mastery & Standards, Careers & Transitions, Deciding Well | 38 |
+| **Principles** | Personal conduct, careers and decisions | Presence & Approach, Integrity & Word, Grace Under Fire, Generosity & Regard, Self-Mastery & Standards, Careers & Transitions, Deciding Well | 51 |
+| **Strategy** | Competing, growing and running the organization | Competitive Strategy, Innovation & Growth, Execution & Operations, Leading the Organization, Advantage & Capital | 20 |
 
 Each entry follows the same structure:
 

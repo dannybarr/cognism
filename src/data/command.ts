@@ -71,26 +71,6 @@ export const commandPhases: Phase[] = [
         ],
       },
       {
-        id: "reputation-guard",
-        code: "K-04",
-        name: "Guard the Reputation Asset",
-        source: "Robert Greene — 48 Laws (Law 5); reputation-market research",
-        tagline:
-          "Reputation is the one asset that negotiates for you in rooms you never enter — build it deliberately, defend it instantly.",
-        science:
-          "Greene's Law 5 ('So much depends on reputation — guard it with your life') matches the economics of reputation markets: because most decisions about you are made in your absence, your reputation IS you for practical purposes — it determines which opportunities even reach you. Research on trust repair shows why defense must be fast: negative information is weighted more heavily than positive (negativity bias), spreads farther, and once a reputational frame sets, confirmation bias makes every subsequent ambiguous act read as evidence for it. An unanswered attack becomes the accepted record.",
-        deployment: [
-          "Choose the one or two words you want attached to your name ('rigorous', 'unflappable', 'ships') and make every visible act deposit into them.",
-          "Answer reputational attacks immediately and factually — silence is read as confirmation. Correct the record where the record lives.",
-          "Never attack another's reputation with insinuation; it marks YOU as dangerous to everyone watching. Beat rivals with visible work instead.",
-          "Protect the keystone: identify which single quality your reputation rests on, and never trade it for a convenience ('I'll just miss this one deadline').",
-        ],
-        examples: [
-          "\"I heard the project described as 'over budget' in the leads meeting. Here are the actual numbers — I'd appreciate the correction reaching the same room.\"",
-          "Prep for a new arena: \"You know my work — when it comes up, the thing I'd want mentioned is the turnaround on the Meridian account.\"",
-        ],
-      },
-      {
         id: "status-conferral",
         code: "K-05",
         name: "Competence Plus Generosity",
@@ -244,28 +224,6 @@ export const commandPhases: Phase[] = [
       "Every encounter runs inside a frame — whoever owns it owns the meaning of everything said within it.",
     principles: [
       {
-        id: "frame-collision",
-        code: "G-01",
-        name: "Frame Collision & Ownership",
-        source: "Oren Klaff — Pitch Anything",
-        tagline:
-          "When frames meet, the stronger absorbs the weaker — and no amount of argument beats a lost frame.",
-        science:
-          "Klaff's operating thesis, drawn from thousands of capital-raising pitches: every social encounter is a collision of frames (perspectives loaded with power), and one frame always wins — instantly, before any content is exchanged. Common hostile frames: the power frame (dismissiveness, making you wait, checking a phone), the analyst frame (drowning the big idea in detail demands), and the time frame ('you've got ten minutes'). Facts do not beat frames; frames are pre-rational. The counter is never argument — it's a frame-disrupting act: mild defiance, humor, or a small denial that breaks the expected script of the subordinate.",
-        deployment: [
-          "Diagnose the frame in the first seconds: who is acting as the prize, who controls time, whose questions are being answered?",
-          "Meet a power frame with small, playful defiance — never hostility, never compliance: a light refusal to follow their script resets the collision.",
-          "Break the analyst frame by owning altitude: 'the details are in the appendix and my analyst will walk yours through them — the decision in this room is about the direction.'",
-          "Never present INTO a broken frame — fix the frame first or reschedule. Content delivered from the low-status position is discounted before it's heard.",
-        ],
-        examples: [
-          "They take a call mid-pitch. You stop, close the laptop, and wait — resuming only when attention returns: \"This part's the reason you took the meeting. Ready?\"",
-          "\"Ten minutes? Perfect — I only need eight. But I need them uninterrupted.\" (accepting the constraint while seizing its terms)",
-        ],
-        caution:
-          "Frame moves are seasoning, not the meal. Defiance without substance is arrogance, and it collapses the moment content is demanded.",
-      },
-      {
         id: "luntz-words",
         code: "G-02",
         name: "It's What They Hear",
@@ -328,6 +286,29 @@ export const commandPhases: Phase[] = [
           "Instead of \"I just sort of feel like maybe we should delay?\": \"We should delay two weeks. The top risk isn't mitigated, and here's the evidence.\"",
           "\"I'm certain about the demand and the unit cost. The churn assumption is the soft spot — that's where I'd aim the diligence.\"",
         ],
+      },
+      {
+        id: "moral-reframing",
+        code: "G-05",
+        name: "Reframe in Their Values",
+        source:
+          "Matthew Feinberg & Robb Willer — From Gulf to Bridge (2015); Jonathan Haidt — The Righteous Mind",
+        tagline:
+          "People are moved by arguments grounded in their values, not yours. Translate your case into what they already care about.",
+        science:
+          "Feinberg and Willer observed that advocates instinctively argue from their own moral values, which rarely move people who don't share them. Across six studies on issues including same-sex marriage, universal health care, military spending and English as an official language, arguments reframed to fit the values of the opposing side were more persuasive, because they increased the perceived fit between the position and the listener's own morals. The work builds on Haidt's moral foundations research, which finds that people weight values such as care, fairness, loyalty, authority and sanctity differently. The evidence is promising but uneven: several studies have replicated the effect, while others, including a preregistered replication on environmental messages, found little or none.",
+        deployment: [
+          "Before arguing, work out what the other person values most: security, fairness, loyalty to the team, efficiency, tradition.",
+          "Rebuild your argument around that value, using their words for it, while keeping your actual proposal the same.",
+          "Test the frame: would someone who holds that value genuinely recognize it in your argument?",
+          "In mixed rooms, offer more than one frame for the same proposal.",
+        ],
+        examples: [
+          "To a cost-focused CFO, a wellbeing program framed as 'cutting the cost of turnover' rather than 'caring for our people'.",
+          "To a team that prizes loyalty: \"This change protects the people who've been here longest.\"",
+        ],
+        caution:
+          "Reframing must be sincere: the value has to be a real reason for the proposal, or it becomes manipulation and backfires once noticed. Effects vary by issue and audience, so treat it as one tool among several.",
       },
     ],
   },
@@ -552,6 +533,29 @@ export const commandPhases: Phase[] = [
         ],
         caution:
           "Cultural scales describe averages, not individuals, and they shift with generation, industry and personal history. Use the map to generate questions about a person, never to predict them.",
+      },
+      {
+        id: "fundamental-attribution-error",
+        code: "I-05",
+        name: "The Situation Before the Person",
+        source:
+          "Lee Ross & Richard Nisbett — The Person and the Situation; Jones & Harris (1967); Gilbert & Malone (1995)",
+        tagline:
+          "When someone behaves badly, look for the pressures on them before deciding what kind of person they are.",
+        science:
+          "In Jones and Harris's 1967 experiment, people read essays supporting or opposing Fidel Castro. Even when told the writer had been assigned the position, for example by a coin toss, readers still judged pro-Castro writers to be more pro-Castro. Lee Ross named this the fundamental attribution error: observers overweight personality and underweight situational pressures when explaining other people's behavior, while explaining their own behavior by circumstances. Gilbert and Malone preferred the term correspondence bias, arguing that inferring character from behavior is often reasonable but systematically overdone. The bias varies with culture: Morris and Peng found American observers more likely than Chinese observers to explain social behavior by individual disposition. At work, it turns a missed deadline into 'unreliable' and a blunt email into 'arrogant' before anyone checks the workload, the incentives or the instructions.",
+        deployment: [
+          "When someone disappoints you, list the situational explanations first: workload, unclear instructions, conflicting incentives, missing information, personal pressure.",
+          "Ask before you label: 'What got in the way?' tells you more than any judgment of character.",
+          "Look for patterns across situations before concluding it's the person; one incident is weak evidence.",
+          "Fix the situation where you can (process, priorities, incentives) before trying to change the person.",
+        ],
+        examples: [
+          "Instead of 'He's careless': \"The report had errors again. What's on your plate this week, and were the requirements clear?\"",
+          "Noticing that three different people have struggled in the same role points to the role, not to three bad hires.",
+        ],
+        caution:
+          "Situations explain a lot, but not everything: consistent behavior across different situations does say something about the person. The aim is to check the situation first, not to excuse every pattern.",
       },
     ],
   },

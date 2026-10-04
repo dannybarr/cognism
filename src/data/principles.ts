@@ -215,6 +215,29 @@ export const phases: Phase[] = [
           "\"We're arguing conclusions. Let's go back down — what data are you starting from? I suspect we're not even selecting the same facts.\"",
         ],
       },
+      {
+        id: "jobs-to-be-done",
+        code: "D-10",
+        name: "Find the Job to Be Done",
+        source:
+          "Clayton Christensen et al. — Competing Against Luck (Harvard Business School)",
+        tagline:
+          "People don't buy products; they hire them to make progress in a specific circumstance. Find the job before you pitch.",
+        science:
+          "Christensen, the Harvard Business School professor behind the theory of disruptive innovation, defined a 'job' as the progress a person is trying to make in a particular circumstance. Jobs have functional, social and emotional dimensions, and they are defined by the circumstance and the struggle, not by the customer's demographics or the product category. His best-known example came from in-store observation of milkshake buyers: many morning customers were hiring a milkshake to make a long, boring commute bearable and keep them full until mid-morning, while afternoon parents bought one for an entirely different job. Each job implies a different product and a different set of competitors. In discovery conversations, asking what a person is trying to get done, and what is getting in the way, surfaces needs that asking which features they want never will.",
+        deployment: [
+          "Ask about the circumstance, not the product: 'Walk me through the last time you dealt with this. What were you trying to get done?'",
+          "Listen for the struggle: workarounds, delays and frustrations show where progress is blocked.",
+          "Name all three dimensions: what they need to get done, how they want to be seen, and how they want to feel.",
+          "Map the real competition: everything the person currently hires for the same job, including a spreadsheet or doing nothing.",
+        ],
+        examples: [
+          "\"Before we look at features, tell me about the last month-end close. Where did it hurt, and what did you do instead?\"",
+          "A buyer evaluating software is also hiring it to look competent in front of the CFO, and the pitch should address that job too.",
+        ],
+        caution:
+          "Jobs-to-be-done is a lens, not a validated measurement method, and different interviewers can describe the same job differently. Check the job you've inferred against what customers actually do, not just what they say.",
+      },
     ],
   },
   {
@@ -623,6 +646,28 @@ export const phases: Phase[] = [
           "\"Instead of debating whether remote works, can we list the conditions under which it clearly does and clearly doesn't? I suspect we agree on more than we think.\"",
         ],
       },
+      {
+        id: "deep-canvassing",
+        code: "S-11",
+        name: "Exchange Stories, Not Arguments",
+        source:
+          "David Broockman & Joshua Kalla — Durably Reducing Transphobia (Science, 2016)",
+        tagline:
+          "To shift a firmly held view, don't argue. Listen, share a real story, and invite them to recall a time they felt the same.",
+        science:
+          "Most attempts to change entrenched attitudes fail, and many backfire. Broockman and Kalla tested an alternative in a randomized field experiment published in Science: 56 canvassers held roughly ten-minute doorstep conversations with 501 voters in South Florida about transgender people. Instead of arguing, canvassers asked voters to talk about a time they had been judged for being different and encouraged them to connect that experience to other people's, a technique called analogic perspective-taking. The conversations substantially reduced prejudice, by more than the average decline in American homophobia between 1998 and 2012, and the effect persisted for at least three months. The study matters twice over: it was run after an earlier, celebrated canvassing study was exposed as fabricated, and it showed that a brief, non-judgmental conversation can do what facts alone rarely do.",
+        deployment: [
+          "Start by asking for their view and listening without rebuttal. People only revisit a position once they feel heard.",
+          "Ask for their own experience: 'Has there been a time you were treated unfairly for something you couldn't control?'",
+          "Share a short, genuine story, your own or that of someone affected, rather than statistics.",
+          "Invite them to connect the two, then ask where they stand now. Don't push for agreement in the moment.",
+        ],
+        examples: [
+          "With a team resisting a new mentoring scheme: \"Can I ask, was there a time you were new somewhere and nobody gave you a chance? That's what this is about for me.\"",
+        ],
+        caution:
+          "The evidence comes from social and political attitudes, not workplace decisions, so expect smaller effects where people have strong material interests. The technique depends on genuine listening; used as a script to win, it reads as manipulation.",
+      },
     ],
   },
   {
@@ -903,6 +948,29 @@ export const phases: Phase[] = [
         ],
         caution:
           "The backlash is a problem with evaluators, not with the people who negotiate; these tactics manage it rather than fix it. Its size also varies across workplaces and cultures.",
+      },
+      {
+        id: "objective-criteria",
+        code: "N-14",
+        name: "Insist on Objective Criteria",
+        source:
+          "Roger Fisher, William Ury & Bruce Patton — Getting to Yes (Harvard Negotiation Project)",
+        tagline:
+          "Don't haggle over positions or test wills. Agree first on a fair standard, then let the standard decide.",
+        science:
+          "Getting to Yes sets out four principles of negotiation: separate the people from the problem, focus on interests, invent options for mutual gain, and insist on objective criteria. The fourth handles what interests can't: the moments when both sides still want more of the same thing. A contest of will rewards stubbornness, damages the relationship and produces arbitrary results; a contest over standards moves the argument to ground both sides can defend to others. Objective criteria include market value, precedent, expert opinion, cost, professional standards, what a court would decide, or a fair procedure such as 'one cuts, the other chooses'. Fisher and Ury's rule is to frame each issue as a joint search for criteria, reason about which standard applies, and yield to principle but never to pressure.",
+        deployment: [
+          "Before the negotiation, research the standards that apply: market rates, comparable deals, published benchmarks, precedent.",
+          "Frame the issue as a shared search: 'What's a fair basis for setting this? How did you arrive at that figure?'",
+          "When pressure replaces reasons, name it and return to criteria: 'Help me understand the principle behind that number.'",
+          "When standards conflict, agree on a fair procedure: an independent valuation, the midpoint of two benchmarks, or taking turns.",
+        ],
+        examples: [
+          "\"Your quote is 30 percent above the three comparable proposals we received. Can you walk me through what justifies the difference?\"",
+          "\"Rather than argue about the valuation, shall we each nominate an appraiser and take the average?\"",
+        ],
+        caution:
+          "Criteria can be cherry-picked, and the other side will produce standards that favor them. Agree on which standard is most relevant before applying it, and be ready to accept one that cuts against you, or the method loses its credibility.",
       },
     ],
   },

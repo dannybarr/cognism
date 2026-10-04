@@ -25,7 +25,7 @@ export default defineTool({
   name: "advise",
   title: "Advise on a situation",
   description:
-    "Get a grounded, structured playbook for a real situation: a negotiation, a difficult conversation, a pitch, a meeting, a career or influence problem. Describe the situation in plain language. Returns the best-matching principles in full (steps, evidence level, references, cautions), a coverage rating, and the answer format and rules to follow. Prefer this over search_principles when the user wants advice rather than a lookup.",
+    "Get a grounded, structured playbook for a real situation: a negotiation, a difficult conversation, a pitch, a meeting, a career, influence or strategy problem. Describe the situation in plain language. Returns the best-matching principles in full (steps, evidence level, references, cautions), a coverage rating, and the answer format and rules to follow. Prefer this over search_principles when the user wants advice rather than a lookup.",
   inputSchema: {
     situation: z
       .string()

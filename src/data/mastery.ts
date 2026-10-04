@@ -424,6 +424,28 @@ export const masteryPhases: Phase[] = [
         caution:
           "The 'but' must be real. A manufactured problem, added for drama, reads as spin. ABT frames an argument; it doesn't prove one, so the 'therefore' still needs evidence behind it.",
       },
+      {
+        id: "public-narrative",
+        code: "T-06",
+        name: "Story of Self, Us and Now",
+        source:
+          "Marshall Ganz (Harvard Kennedy School) — Public Narrative; People, Power, Change",
+        tagline:
+          "Move people to act by linking three stories: why you are called, what we share, and why we must act now.",
+        science:
+          "Ganz, a senior lecturer at Harvard Kennedy School and a veteran organizer, developed public narrative as a leadership practice for turning shared values into action. It links three stories. The story of self explains why you are called to lead, through moments when you faced a challenge, made a choice and saw an outcome that shaped your values. The story of us expresses the values and experiences a group shares, and the resources it has to act. The story of now names an urgent challenge to those values, a source of hope, and a specific choice the group must make. Ganz's insight is that values move people through emotion, and stories are how values travel: a listener experiences the character's choice rather than being told about it. The structure of each story is challenge, choice, outcome, and the moral is carried by the choice. Without a story of now, inspiration has nowhere to go; without the stories of self and us, the call to action has no credibility.",
+        deployment: [
+          "Story of self: pick one specific moment when you faced a challenge, made a choice and learned something that explains why you care. One scene, not a CV.",
+          "Story of us: name the values and experiences your audience already shares, and the strengths they bring.",
+          "Story of now: state the urgent challenge, a credible reason for hope, and one specific action you are asking for.",
+          "Keep a few of each ready, drawn from your own path, your team's history and your customers, so you can match the story to the room.",
+        ],
+        examples: [
+          "\"When I was nineteen, I watched my father's business fail because no bank would back him. That's why I'm in this job. Every one of you has seen a customer we couldn't help. This quarter we can change that, and I need each team to commit two people to the pilot by Friday.\"",
+        ],
+        caution:
+          "The method assumes values that are genuinely shared. Using personal stories to manufacture urgency for something people don't believe in reads as manipulation. The urgency must be real, and the ask must be specific and doable.",
+      },
     ],
   },
   {
@@ -617,6 +639,29 @@ export const masteryPhases: Phase[] = [
         caution:
           "Inside jokes exclude most of the room, and roast humor aimed at a bride, groom or the deceased rarely survives mixed company. Honesty beats whitewash, but a eulogy is not the place to settle scores. The most common failure is making it about the speaker: every story should end with them, not you. Fitting praise to the audience's values can slide into flattery, so praise what is true.",
       },
+      {
+        id: "storytelling-with-data",
+        code: "O-09",
+        name: "Declutter the Chart, Direct the Eye",
+        source:
+          "Cole Nussbaumer Knaflic — Storytelling with Data (2015)",
+        tagline:
+          "Every chart should make one point. Remove what doesn't serve it, and use color to show where to look.",
+        science:
+          "Knaflic distilled her data-visualization workshops into a sequence: understand the context (who the audience is and what you need them to know or do), choose an effective visual, eliminate clutter, focus attention, think like a designer, and tell a story. Clutter matters because every element on a chart costs the viewer attention; borders, heavy gridlines, data markers and legends that don't aid understanding make the point harder to find. Focus matters because of preattentive attributes such as color, size and position, which the eye picks up before conscious reading: one highlighted bar in a field of gray tells the audience where to look in an instant. Before building anything, she asks presenters to write the Big Idea in one sentence and to be able to tell the whole story in three minutes. If you can't, the chart can't either.",
+        deployment: [
+          "Write the Big Idea first: one sentence stating your point and what's at stake. Then check the chart makes exactly that point.",
+          "Strip clutter: remove borders, heavy gridlines, data markers and redundant labels, and label lines directly instead of using a legend.",
+          "Push everything to gray, then use one color to highlight the data that carries your point.",
+          "Title the chart with the takeaway ('Churn doubled after the price change'), not the topic ('Churn by month').",
+        ],
+        examples: [
+          "Instead of a rainbow of twelve product lines: eleven gray lines and one orange line, the product whose growth is the point of the slide.",
+          "Slide title: 'Support tickets fell after the onboarding redesign', with the redesign date marked on the line.",
+        ],
+        caution:
+          "Highlighting is persuasion, so use it honestly: emphasizing one series must not hide data that contradicts your point. Analytical audiences who will scrutinize the numbers should get the full data in an appendix.",
+      },
     ],
   },
   {
@@ -737,6 +782,29 @@ export const masteryPhases: Phase[] = [
         ],
         caution:
           "Six pages is Amazon's convention, not a rule; for most decisions one or two pages will do. A memo culture can also slow a small team down, so use it where the decision deserves full thought.",
+      },
+      {
+        id: "characters-and-actions",
+        code: "L-06",
+        name: "Characters as Subjects, Actions as Verbs",
+        source:
+          "Joseph M. Williams — Style: Lessons in Clarity and Grace; William Zinsser — On Writing Well",
+        tagline:
+          "Clear sentences make the people the subjects and what they do the verbs, and move from what readers know to what they don't.",
+        science:
+          "Williams, who taught writing at the University of Chicago, traced most unclear prose to a gap between the story a sentence tells and its grammar. Readers expect the main characters to be the subjects and their actions to be the verbs. Writers often bury actions in nouns, which Williams calls nominalizations ('the implementation of a review of the decision' instead of 'we reviewed the decision'), forcing readers to reconstruct who did what. His second principle governs flow: begin a sentence with familiar information that links to what came before, and end with the new and often complex information, where readers expect emphasis. Zinsser's On Writing Well attacks the same problem from another side: clutter, the needless words, inflated phrases and jargon that hide thinking. Both rest on one premise: unclear writing usually signals unclear thinking, and revision is where the thinking gets done.",
+        deployment: [
+          "Find the characters and their actions in each important sentence, then make the characters the subjects and the actions the verbs.",
+          "Hunt nominalizations ending in -tion, -ment or -ance: turn 'a decision was made regarding the implementation' into 'we decided to implement'.",
+          "Start each sentence with something the reader already knows, and save the new or complex point for the end.",
+          "Cut clutter: delete words that add nothing ('in order to', 'at this point in time', 'very'), and replace jargon with plain words.",
+        ],
+        examples: [
+          "Before: 'There was a lack of alignment on the prioritization of the roadmap.' After: 'The product and sales teams disagreed about what to build first.'",
+          "Before: 'Implementation of the new process resulted in a reduction of errors.' After: 'When we introduced the new process, errors fell.'",
+        ],
+        caution:
+          "Some nominalizations help: they name a concept already introduced ('this decision') and keep a paragraph cohesive. The aim is clarity, not a ban on nouns, and in legal or technical documents precise conventional phrasing can matter more than flow.",
       },
     ],
   },
@@ -893,6 +961,51 @@ export const masteryPhases: Phase[] = [
         ],
         caution:
           "Progress only motivates when the work is meaningful to the person; manufactured wins and vanity metrics read as condescension. Recognition still matters. It just isn't the whole story.",
+      },
+      {
+        id: "coaching-habit",
+        code: "F-08",
+        name: "Stay Curious a Little Longer",
+        source:
+          "Michael Bungay Stanier — The Coaching Habit (2016)",
+        tagline:
+          "Managers rush to advice. Ask a few sharp questions first, and let people solve more of their own problems.",
+        science:
+          "Bungay Stanier argues that managers default to giving advice, which feels helpful but often solves the wrong problem, creates dependence and overloads the manager. His alternative is a short set of questions that can turn a conversation into coaching in ten minutes or less: 'What's on your mind?' to open; 'And what else?' to go beyond the first answer; 'What's the real challenge here for you?' to find the actual problem; 'What do you want?' to clarify the goal; 'How can I help?' to make support specific; 'If you're saying yes to this, what are you saying no to?' to force trade-offs; and 'What was most useful for you?' to close and reinforce learning. The book is practitioner guidance rather than research, but it fits the research on question-asking (Q-02) and on autonomy (M-04): people commit more to solutions they reach themselves.",
+        deployment: [
+          "When someone brings a problem, hold back your advice and ask 'What's the real challenge here for you?'",
+          "Ask 'And what else?' at least once; the first issue raised is rarely the most important.",
+          "Before taking on a task, ask 'How can I help?' so you do what's needed rather than what you assume.",
+          "End with 'What was most useful for you?' to help the learning stick.",
+        ],
+        examples: [
+          "Report: \"The client's pushing back on the timeline.\" Manager: \"What's the real challenge here for you?\" Report: \"Honestly, I don't know how to say no to them.\"",
+        ],
+        caution:
+          "Questions aren't always the answer. In a crisis, or with someone new who lacks the knowledge to solve the problem, direct guidance is kinder and faster. Asked mechanically, the questions feel like a technique rather than interest.",
+      },
+      {
+        id: "one-on-ones",
+        code: "F-09",
+        name: "One-on-Ones Belong to Them",
+        source:
+          "Steven Rogelberg — Glad We Met: The Art and Science of 1:1 Meetings; Andrew Grove — High Output Management",
+        tagline:
+          "A one-on-one is the report's meeting, not a status update for the manager. Keep it regular, with a light agenda they lead.",
+        science:
+          "Grove, Intel's former CEO, treated the one-on-one as one of a manager's highest-leverage activities and held that it should be the subordinate's meeting, with their agenda. Rogelberg, an organizational psychologist, drew on two decades of research on meetings to examine how one-on-ones actually work. He found that they are widespread, that nearly half are seen as suboptimal by the employees in them, and that managers tend to overestimate how well they go. One-on-ones work best when they happen regularly, when they focus on the employee's needs, growth and obstacles rather than on status updates, and when they follow a light agenda rather than none or a rigid one.",
+        deployment: [
+          "Meet regularly and protect the slot; frequent cancellations tell people they're a low priority.",
+          "Let them set most of the agenda: ask them to bring the topics that matter to them, and add yours at the end.",
+          "Spend the time on obstacles, growth and wellbeing, and handle status updates in writing.",
+          "Close with clear next steps, including what you'll do for them.",
+        ],
+        examples: [
+          "Opening: \"This is your time. What's top of mind for you this week?\"",
+          "Moving routine updates to a shared document so the conversation can focus on the promotion case they want to build.",
+        ],
+        caution:
+          "Frequency and format should fit the person: someone new or struggling needs more contact than an experienced, independent colleague. A one-on-one that never gets to real obstacles wastes time as surely as a status update does.",
       },
     ],
   },
