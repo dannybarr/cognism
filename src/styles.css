@@ -869,7 +869,8 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .principles-field.phases-7 > .phase-group {
+  /* nth-child(n) matches the specificity of the desktop span rules so this reset wins */
+  .principles-field.phases-7 > .phase-group:nth-child(n) {
     grid-column: auto;
   }
 
