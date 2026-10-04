@@ -679,4 +679,183 @@ export const conductPhases: Phase[] = [
       },
     ],
   },
+  {
+    id: "careers-transitions",
+    code: "24",
+    name: "Careers & Transitions",
+    brief:
+      "Change direction by testing, not by planning in your head: reshape the job you have, and use the network that actually moves careers.",
+    principles: [
+      {
+        id: "test-and-learn-career",
+        code: "J-01",
+        name: "Test and Learn Your Next Career",
+        source:
+          "Herminia Ibarra — Working Identity: Unconventional Strategies for Reinventing Your Career",
+        tagline:
+          "You don't find your next career by thinking harder. You find it by running small experiments and talking to new people.",
+        science:
+          "Ibarra, an organizational behavior professor at INSEAD and later London Business School, studied professionals changing careers and found that the conventional advice (look inward, find your true self, then plan and execute) rarely works. Introspection seldom generates enough momentum to break an established routine, and the 'true self' people look for is built through action, not discovered. The people who changed successfully did three things: they experimented with new activities and possible identities through side projects, temporary roles and courses; they interacted with new networks outside their usual circles; and they made sense of what was happening by reworking the story of who they were becoming. Knowing comes from doing, and the transition is a crooked path through several 'possible selves', not a straight line to a fixed goal.",
+        deployment: [
+          "Replace 'What should I do with my life?' with 'What can I try in the next month?' Pick one small experiment: a side project, a short course, a secondment or a volunteer role.",
+          "Talk to people already doing the work you're curious about, and ask what their week actually looks like.",
+          "Keep your current role while you test, where you can. The aim is information, not a leap.",
+          "After each experiment, update the story: what energized you, what didn't, and what you would test next.",
+        ],
+        examples: [
+          "Instead of quitting to become a product manager: \"Could I shadow the product team on the next launch and run the customer interviews?\"",
+          "\"I'm exploring a move into climate finance. Could I ask you three questions about what the job is really like?\"",
+        ],
+        caution:
+          "Experiments can become a way to avoid deciding forever. Set a time frame, and when the evidence points one way, commit. Some transitions also need a clean break that small tests can't simulate.",
+      },
+      {
+        id: "job-crafting",
+        code: "J-02",
+        name: "Craft the Job You Have",
+        source:
+          "Amy Wrzesniewski & Jane Dutton — Crafting a Job (Academy of Management Review, 2001); Rudolph et al. (2017) meta-analysis",
+        tagline:
+          "Before you leave, reshape. Change your tasks, your relationships and how you see the work.",
+        science:
+          "Wrzesniewski and Dutton observed that employees in all kinds of jobs actively reshape them, and named three forms of job crafting: task crafting (changing what you do, how much and how), relational crafting (changing who you work with and how), and cognitive crafting (changing how you understand the purpose of the work). A 2017 meta-analysis of 122 samples covering 35,670 workers (Rudolph, Katz, Lavigne and Zacher) found that crafting which adds resources and challenge is associated with better performance, more citizenship behavior and higher job satisfaction. The data are mostly correlational, but the practical point holds: dissatisfaction often has a fix inside the current role, and testing that fix first makes any eventual move better informed.",
+        deployment: [
+          "List your tasks and mark which energize you and which drain you. Look for ways to do more of the first: volunteer, swap or redesign.",
+          "Reshape relationships: seek out the colleagues, customers or mentors who make the work better, and spend more time with them.",
+          "Reframe the purpose: connect daily tasks to the outcome they serve and the people they help.",
+          "Agree changes with your manager where they affect others. Crafting works best in the open.",
+        ],
+        examples: [
+          "\"I'd like to take on onboarding new analysts. I'm good at it, and it would free up time for the team leads.\"",
+          "A support engineer starts seeing the role as 'keeping customers' businesses running' rather than 'closing tickets'.",
+        ],
+        caution:
+          "Crafting can't fix a fundamentally bad fit, an abusive environment or unfair pay. And quietly reshaping a role without telling anyone can leave gaps that others have to cover.",
+      },
+      {
+        id: "moderately-weak-ties",
+        code: "J-03",
+        name: "Your Next Job Comes Through Moderately Weak Ties",
+        source:
+          "Rajkumar, Saint-Jacques, Bojinov, Brynjolfsson & Aral — A Causal Test of the Strength of Weak Ties (Science, 2022); Mark Granovetter (1973)",
+        tagline:
+          "The contacts most likely to lead to your next job aren't your closest ones. They're the people you know a little.",
+        science:
+          "Granovetter's 1973 theory held that acquaintances matter more than close friends for finding jobs, because they connect you to information you don't already have. Rajkumar and colleagues tested it causally, using randomized experiments in LinkedIn's 'People You May Know' algorithm that varied the mix of weak and strong ties for more than 20 million people over five years, during which 600,000 new jobs were created. The relationship between tie strength and job moves was an inverted U: moderately weak ties increased job mobility the most, and the strongest ties did so least. Very weak ties helped less, because there was too little relationship for anyone to act on. Weak ties mattered more in digital industries; strong ties mattered more in less digital ones.",
+        deployment: [
+          "When you start a job search, list acquaintances, not just close contacts: former colleagues, people met at events, friends of friends.",
+          "Reactivate dormant ties with a specific, easy request: what they're seeing in their field, or one introduction.",
+          "Keep moderately weak ties warm before you need them, with occasional, genuine contact.",
+          "In a less digital industry, lean more on close contacts who can vouch for you directly.",
+        ],
+        examples: [
+          "\"We worked together at Acme three years ago. I'm looking at operations roles in fintech, and you came to mind. Who should I be talking to?\"",
+          "Accepting a connection request from someone you met once at a conference, then following up with a useful article.",
+        ],
+        caution:
+          "Mass outreach to near-strangers is not what the study found useful: very weak ties helped less. The value comes from people who know you well enough to act on your behalf.",
+      },
+      {
+        id: "lean-toward-change",
+        code: "J-04",
+        name: "When Torn, Lean Toward Change",
+        source:
+          "Steven Levitt — Heads or Tails: The Impact of a Coin Toss on Major Life Decisions and Subsequent Happiness (Review of Economic Studies, 2021)",
+        tagline:
+          "If you're genuinely split on a big change, the evidence suggests you're more likely to regret staying than going.",
+        science:
+          "Levitt recruited people who were stuck on a decision and let a coin toss suggest the answer. For important decisions, such as quitting a job or ending a relationship, people the coin told to make the change were more likely to make it, and six months later reported being more satisfied with their decision and happier than those told to keep the status quo. Because the coin was random, the difference can be attributed to making the change rather than to who chose to. Levitt concluded that people may be excessively cautious about life-changing choices, consistent with research showing that losses loom larger than gains and that people overweight the status quo.",
+        deployment: [
+          "First check you're genuinely torn: if you've done the analysis and it's close to a draw, let the tie-breaker lean toward change.",
+          "Ask whether what holds you back is fear of loss rather than a real downside. If so, discount it.",
+          "Make the change reversible where you can: a sabbatical, a trial period, a phased exit.",
+          "If the analysis clearly favors staying, stay. This principle is for close calls only.",
+        ],
+        examples: [
+          "\"I've gone back and forth for six months and the pros and cons are even. People in my position tend to be glad they moved, so I'm going.\"",
+          "Negotiating a three-month trial at the new firm while keeping the option to return.",
+        ],
+        caution:
+          "Participants were self-selected people already considering a change, happiness was self-reported, and many didn't answer the follow-up. This is a tie-breaker for genuinely close decisions, not a reason to make rash ones, and it doesn't apply when the downside is severe or irreversible.",
+      },
+    ],
+  },
+  {
+    id: "deciding-well",
+    code: "25",
+    name: "Deciding Well",
+    brief:
+      "Make the big calls with more options, outside evidence and a plan for being wrong.",
+    principles: [
+      {
+        id: "never-whether-or-not",
+        code: "Y-01",
+        name: "Never Decide 'Whether or Not'",
+        source:
+          "Paul Nutt — Why Decisions Fail (Ohio State decision studies); Chip & Dan Heath — Decisive (2013)",
+        tagline:
+          "A yes-or-no decision is usually a sign you haven't looked for options. Find at least one more before you decide.",
+        science:
+          "Paul Nutt of Ohio State spent decades studying real decisions in organizations and found that about half of them failed. In one study of 168 decisions, only 29 percent of the teams considered more than one alternative; most decisions were framed as 'whether or not' (should we acquire this company or not?) rather than as a choice among options. The Heath brothers built on this in Decisive, where 'Widen your options' is the first step of their WRAP process: Widen your options, Reality-test your assumptions, Attain distance before deciding, Prepare to be wrong. Narrow framing hides alternatives; even one extra option forces a comparison and exposes the opportunity cost of the default.",
+        deployment: [
+          "When a decision is framed as yes or no, stop and ask: 'What else could we do with the same time and money?'",
+          "Try the vanishing-options test: if the current options disappeared, what would you do instead?",
+          "Aim for two or three real alternatives, including a cheaper or smaller version.",
+          "Consider 'and' rather than 'or': can you combine options, or run two in parallel as small tests?",
+        ],
+        examples: [
+          "Instead of 'Should we hire a second salesperson?': \"What are three ways to grow sales 20 percent this year, and where does a hire rank?\"",
+          "\"If we couldn't renew this contract at all, what would we do? Let's price that option too.\"",
+        ],
+        caution:
+          "More options can become paralysis. Two to four genuine alternatives is the aim, not an exhaustive list, and some decisions really are binary.",
+      },
+      {
+        id: "outside-view",
+        code: "Y-02",
+        name: "Take the Outside View",
+        source:
+          "Daniel Kahneman & Dan Lovallo — the outside view; Bent Flyvbjerg — reference-class forecasting",
+        tagline:
+          "Before trusting your plan's forecast, ask how similar plans actually turned out.",
+        science:
+          "Kahneman describes leading a team writing a high-school curriculum on judgment. Asked how long it would take, the team estimated around two years. A curriculum expert on the team then recalled that similar teams had taken seven to ten years, and that about 40 percent never finished. The team ignored the statistic and finished in eight years. Kahneman and Lovallo called the default approach the 'inside view' (forecasting from the details of your own plan) and its cure the 'outside view' (starting from the actual outcomes of a reference class of similar projects). Flyvbjerg turned this into reference-class forecasting for large projects, and the American Planning Association endorsed the method in 2005. The inside view feels better informed but is systematically optimistic.",
+        deployment: [
+          "Before estimating time, cost or chance of success, name the reference class: what are the similar projects, launches, hires or moves?",
+          "Find the base rate: how long did they take, what did they cost, how often did they succeed?",
+          "Start from that base rate, then adjust modestly for what genuinely makes your case different.",
+          "Put the outside-view number next to the plan, and make anyone who wants the optimistic number argue for it.",
+        ],
+        examples: [
+          "\"Our plan says six months to migrate. The last three migrations this size took eleven to fourteen. Let's plan for twelve.\"",
+          "Considering a startup: \"What share of companies like ours reach profitability within three years?\" before \"How fast can we grow?\"",
+        ],
+        caution:
+          "Choosing the reference class is a judgment call: too broad and it's meaningless, too narrow and you're back to the inside view. Base rates describe averages; they don't forbid exceptions, they make you prove them.",
+      },
+      {
+        id: "prepare-to-be-wrong",
+        code: "Y-03",
+        name: "Prepare to Be Wrong",
+        source:
+          "Chip & Dan Heath — Decisive (2013), the WRAP process",
+        tagline:
+          "Decide in advance what would tell you you're wrong, and set a tripwire to catch it.",
+        science:
+          "The last step of the Heath brothers' WRAP process addresses overconfidence: people treat forecasts as certainties and stay on a failing course too long. Their remedies are to bookend the future (plan for a range of outcomes, from very bad to very good, rather than one expected case) and to set tripwires: explicit triggers, such as a date, a budget figure or a metric, that force a decision to be revisited instead of drifting. Tripwires help because the moment to reconsider is easy to miss from inside a project, and commitment grows with every step taken. This is a practitioner synthesis rather than a tested model, but it pairs with experimental evidence elsewhere in the library: the premortem reduces overconfidence more than a standard critique.",
+        deployment: [
+          "Write down, before you start, the outcomes that would tell you the decision was wrong.",
+          "Set a tripwire: 'If we haven't reached 500 paying users by March, we stop and reassess.'",
+          "Plan for a range: what does the plan look like if things go much worse, or much better, than expected?",
+          "Run a premortem (M-07) on any big decision, and put a review date in the calendar now.",
+        ],
+        examples: [
+          "\"We'll give the new market until the end of Q2. If revenue is under £50,000 by then, we pull back. We're agreeing that now, so nobody has to argue for it later.\"",
+          "A personal version: \"If I'm not enjoying the role after six months, I'll start talking to recruiters.\"",
+        ],
+        caution:
+          "Tripwires set too tight kill good ideas before they've had a fair chance; set them from realistic base rates. And a tripwire only works if someone is committed to acting when it's crossed.",
+      },
+    ],
+  },
 ];

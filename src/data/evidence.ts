@@ -208,6 +208,15 @@ export const evidence: Record<string, Evidence> = {
   "code-not-mood": { level: "meta-analysis" },
   "guard-the-body": { level: "meta-analysis" },
   "feed-the-mind": { level: "observational" },
+  // Principles: Careers & Transitions
+  "test-and-learn-career": { level: "observational", note: "Based on qualitative studies of people changing careers." },
+  "job-crafting": { level: "meta-analysis", note: "A meta-analysis of 122 samples (Rudolph et al., 2017); the studies are mostly correlational." },
+  "moderately-weak-ties": { level: "experimental", note: "Randomized experiments on LinkedIn covering more than 20 million people (Rajkumar et al., 2022)." },
+  "lean-toward-change": { level: "experimental", note: "A randomized field experiment, but with self-selected participants, self-reported happiness and substantial non-response." },
+  // Principles: Deciding Well
+  "never-whether-or-not": { level: "observational" },
+  "outside-view": { level: "observational", note: "Reference-class forecasting is supported by studies of project outcomes; the curriculum story is an illustration." },
+  "prepare-to-be-wrong": { level: "practitioner", note: "Pairs with the experimental evidence for the premortem (M-07)." },
 };
 
 export const evidenceFor = (id: string): Evidence | undefined => evidence[id];

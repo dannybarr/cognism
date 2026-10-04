@@ -172,6 +172,30 @@ export const references: Record<string, Reference[]> = {
     { citation: "Chang, Y. K. et al. (2012). The effects of acute exercise on cognitive performance: A meta-analysis.", url: "https://www.semanticscholar.org/paper/The-effects-of-acute-exercise-on-cognitive-A-Chang-Labban/726cba1d5acce93f799ae977c79979046bfc7779" },
     { citation: "(2021). The effect of sleep deprivation and restriction on mood, emotion, and emotion regulation: Three meta-analyses in one. Sleep, 44(6).", url: "https://pubmed.ncbi.nlm.nih.gov/33367799/" },
   ],
+  "test-and-learn-career": [
+    { citation: "Ibarra, H. Working Identity: Unconventional Strategies for Reinventing Your Career. Harvard Business Review Press.", url: "https://herminiaibarra.com/working-identity-book/" },
+  ],
+  "job-crafting": [
+    { citation: "Wrzesniewski, A. & Dutton, J. E. (2001). Crafting a job: Revisioning employees as active crafters of their work. Academy of Management Review, 26(2).", url: "https://www.researchgate.net/publication/211396297_Crafting_a_Job_Revisioning_Employees_as_Active_Crafters_of_Their_Work" },
+    { citation: "Rudolph, C. W., Katz, I. M., Lavigne, K. N. & Zacher, H. (2017). Job crafting: A meta-analysis of relationships with individual differences, job characteristics, and work outcomes. Journal of Vocational Behavior, 102.", url: "https://www.researchgate.net/publication/317128663_Job_Crafting_A_Meta-Analysis_of_Relationships_with_Individual_Differences_Job_Characteristics_and_Work_Outcomes" },
+  ],
+  "moderately-weak-ties": [
+    { citation: "Rajkumar, K., Saint-Jacques, G., Bojinov, I., Brynjolfsson, E. & Aral, S. (2022). A causal test of the strength of weak ties. Science.", url: "https://www.semanticscholar.org/paper/A-causal-test-of-the-strength-of-weak-ties-Rajkumar-Saint-Jacques/63b9342bb178f12be3d7ece657e6a9c5324e040f" },
+  ],
+  "lean-toward-change": [
+    { citation: "Levitt, S. D. (2021). Heads or tails: The impact of a coin toss on major life decisions and subsequent happiness. Review of Economic Studies, 88(1).", url: "https://www.nber.org/papers/w22487" },
+  ],
+  "never-whether-or-not": [
+    { citation: "Nutt, P. C. Why Decisions Fail. Berrett-Koehler.", url: "https://news.osu.edu/half-of-business-decisions-fail-because-of-managements-blunders-new-study-finds/" },
+    { citation: "Heath, C. & Heath, D. (2013). Decisive: How to Make Better Choices in Life and Work. Crown.", url: "https://readingraphics.com/book-summary-decisive/" },
+  ],
+  "outside-view": [
+    { citation: "Flyvbjerg, B. From Nobel Prize to project management: Getting risks right. Project Management Institute.", url: "https://www.pmi.org/learning/library/nobel-project-management-reference-class-forecasting-8068" },
+    { citation: "Kahneman, D. (2007). A short course in thinking about thinking. Edge Master Class.", url: "https://www.edge.org/event/edge-master-class-2007-daniel-kahneman-a-short-course-in-thinking-about-thinking" },
+  ],
+  "prepare-to-be-wrong": [
+    { citation: "Heath, C. & Heath, D. (2013). Decisive: How to Make Better Choices in Life and Work. Crown.", url: "https://readingraphics.com/book-summary-decisive/" },
+  ],
 };
 
 export const referencesFor = (id: string): Reference[] => references[id] ?? [];
